@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# mine shiny-apps
+
+```{r}
+library(tidyverse)
+list.dirs(recursive = F) %>% 
+  filter()
+library(fs)
+library(stringr)
+library(glue)
+dir_ls(type = "directory") %>% 
+  paste("[", ., "](",.,")", sep = "")
+
+
+```
+
