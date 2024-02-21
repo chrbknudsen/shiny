@@ -9,9 +9,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 # mine shiny-apps
 
-```{r eval = F}
+```{r eval = T}
 library(tidyverse)
-list.dirs(recursive = F) 
 library(fs)
 library(stringr)
 library(glue)
