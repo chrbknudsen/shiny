@@ -14,8 +14,8 @@ library(tidyverse)
 library(fs)
 library(stringr)
 library(glue)
-dir_ls(type = "directory") %>% 
-  paste("[", ., "](",.,")", sep = "")
+dir_ls(type = "directory") 
+#  paste("[", ., "](",.,")", sep = "")
 
 
 ```
