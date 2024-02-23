@@ -4,10 +4,15 @@ output: html_document
 date: "`r Sys.Date()`"
 ---
 
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 # mine shiny-apps
+
+biblioteket bslib er nok værd at bruge endda relativt meget tid på at studere
+
 
 ```{r eval = T}
 library(tidyverse)
@@ -16,7 +21,6 @@ library(stringr)
 library(glue)
 dir_ls(type = "directory") 
 #  paste("[", ., "](",.,")", sep = "")
-
 
 ```
 
