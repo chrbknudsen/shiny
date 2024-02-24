@@ -1,0 +1,11 @@
+En simpel app. Hvor du vælger en fordeling. 
+Hvor du får vist hvordan fordelingen ser ud.
+Hvor du får vist en sample.
+Og hvor du får vist fordelingen af sample means - den approximerer en normalfordeling.
+
+Vi kan vælge samplestørrelse.
+Og vi kan vælge antal gentagelser - det er det antal gange vi tager en 
+sample og beregner en middelværdi.
+
+Og så kan vi tilføje de samples en af gangen, så vi kan se hvordan det udvikler
+sig efterhånden som vi tager flere samples. det giver en checkbox.

@@ -8,10 +8,11 @@
 #
 
 library(shiny)
+library(bslib)
 
 # Define server logic required to draw a histogram
 function(input, output, session) {
-
+    bs_themer()
     output$distPlot <- renderPlot({
 
         # generate bins based on input$bins from ui.R
