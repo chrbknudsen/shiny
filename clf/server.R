@@ -14,6 +14,7 @@ library(dplyr)
 
 # Define server logic required to draw a histogram
 function(input, output, session) {
+  bs_themer()
     distrib <- reactive(input$distribution)
 
     output$distriPlot <- renderPlot({
@@ -103,11 +104,12 @@ function(input, output, session) {
                                                                 rnorm(input$sample_size, 0,1))))
       # plot sample
       
-      
       data.frame(x = collated_samples) %>% 
         ggplot(aes(x)) + 
-        geom_histogram()
-      
-      
+        geom_histogram() +
+        stat_function(data = data.frame(x=range), 
+                      fun=match.fun(distrib()), 
+                      args=argumenter)
+
     })
 }
