@@ -15,29 +15,22 @@ library(dplyr)
 # Define server logic required to draw a histogram
 function(input, output, session) {
     distrib <- reactive(input$distribution)
-    output$distPlot <- renderPlot({
 
-        # generate bins based on input$bins from ui.R
-        x    <- faithful[, 2]
-        bins <- seq(min(x), max(x), length.out = input$bins + 1)
-
-        # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white',
-             xlab = 'Waiting time to next eruption (in mins)',
-             main = 'Histogram of waiting times')
-
-    })
     output$distriPlot <- renderPlot({
       
       # distrib <- input$distribution
-      range <- case_when(distrib() == "dnorm" ~ c(-3,3),
-                         distrib() == "dunif" ~ c(-3,3),
-                         distrib() == "dlnorm" ~ c(0,3),
-                         .default =  c(-3,3))
+      range <- switch(distrib(),
+                      dnorm = c(-3,3),
+                      dunif = c(-3,3),
+                      dlnorm = c(0,3),
+                      dweibull = c(0,10),
+                      c(-3,3)
+                      )
       
       argumenter <- case_when(distrib() == "dnorm" ~ list(0,1),
                               distrib() == "dunif" ~ list(-3,3),
                               distrib() == "dlnorm" ~ list(0,1),
+                              distrib() == "dweibull" ~ list(2, 2.5),
                               .default =  list(-3,3))
       
       # plot fordelingen
@@ -53,18 +46,68 @@ function(input, output, session) {
       range <- case_when(distrib() == "dnorm" ~ c(-3,3),
                          distrib() == "dunif" ~ c(-3,3),
                          distrib() == "dlnorm" ~ c(0,3),
+                         distrib() == "dweibull" ~ c(0,10),
                          .default =  c(-3,3))
       
       argumenter <- case_when(distrib() == "dnorm" ~ list(0,1),
                               distrib() == "dunif" ~ list(-3,3),
                               distrib() == "dlnorm" ~ list(0,1),
-                              .default =  list(-3,3))
+                              distrib() == "dweibull" ~ list(2, 2.5),
+                              .default =  list(0,1))
       
-      # plot fordelingen
-      data.frame(x = rnorm(100, 0, 1)) %>% 
+      sample_data <- switch(distrib(),
+                     dnorm = rnorm(input$sample_size, 0, 1),
+                     dunif = runif(input$sample_size, -3, 3),
+                     dlnorm = rlnorm(input$sample_size, 0,1),
+                     dweibull = rweibull(input$sample_size, 2, 2.5),
+                     rnorm(input$sample_size, 0,1)
+                     )
+      
+      # plot sample
+      
+
+      data.frame(x = sample_data) %>% 
       ggplot(aes(x)) + 
         geom_histogram()
 
+      
+    })
+    
+    output$flere_samples <- renderPlot({
+      
+      # distrib <- input$distribution
+      range <- case_when(distrib() == "dnorm" ~ c(-3,3),
+                         distrib() == "dunif" ~ c(-3,3),
+                         distrib() == "dlnorm" ~ c(0,3),
+                         distrib() == "dweibull" ~ c(0,10),
+                         .default =  c(-3,3))
+      
+      argumenter <- case_when(distrib() == "dnorm" ~ list(0,1),
+                              distrib() == "dunif" ~ list(-3,3),
+                              distrib() == "dlnorm" ~ list(0,1),
+                              distrib() == "dweibull" ~ list(2, 2.5),
+                              .default =  list(0,1))
+      
+      sample_data <- switch(distrib(),
+                            dnorm = rnorm(input$sample_size, 0, 1),
+                            dunif = runif(input$sample_size, -3, 3),
+                            dlnorm = rlnorm(input$sample_size, 0,1),
+                            dweibull = rweibull(input$sample_size, 2, 2.5),
+                            rnorm(input$sample_size, 0,1)
+      )
+      collated_samples <- replicate(input$sample_n, mean(switch(distrib(),
+                                                                dnorm = rnorm(input$sample_size, 0, 1),
+                                                                dunif = runif(input$sample_size, -3, 3),
+                                                                dlnorm = rlnorm(input$sample_size, 0,1),
+                                                                dweibull = rweibull(input$sample_size, 2, 2.5),
+                                                                rnorm(input$sample_size, 0,1))))
+      # plot sample
+      
+      
+      data.frame(x = collated_samples) %>% 
+        ggplot(aes(x)) + 
+        geom_histogram()
+      
       
     })
 }

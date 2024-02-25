@@ -1,3 +1,12 @@
+test <- "rweibull"
+
+match.fun(test)(10, 4)
+stat_function(fun=match.fun(distrib()), args=argumenter, aes(fill = "orange"), geom  ="area") +
+  
+
+
+
+
 library(tidyverse)
 
 distrib <- "dunif"
@@ -26,3 +35,19 @@ unif = runif(n),
 lnorm = rlnorm(n),
 exp = rexp(n),
 rnorm(n)))
+
+ggplot(data.frame(x=c(-10,10)), aes(x)) + 
+  stat_function(fun=dwilcox,
+                args=list(.5), aes(fill = "orange"), geom  ="density") +
+  scale_fill_manual(values = "orange", guide  =F)
+
+
+
+sample_size
+
+library(SuppDists)
+
+rcauchy(1)
+switch()
+
+SuppDists::

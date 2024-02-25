@@ -9,3 +9,23 @@ sample og beregner en middelværdi.
 
 Og så kan vi tilføje de samples en af gangen, så vi kan se hvordan det udvikler
 sig efterhånden som vi tager flere samples. det giver en checkbox.
+
+exponential
+weibull
+cauchy
+dbeta
+dbinom (?)
+dchisq()
+dexp
+df
+dgamma
+dgeom
+dhyper
+dmultinom
+dnbinom
+dt
+library(SuppDists)
+pbirthday
+dsignrank
+ptukey
+dwilcox
