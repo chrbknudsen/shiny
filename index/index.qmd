@@ -1,0 +1,11 @@
+---
+title: "Stuff"
+format: html
+editor: source
+---
+
+## Quarto
+```{r}
+list.dirs("..")
+```
+
