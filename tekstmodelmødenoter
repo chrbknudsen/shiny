@@ -1,0 +1,79 @@
+fælles nordiske sprogmodeller
+
+
+
+papirnoter
+
+Love - baseret på et ønske om sammen at skabe transparente, demokratisk
+funderede modeller, baseret på højkvalitetsdata.
+
+Der vil laves en fælles ansøgning til euroHPC. der var meget andet 
+man ville kunne samarbejde om - men man er  i tre forskellige lande, og 
+derfor kommer man aldrig til at være alignet. Så derfor kommer man ikke
+til at søge om andet end dette. For det kommer man ikke igennem med.
+
+Leonora - også sverige
+
+EuroHPC - finansieret af EU-Horizon. Og derfor kan norge være med.
+
+de drier 8 hpc centre. Adgang er konkurrencebaseret med to årlige 
+ansøgningsrunder. Offenlige projekter er der ikke mange af - og det er derfor ret let at komme til.
+
+Pt arbejder de på Leonardo, der står i en gammel tobaksfabrik i Bologna. Den er nr. 6 på top 500 over hpc faciliteter i verden.
+
+papir slut
+
+
+svenskerne kører pt et projekt smamen med norske naitonalbibliotek på
+maskinen.
+
+pt kører de lydmodeller  -tale til text (og den anden vej)
+
+Og en svensk/norsk sprogmodel
+
+massively multilingual models. dansk/svensk/norsk er underrepræsenterede
+i de amerikanske modeller.
+De amerikanske kommercielle kører på webskrabet data - som hun betragter
+som af lavere kvalitet. (?)
+
+Der r et et perspektiv i at man vist ikke før har prøvet at træne på 
+tre sprog fra samme familie.
+
+De tester BERT T5, gpt, llama, mistral og gemma - det besvarede hvilke modeller de vil bygge.
+
+almindelig adgang forventes september 2024. svneskerne leverer 500 GB
+data. Og den model forventes at blive offentliggjort.
+
+Svenskerne har åbenbart lov til at lave deres tdm og træning også på
+ophavsretsbeskyttet data. Der er dog udfordringer i forbindelse med 
+at træne data i Italien. Men svenskerne har fundet en jurist der siger at man kan distribuere modellen - så længe man gør det uafhængigt af træningsdata.
+
+
+Svein Arne - Norge
+NB AI-lab
+
+AI-lab@nb.no. Fire fte, med mulighed for researchers in residense. Det lyder
+en smule som Leiden. 
+De har digitaliseret 95% af alle bøger i norge. 
+>80% af alle avaiser.
+
+Der er en phdafhandling/noget fra Kenneth Enevoldsen, der afdækker at den norske sprogmodel er bedre til dansk end den danske.
+
+Han havde en graf om perplexity mål. Det skal der måske læses op på.
+
+Et nyt projekt Mimer. Nordmændene kigger på kompensation af rettighedshavere, for at afdække værdien af ophavsretbeskyttet materiale i sprogmodeller.
+Hvis det har værdi - kompenser, så man kan få bygget dem.
+
+De øsnker at videreudvikle deres digitale norske tekskorpus.
+
+I partnerskab med NTNU (NorwAI), Oslo universitet - institut fro informatik. Og "Sigma2" der er Deic ækvivalenten i norge.
+
+deres korpus er både digitaliserede bøger og aviser. Offenltige websites. Sortingest, lovdata og wikipedia. Og dertil større interantiaonale datasæt, der ikke indgår i NCC - der er deres digitale tekstkorpus.
+
+
+De vil træne modeller optil 7B, måske 15B. Mistral og Llama2.  Måske Bloom.
+
+De vil træne 10-15 norske modeller. Trænes på forskellige datasæt, både med og uden ophavsretligt beskyttet materiale.
+
+Evalueringer. læseforstårelse. Genereing af tekst, opsummering af tekst, sentiment analyse, svare på multiple choice kvisser fra NRK.
+
