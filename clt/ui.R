@@ -13,7 +13,7 @@ library(bslib)
 # Define UI for application that draws a histogram
 page_sidebar(
   theme = bs_theme(version = 5),
-  title = "CLF",
+  title = "CLT",
   sidebar = sidebar(
     title = "kontrol",
     selectInput("distribution", "Vælg fordeling", 
