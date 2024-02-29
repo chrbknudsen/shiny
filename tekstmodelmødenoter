@@ -77,3 +77,45 @@ De vil træne 10-15 norske modeller. Trænes på forskellige datasæt, både med
 
 Evalueringer. læseforstårelse. Genereing af tekst, opsummering af tekst, sentiment analyse, svare på multiple choice kvisser fra NRK.
 
+Basert på disse evalueringer, kan man så - msåke - svare på hvilken betydning
+ophavsretligt beskyttet materiale - og derfra danne grunlag for en evt kompensationsaftale.
+
+De baserer sig bl.a. på "common crawl". det er internetdata, men ikke deres netarkiv. Det er internationalt høstet data. Og norske jurister vurderer at man godt må bruge det - så længe man ikke distribuerer det.
+
+Cecile lyser op både ved svenskernes mulighed. og nordmændenes overvejelser om kompensationsordninger. Denne forventes baseret på en tidligere model - hvor løsningen var at staten kom med en pose penge og rettighedshaverne sagde jatak. 
+
+De forventer ikke at der gives adgang til alle data for alle. Men modellen forventes i sidste ende at være.
+
+
+
+per. ministeren siger at vi ikke skal lave chatgpt på dansk. Per: nej, det skla vi ikke vi skla lave det der ligger nede i kælderen langt under chatgpt. det er kulturmodeller. Må man stille sin barnevogn på fortovet?
+
+Det vigtige er ikke teknikken. Det er rettighederne til data.
+
+scandeval er benchmarkmodeller for de forskellige nordiske modeller.
+De deler på huggingface og kildekode på github.
+
+det var fascinerende så let det var at få adgang til infomedia som del af hopeprojektet. det har åbnet døre for efterfølgende forskningsadgagn.
+
+Anders klint myrvold.
+
+dataudlevering fra netarkivet er kun til forskning - baseret på en undtagelse.
+public domain - alt ældre end 140.
+
+og man kan tale om muligheder for andre datatyper.
+
+https://gigaword.dk/
+
+Cecile - en af udfordringerne er at vi kan udlevere ting der ikke er tilgængelig i almindelig handel. Der forsøges at argumentere med at eksempelvis aviser godt nok er tilgængelige. Men ikke i de formater vi kan levere. Kammeradvokaten er på sagen.
+Rygtet om nyheder var baseret på en vurdeing af om man må træne  algoritmer baseret på ophavsmateriale. den forventes at komme i denne uge. Hun havde håbet at den var kommet til i dag.
+det næste er så spørgmsålet om man må tilgængeliggøre modellerne. Og der vil være forskelle på forskellige modeller. generative modeller kan være vanskeligere.
+Og så er der persondatasporet. Alene det at køre en algoritme på personholdigt data har været betragtet osm databehandling. tilsynet lyder osm om at de godt kan se at der er en forskel. Hvis ikke der er persondata i outputtet - lyder det som om man må.
+
+Deic
+
+eurocc2
+
+primært gennemgang af hvilke hpc-faciliter de kan give adgang til/hjælpe med adgang til.
+
+
+Rigsarkivet
