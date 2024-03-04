@@ -46,7 +46,7 @@ server <- function(input, output, session) {
       target_time <-  as.POSIXct("2038-06-30 23:59:59", tz = "Europe/Copenhagen")
       diff <- floor(as.numeric(difftime(target_time, curr_time, units = "secs")))
       if(diff>0){
-        paste(toBinaryString(diff))
+        paste(to_binary_string(diff))
       }else{
         paste("Done!")
       }
