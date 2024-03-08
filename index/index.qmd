@@ -6,6 +6,53 @@ editor: source
 
 ## Quarto
 ```{r}
-list.dirs("..")
+library(tidyverse)
+
+shinys <- list.dirs("..") %>% 
+  tibble(sti = .) %>% 
+  filter(str_starts(sti, pattern = "\\.\\.\\/\\.", negate = TRUE)) %>% 
+  filter(sti != "..") %>% 
+  filter(sti != "/index")
+shinys
 ```
 
+```{r}
+find_meta <- function(x){
+  read_lines(paste0(x,"/meta.txt"))
+}
+x <- "/TFCD"
+read_lines(paste0(x, "/meta.txt"))
+
+get_meta <- function(x) {
+  res <- tryCatch({
+    read_lines(paste0(x, "/meta.txt"))
+  }, error = function(e) {
+    "not found"
+  })
+  return(res)
+}
+
+get_logo <- function(x){
+  sti <- paste0(x, "/logo.png")
+  if(file.exists(paste0(sti))){
+    return(sti)
+  }else{
+    return("not found")
+  }
+}
+
+file.exists()
+```
+
+```{r}
+shinys %>% 
+  mutate(meta = map_chr(sti, get_meta),
+         logo = map_chr(sti, get_logo)
+         )
+```
+
+https://www.tidyverse.org/css/main-site.css
+
+og 
+
+view-source:https://www.tidyverse.org/
