@@ -1,6 +1,8 @@
 ---
 title: "Stuff"
-format: html
+format: 
+  html:
+    css: styles.css
 editor: source
 ---
 
@@ -20,9 +22,12 @@ shinys
 find_meta <- function(x){
   read_lines(paste0(x,"/meta.txt"))
 }
-x <- "/TFCD"
+x <- "../TFCD"
 read_lines(paste0(x, "/meta.txt"))
+```
 
+
+```{r get_meta}
 get_meta <- function(x) {
   res <- tryCatch({
     read_lines(paste0(x, "/meta.txt"))
@@ -31,7 +36,10 @@ get_meta <- function(x) {
   })
   return(res)
 }
+```
 
+
+```{r get_logo}
 get_logo <- function(x){
   sti <- paste0(x, "/logo.png")
   if(file.exists(paste0(sti))){
@@ -41,7 +49,6 @@ get_logo <- function(x){
   }
 }
 
-file.exists()
 ```
 
 ```{r}
@@ -53,6 +60,59 @@ shinys %>%
 
 https://www.tidyverse.org/css/main-site.css
 
-og 
+ogasdf
 
 view-source:https://www.tidyverse.org/
+
+
+```{=html}
+
+<a href="https://dplyr.tidyverse.org"><img src="../test/dplyr.png" alt="dplyr hex sticker" class="r1 c0"></a>
+
+<div class="band first">
+  <div class="bandContent">
+    <div class="hexBadges">
+      <a href="https://dplyr.tidyverse.org"><img src="../test/dplyr.png" alt="dplyr hex sticker" class="r1 c0"></a>
+      <a href="https://ggplot2.tidyverse.org"><img src="../test/ggplot2.png" alt="ggplot2 hex sticker" class="r2 c0"></a>
+      <a href="https://readr.tidyverse.org"><img src="../test/readr.png" alt="readr hex sticker" class="r3 c0"></a>
+      <a href="https://forcats.tidyverse.org"><img src="../test/forcats.png" alt="forcats hex sticker" class="r2 c1"></a>
+      <a href="https://stringr.tidyverse.org"><img src="../test/stringr.png" alt="stringr hex sticker" class="r3 c1"></a>
+      <a href="https://tibble.tidyverse.org"><img src="../test/tibble.png" alt="tibble hex sticker" class="r2 c2"></a>
+      <a href="https://tidyr.tidyverse.org"><img src="../test/tidyr.png" alt="tidyr hex sticker" class="r3 c2"></a>
+      <a href="https://purrr.tidyverse.org"><img src="../test/purrr.png" alt="purrr hex sticker" class="r4 c2" /></a>
+    </div>
+    <div class="blurb">
+      <div class="tagline">
+        R packages for data science
+      </div>
+      <div>
+        <p>The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.</p>
+        <p>Install the complete tidyverse with:</p>
+        <pre><code>install.packages("tidyverse")
+</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+Eller - hvis vi genererer noget html kode:
+
+<!-- html_code <- apply(df, 1, function(row) { -->
+<!--   paste0('<a href="', row['url'], '"><img src="', row['image'], '" alt="', row['name'], ' hex sticker"></a>') -->
+<!-- }) -->
+
+<!-- html_code <- paste(html_code, collapse = "\n") -->
+
+
+Så kan vi indsætte den ved:
+<!-- ```{=html} -->
+<!-- <div class="band first"> -->
+<!--   <div class="bandContent"> -->
+<!--     <div class="hexBadges"> -->
+<!--       r html_code --> her skal der så backtick omkring.
+<!--     </div> -->
+<!--     <!-- Din yderligere HTML her --> -->
+<!--   </div> -->
+<!-- </div> -->
+<!-- ``` -->
