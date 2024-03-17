@@ -1,0 +1,98 @@
+---
+title: "test"
+format: html
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+source("segment7.R")
+```
+
+```{=html}
+`r segment7(0)`
+```
+1
+```{=html}
+`r segment7(1)`
+```
+2
+You can add options to executable code like this 
+```{=html}
+`r segment7(2)`
+```
+3
+
+```{=html}
+`r segment7(3)`
+```
+4
+
+```{=html}
+`r segment7(4)`
+```
+
+5
+
+```{=html}
+`r segment7(5)`
+```
+
+6
+
+```{=html}
+`r segment7(6)`
+```
+
+7
+
+```{=html}
+`r segment7(7)`
+```
+
+8
+
+```{=html}
+`r segment7(8)`
+```
+
+9
+
+```{=html}
+`r segment7(9)`
+```
+
+
+```{=html}
+`r segment7(9); segment7(8)`
+```
+
+
+```{r}
+svg0 <- segment7(0)
+svg1 <- segment7(1)
+test <- "1010101"
+
+```
+
+```{r}
+print_svgs <- function(test){
+  for(i in strsplit(test, "")[[1]]){
+    svg_to_add <- ifelse(i == "0", svg0, svg1)
+    cat('<div style="display: inline-block; width: 20%; height: auto;">', svg_to_add, '</div>\n')
+  }
+}
+```
+
+```{=html}
+`r print_svgs(test)`
+```
+ad
+
+

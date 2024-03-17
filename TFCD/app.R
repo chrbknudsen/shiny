@@ -10,6 +10,11 @@
 library(shiny)
 library(lubridate)
 
+# skaber svg'er af 0 og 1
+source("segment7.R")
+svg0 <- segment7(0)
+svg1 <- segment1(1)
+
 to_binary_string <- function(number) {
   if(number == 0) {
     return('0')
