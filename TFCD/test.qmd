@@ -65,9 +65,9 @@ You can add options to executable code like this
 9
 
 ```{=html}
-`r segment7(9)`
+`r segment7(9, height= 100)`
 ```
-
+asdf
 
 ```{=html}
 `r segment7(9); segment7(8)`
@@ -77,6 +77,9 @@ You can add options to executable code like this
 ```{r}
 svg0 <- segment7(0)
 svg1 <- segment7(1)
+
+svg0 <- paste0(segment7(0)
+
 test <- "1010101"
 
 ```
@@ -95,4 +98,36 @@ print_svgs <- function(test){
 ```
 ad
 
+<style>
+  .svg-container {
+    display: flex;
+  }
+  
+  svg {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .svg-container svg:last-child {
+    margin-right: 0;
+  }
+</style>
+
+<div class="svg-container">
+  <!-- SVG 1 -->
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <!-- SVG-indhold her -->
+  </svg>
+  
+  <!-- SVG 2 -->
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <!-- SVG-indhold her -->
+  </svg>
+  
+  <!-- SVG 3 -->
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <!-- SVG-indhold her -->
+  </svg>
+</div>
 

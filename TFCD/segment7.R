@@ -1,7 +1,10 @@
 segment7 <- function(value = 0, 
                      color = "#1B03A3",
-                     background = "#000000"){
+                     background = "#000000",
+                     height = 320){
   all_segments <- c("a", "b", "c", "d", "e", "f", "g")
+  
+  width <- height/(1+2/3)
   
   segments <- list(
                  "0" = c("a", "b", "c", "d", "e", "f"),
@@ -51,9 +54,15 @@ segment7 <- function(value = 0,
   
   passive_segments <- segments_off[passive_segments]
   passive_segments <- unlist(passive_segments)
-  beginning <- '<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" style = "width:20%" width="192" height="320" viewBox="-1 -1 13 21" stroke="#FFF" stroke-width=".25">
-<rect width = "100%" height = "100%" fill = "#000000"/>'  
+  beginning <- paste0('<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  
+  width="', width, '" height="', height,' " viewBox="-1 -1 13 21" stroke="#FFF" stroke-width=".25">
+<rect width = "100%" height = "100%" fill = "#000000"/>', collapse = "")  
   end <- '</svg>'
   paste0(beginning, active_segments, passive_segments, end, collapse = "\n")
 }
+
+
+# 192*.2
+# 320*0.2
+
+# 320/192
