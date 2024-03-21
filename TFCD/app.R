@@ -24,7 +24,8 @@ start <- '<style>
 svg {
   width: 100px;
   height: auto;
-  margin-right: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .svg-container svg:last-child {
@@ -59,7 +60,11 @@ to_svgs <- function(number){
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-
+  tags$head(
+    tags$style(HTML("
+      h2 { color: #00FF00; }
+      body { background-color: black; }
+    "))),
     # Application title
     titlePanel("leaving ground"),
     htmlOutput("curr_down")
