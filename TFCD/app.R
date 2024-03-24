@@ -9,7 +9,8 @@
 
 library(shiny)
 library(lubridate)
-source("segment7.R")
+library(KnudsenKit)
+
 
 # skaber svg'er af 0 og 1
 
