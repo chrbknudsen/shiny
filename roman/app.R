@@ -19,25 +19,28 @@ ui <- fluidPage(
                windowTitle = "Roman Converter"),
 
     # Sidebar with a slider input for number of bins 
-    sidebarLayout(
-        sidebarPanel(
-            textInput("roman",
-                        "Roman Numeral:",
-                        value = "MM")
-        ),
+   
 
         # Show a plot of the generated distribution
         mainPanel(
+          textInput("roman",
+                    "Roman Numeral:",
+                    value = "MM"),
            textOutput("arabic")
         )
     )
-)
+
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-
+ 
     output$arabic <- renderText({
-      as.numeric(as.roman(input$roman))        
+      res <- gsub(" ", "", input$roman)
+      res <- as.roman(res)
+      if(is.na(res)){
+        res <- "Invalid input. This app can only handle roman numerals between 1 and 3899"
+      } 
+      res        
 
     })
 
