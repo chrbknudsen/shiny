@@ -3,7 +3,8 @@ library(leaflet)
 
 shinyUI(fluidPage(
   
-  titlePanel("Using Geolocation"),
+  titlePanel("I would walk 804 kilometers and 672 meters.",
+             windowTitle = "Proclaim!"),
   
   tags$script('
       $(document).ready(function () {
@@ -26,11 +27,6 @@ shinyUI(fluidPage(
               '),
   
   # Show a plot of the generated distribution
-  fluidRow(column(width = 2,
-                  verbatimTextOutput("lat"),
-                  verbatimTextOutput("long"),
-                  verbatimTextOutput("geolocation"))
-  ),
   leafletOutput("mymap")
 )
 )
