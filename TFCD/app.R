@@ -66,6 +66,12 @@ ui <- fluidPage(
       h2 { color: #00FF00; }
       body { background-color: black; }
     "))),
+    # favicons
+    tags$link(rel = "shortcut icon", href = "favicon.ico"),
+    tags$link(rel = "apple-touch-icon", sizes = "180x180", href = "apple-touch-icon.ico"),
+    tags$link(rel = "icon", type = "image/png", sizes = "32x32", href = "/favicon-32x32.png"),
+    tags$link(rel = "icon", type = "image/png", sizes = "16x16", href = "/favicon-16x16.png"),
+  
     # Application title
     titlePanel("leaving ground"),
     htmlOutput("curr_down")
