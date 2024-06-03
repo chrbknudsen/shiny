@@ -13,7 +13,7 @@ library(deldir)
 library(tidyverse)
 
 set.seed(42)
-tiler <- 50
+tiler <- 100
 x <- rnorm(tiler)
 y <- rnorm(tiler)
 
@@ -49,7 +49,7 @@ function(input, output, session) {
               axis.line = element_blank(),
               axis.ticks = element_blank(),
               panel.grid = element_blank()) +
-        scale_fill_manual(values = hcl.colors(50, input$palette)) +
+        scale_fill_manual(values = hcl.colors(tiler, input$palette)) +
         theme(legend.position = "none")
 
     })
