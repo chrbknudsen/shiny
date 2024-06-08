@@ -9,6 +9,33 @@
 
 library(shiny)
 
+valg <- c(
+  "Grays",         
+  "Blues 2",      
+  "Blues 3" ,   
+  "Purples 2",     
+  "Purples 3",     
+  "Oslo"    ,     
+  "Inferno"  ,     
+  "Mako"      ,    
+  "Teal"       ,   
+  "Purp"        , 
+  "BrwnYl"       , 
+  "YlOrRd",
+  "YlGn",
+  "Blues",         
+  "Lajolla",      
+  "Turku"   ,      
+  "Blue-Red" ,    
+  "Blue-Yellow 2", 
+  "Broc"       ,
+  "Cork"  ,
+  "Vik"    ,       
+  "Lisbon"  ,     
+  "Tofino"   ,     
+  "Cividis"  
+)
+
 # Define UI for application that draws a histogram
 fluidPage(
 
@@ -20,7 +47,7 @@ fluidPage(
         sidebarPanel(
             selectInput("palette",
                         "palette:",
-                        choices = hcl.pals())
+                        choices = valg)
         ),
 
         # Show a plot of the generated distribution
