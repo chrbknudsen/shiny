@@ -38,6 +38,36 @@ svg {
 
 slut <- '</div>'
 
+# Funktion til justering af enhed
+unit_label <- function(value, singular, plural) {
+  if (value == 1) {
+    return(sprintf("%d %s", value, singular))
+  } else {
+    return(sprintf("%d %s", value, plural))
+  }
+}
+
+to_text_string <- function(duration){
+  aar <- floor(as.period(duration)@year)
+  mon <- floor(as.period(duration)@month)
+  day <- floor(as.period(duration)@day)
+  hou <- floor(as.period(duration)@hour)
+  min <- floor(as.period(duration)@minute)
+  sec <- floor(as.period(duration)@.Data)
+  result <- paste(
+    if (aar > 0) unit_label(aar, "år", "år") else "",
+    if (mon > 0) unit_label(mon, "måned", "måneder") else "",
+    if (day > 0) unit_label(day, "dag", "dage") else "",
+    if (hou > 0) unit_label(hou, "time", "timer") else "",
+    if (min > 0) unit_label(min, "minut", "minutter") else "",
+    if (sec > 0) unit_label(sec, "sekund", "sekunder") else "",
+    sep = " "
+  )
+  result <- gsub(", ,", ",", result)
+  result <- gsub("^, |, $", "", result)
+  result
+}
+
 to_binary_string <- function(number) {
   if(number == 0) {
     return('0')
@@ -59,12 +89,20 @@ to_svgs <- function(number){
   temp <- paste0(ifelse(temp == 0, svg0, svg1), collapse = " ")
 }
 
-# Define UI for application that draws a histogram
+# Define UI for application 
 ui <- fluidPage(
   tags$head(
     tags$style(HTML("
       h2 { color: #00FF00; }
       body { background-color: black; }
+      .checkbox label {
+        color: #00FF00;
+        font-size: 16px;
+      }
+      .checkbox input[type='checkbox'] {
+        color: #00FF00;
+        
+      }
     ")),
     # favicons
     tags$link(rel = "shortcut icon", href = "favicon.ico"),
@@ -76,6 +114,7 @@ ui <- fluidPage(
   
     # Application title
     titlePanel("leaving ground"),
+    checkboxInput("toggle", 'Binær', value = TRUE),
     htmlOutput("curr_down")
     
 
@@ -89,11 +128,14 @@ server <- function(input, output, session) {
       invalidateLater(1000, session)
       curr_time <- with_tz(now("UTC"), tzone = "Europe/Copenhagen")
       target_time <-  as.POSIXct("2038-06-30 23:59:59", tz = "Europe/Copenhagen")
-      diff <- floor(as.numeric(difftime(target_time, curr_time, units = "secs")))
-      if(diff>0){
-        HTML(paste0(start, to_svgs(diff), slut, collapse = " "))
+      duration <- interval(curr_time, target_time)
+      sekunder <- floor(as.numeric(duration, "seconds"))
+      if(diff>0 & input$toggle){
+        HTML(paste0(start, to_svgs(sekunder), slut, collapse = " "))
+      }else if(diff>0 & !input$toggle){
+        HTML(paste('<h2 style="color: #00FF00;">',to_text_string(duration),'</h2>'))
       }else{
-        HTML(paste("Done!"))
+        HTML(paste('<h2 style="color: #00FF00;">Done!</h2>'))
       }
       
       
