@@ -130,9 +130,9 @@ server <- function(input, output, session) {
       target_time <-  as.POSIXct("2038-06-30 23:59:59", tz = "Europe/Copenhagen")
       duration <- interval(curr_time, target_time)
       sekunder <- floor(as.numeric(duration, "seconds"))
-      if(diff>0 & input$toggle){
+      if(sekunder>0 & input$toggle){
         HTML(paste0(start, to_svgs(sekunder), slut, collapse = " "))
-      }else if(diff>0 & !input$toggle){
+      }else if(sekunder>0 & !input$toggle){
         HTML(paste('<h2 style="color: #00FF00;">',to_text_string(duration),'</h2>'))
       }else{
         HTML(paste('<h2 style="color: #00FF00;">Done!</h2>'))
