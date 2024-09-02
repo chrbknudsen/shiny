@@ -48,12 +48,12 @@ unit_label <- function(value, singular, plural) {
 }
 
 to_text_string <- function(duration){
-  aar <- floor(as.period(duration)@year)
-  mon <- floor(as.period(duration)@month)
-  day <- floor(as.period(duration)@day)
-  hou <- floor(as.period(duration)@hour)
-  min <- floor(as.period(duration)@minute)
-  sec <- floor(as.period(duration)@.Data)
+  aar <- floor(as.numeric(as.period(duration)@year))
+  mon <- floor(as.numeric(as.period(duration)@month))
+  day <- floor(as.numeric(as.period(duration)@day))
+  hou <- floor(as.numeric(as.period(duration)@hour))
+  min <- floor(as.numeric(as.period(duration)@minute))
+  sec <- floor(as.numeric(as.period(duration)@.Data))
   result <- paste(
     if (aar > 0) unit_label(aar, "år", "år") else "",
     if (mon > 0) unit_label(mon, "måned", "måneder") else "",
