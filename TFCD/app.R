@@ -1,11 +1,4 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    https://shiny.posit.co/
-#
+
 
 library(shiny)
 library(lubridate)
@@ -48,12 +41,12 @@ unit_label <- function(value, singular, plural) {
 }
 
 to_text_string <- function(duration){
-  aar <- floor(as.period(duration)@year)
-  mon <- floor(as.period(duration)@month)
-  day <- floor(as.period(duration)@day)
-  hou <- floor(as.period(duration)@hour)
-  min <- floor(as.period(duration)@minute)
-  sec <- floor(as.period(duration)@.Data)
+  aar <- floor(as.numeric(as.period(duration)@year))
+  mon <- floor(as.numeric(as.period(duration)@month))
+  day <- floor(as.numeric(as.period(duration)@day))
+  hou <- floor(as.numeric(as.period(duration)@hour))
+  min <- floor(as.numeric(as.period(duration)@minute))
+  sec <- floor(as.numeric(as.period(duration)@.Data))
   result <- paste(
     if (aar > 0) unit_label(aar, "år", "år") else "",
     if (mon > 0) unit_label(mon, "måned", "måneder") else "",
@@ -122,7 +115,7 @@ ui <- fluidPage(
 
 
 
-# Define server logic required to draw a histogram
+# Define server logic
 server <- function(input, output, session) {
     output$curr_down <- renderUI({
       invalidateLater(1000, session)
