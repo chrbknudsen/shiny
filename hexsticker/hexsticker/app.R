@@ -1,6 +1,6 @@
 library(shiny)
 library(hexSticker)
-library(colourpicker)  # Bibliotek for farvevælger
+library(colorpicker)  # Bibliotek for farvevælger
 
 # UI
 ui <- fluidPage(
