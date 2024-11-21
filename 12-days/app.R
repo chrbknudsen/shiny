@@ -31,7 +31,7 @@ lys <- tibble::tibble(
   tidyr::unnest(y)
 
 generate_flammer <- function(dage) {
-  tibble(
+  tibble::tibble(
     x = letters[1:dage],
     y = map(1:dage, ~ c(
       rnorm(30, mean = 0, sd = 1),       # Nederste del
