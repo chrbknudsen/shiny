@@ -30,7 +30,7 @@ lys <- tibble::tibble(
 ) %>% 
   tidyr::unnest(y)
 
-generate_flammer <- function(dage) {
+generer_flammer <- function(dage) {
   tibble::tibble(
     x = letters[1:dage],
     y = purrr::map(1:dage, ~ c(
@@ -90,7 +90,7 @@ ui <- fluidPage(
                              selected = juledag)
 
         ),
-
+    
         # Show a plot of the generated distribution
         mainPanel(
            plotOutput("distPlot")
@@ -102,7 +102,7 @@ ui <- fluidPage(
 server <- function(input, output) {
   # definer funktion til at generere data til flammer.
     flammer <- reactive({
-    generate_flammer(input$dage)
+    generer_flammer(input$dage)
   })
     output$distPlot <- renderPlot({
 
@@ -116,6 +116,8 @@ server <- function(input, output) {
           )
         
     })
+
+    
 }
 
 # Run the application 
