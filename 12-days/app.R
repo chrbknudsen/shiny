@@ -8,7 +8,7 @@
 #
 
 library(shiny)
-
+library(magrittr)
 flammebound <- 2.5
 
 # find dagens juledag
