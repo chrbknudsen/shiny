@@ -39,8 +39,8 @@ generate_flammer <- function(dage) {
       rnorm(30, mean = 1, sd = 0.5)      # Øverste del
     ))
   ) %>%
-    unnest(y) %>%
-    filter(y > 0) %>% 
+    tidyr::unnest(y) %>%
+    dplyr::filter(y > 0) %>% 
     dplyr::filter(x %in% letters[0:dage])
 }
 
