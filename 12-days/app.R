@@ -33,7 +33,7 @@ lys <- tibble::tibble(
 generate_flammer <- function(dage) {
   tibble::tibble(
     x = letters[1:dage],
-    y = map(1:dage, ~ c(
+    y = purrr::map(1:dage, ~ c(
       rnorm(30, mean = 0, sd = 1),       # Nederste del
       rnorm(30, mean = 0.5, sd = 0.7),   # Midten
       rnorm(30, mean = 1, sd = 0.5)      # Øverste del
