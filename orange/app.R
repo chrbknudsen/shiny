@@ -5,8 +5,8 @@ library(KnudsenKit)
 
 # skaber svg'er af 0 og 1
 
-svg0 <- segment7(0, color = "#ff7800", stroke= "#ff8a00")
-svg1 <- segment7(1, color = "#ff7800", stroke= "#ff8a00")
+svg0 <- segment7(0, color = "#ff7800", stroke= "#CC4800")
+svg1 <- segment7(1, color = "#ff7800", stroke= "#CC4800")
 
 start <- '<style>
   .svg-container {
