@@ -38,7 +38,7 @@ server <- function(input, output, session) {
     output$curr_word <- renderUI({
       update_ord()
       invalidateLater(400, session)
-      HTML(paste('<h1 style="color: ##ff0000; font-family: monospace;">',saml_ord()),'</h2>')
+      HTML(paste('<h1 style="color: #ff0000; font-family: monospace;">',saml_ord()),'</h1>')
     })
 }
 
