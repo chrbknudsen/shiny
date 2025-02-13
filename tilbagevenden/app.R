@@ -9,8 +9,7 @@
 
 library(shiny)
 source("funcs.R")
-set_target_ord("TVANGSHYGGE")
-gen_start_ord()
+
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -34,6 +33,8 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
+  set_target_ord("TVANGSHYGGE")
+  gen_start_ord()
     output$curr_word <- renderUI({
       update_ord()
       invalidateLater(400, session)
