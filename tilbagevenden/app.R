@@ -1,17 +1,6 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    https://shiny.posit.co/
-#
-
 library(shiny)
 source("funcs.R")
 
-
-# Define UI for application that draws a histogram
 ui <- fluidPage(
   tags$head(
     tags$style(HTML("
@@ -21,26 +10,32 @@ ui <- fluidPage(
         color: #ff0000;
         font-size: 16px;
       }
-    "))),
-  
-  
-  # Application title
-  
+    "))
+  ),
   htmlOutput("curr_word")
-  
-  
 )
 
-# Define server logic required to draw a histogram
 server <- function(input, output, session) {
-  set_target_ord("TVANGSHYGGE")
-  gen_start_ord()
-    output$curr_word <- renderUI({
-      update_ord()
-      invalidateLater(400, session)
-      HTML(paste('<h1 style="color: #ff0000; font-family: monospace;">',saml_ord()),'</h1>')
-    })
+  
+  # Session-specifik tilstand
+  state <- reactiveValues(
+    ord = NULL,
+    target_ord = NULL
+  )
+  
+  # Initialiser tilstanden for denne session
+  set_target_ord(state, "TVANGSHYGGE")
+  gen_start_ord(state, "TVANGSHYGGE")
+  
+  output$curr_word <- renderUI({
+    update_ord(state)
+    invalidateLater(400, session)
+    HTML(paste0(
+      '<h1 style="color: #ff0000; font-family: monospace;">',
+      saml_ord(state),
+      '</h1>'
+    ))
+  })
 }
 
-# Run the application 
 shinyApp(ui = ui, server = server)

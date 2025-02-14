@@ -2,38 +2,35 @@
 
 letter_pool <- c(LETTERS, letters, "æ", "ø", "å", "Æ", "Ø", "Å")
 
-
-update_ord <- function(){
-  if(length(which(ord != target_ord)) == 0){
-    return(ord)
-  }else{
-    ord[get_index()] <<- get_letter()
-    return(ord)}
-  
+update_ord <- function(state) {
+  # Læs reactive værdier med isolate()
+  if (all(isolate(state$ord) == isolate(state$target_ord))) {
+    return(isolate(state$ord))
+  } else {
+    index <- get_index(state)
+    state$ord[index] <- get_letter()
+    return(isolate(state$ord))
+  }
 }
 
-
-# Identificer hvilket bogstav der skal ændres
-get_index <- function(){
-  sample(which(ord != target_ord), 1)
+get_index <- function(state) {
+  available <- which(isolate(state$ord) != isolate(state$target_ord))
+  sample(available, 1)
 }
 
-get_letter <- function(){
+get_letter <- function() {
   sample(letter_pool, 1)
 }
 
-
-set_target_ord <- function(ord = "TVANGSHYGGE"){
-  target_ord <<- unlist(strsplit(ord, ""))
+set_target_ord <- function(state, word = "TVANGSHYGGE") {
+  # Skrivning til reactiveValues behøver ikke isolate()
+  state$target_ord <- unlist(strsplit(word, ""))
 }
 
-gen_start_ord <- function(ord = "TVANGSHYGGE"){
-  ord <<- sample(letter_pool, length(unlist(strsplit(ord, ""))), replace = TRUE)
+gen_start_ord <- function(state, word = "TVANGSHYGGE") {
+  state$ord <- sample(letter_pool, nchar(word), replace = TRUE)
 }
 
-saml_ord <- function(){
-  paste(ord, collapse = "")
+saml_ord <- function(state) {
+  paste(isolate(state$ord), collapse = "")
 }
-
-
-
