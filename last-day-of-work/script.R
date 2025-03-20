@@ -55,4 +55,20 @@ data %>%
   { -.[["(Intercept)"]] / .[["TID"]] } %>% 
   round()
 
+data %>% 
+  select(-ARBEJDSTID) %>% 
+  pivot_wider(names_from = KOEN, values_from = INDHOLD) %>% view()
 
+
+Kvindernes gennemsnitlige ugentlige arbejdstid på 30,8 timer er til brug for 
+beregningen sat i forhold til mændenes gennemsnitlige ugentlige arbejdstid på 35,5 timer.
+19. november 
+
+dag_til_dato <- function(dag_nummer, aar) {
+  as.Date(paste0(aar, "-01-01")) + (dag_nummer - 1)
+}
+
+(1-0.124)*365
+dag_til_dato(319, aar = 2024)
+
+en 14. november markerer vi igen Kvindernes Sidste Arbejdsdag, fordi kvinder i gennemsnit tjener 12,4 procent mindre end mæ

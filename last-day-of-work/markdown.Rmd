@@ -1,0 +1,273 @@
+---
+title: "Trinvis databehandling"
+author: "Christian Knudsen"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## trin 0
+
+Her skal vi vise hvordan høstning af data gennem en API, bearbejdning
+og tilsidst visning af data kan foregår. Vi gør det trin for trin, klik på knappen
+for at gå til næste trin.
+
+
+
+## trin 1
+
+Først skal vi have indlæst biblioteker til hjælp for arbejdet.
+
+```{r}
+library(shiny)
+library(shinyjs)
+library(future)
+library(promises)
+library(tidyverse)
+library(httr)
+library(jsonlite)
+library(magrittr)
+```
+
+## trin 2
+
+Vi har fundet ud af at den interessante tabel fra Danmarks Statistik er "AKU410A".
+
+Metadata kan vi få fra dette endpoint:
+
+```{r}
+endpoint <- "http://api.statbank.dk/v1/tableinfo"
+```
+
+Og læser vi dokumentationen, kan vi finde ud af at vi skal have dette i
+"body" på et POST request:
+
+```{r}
+our_body <- list(lang = "da", table = "AKU410A")
+```
+
+## trin 3
+
+Med vores endpoint og indholdet i "our_body", kan vi hente metadata således:
+```{r}
+metadata <- POST(endpoint, body=our_body, encode = "json") %>% 
+  content() %>% 
+  fromJSON()
+```
+
+## trin 4
+
+Det ser sådan ud:
+```{r}
+metadata
+```
+
+
+## trin 5
+
+Vi vil gerne have en bestemt opgørelse af ARBEJDSTID, der matcher koden "022".
+Vi vil gerne have alle værdier af ALDER. Og begge køn, men ikke totalen.
+
+Og så er data opgjort for forskellige år. Vi vil gerne have dem alle.
+
+Det giver disse variabler som vi beder om fra API'en:
+
+```{r}
+variables <- list(list(code = "ARBEJDSTID", values = I("022")),
+                    list(code = "ALDER", values = I("*")),
+                    list(code = "KOEN", values = c("M", "K")),
+                    list(code = "Tid", values = I("*"))
+  )
+```
+
+## trin 6
+
+Det samlede "body" vi skal sende til API'en kommer derfor til at se således ud:
+
+```{r}
+data_body <- list(table = "AKU410A", 
+                  lang = "da", 
+                  format = "CSV", 
+                  variables = variables)
+```
+
+Og det kan vi nu sende med et POST-request til API'en.
+Først skal vi huske at ændre endpoint - for det er ikke metadata vi skal have,
+men data:
+
+```{r}
+endpoint <- "http://api.statbank.dk/v1/data"
+```
+
+
+## trin 7
+
+```{r}
+data <- POST(endpoint, body=data_body, encode = "json")
+
+```
+Nu står der forhåbentlig "200" ud for status når vi kigger på svaret:
+
+```{r}
+data
+```
+
+
+## trin 8
+
+Det skal vi have ekstraheret. Vi trækker "content" ud, og konverterer til csv:
+
+```{r}
+data <- data %>% content(type="text") %>% read_csv2()
+```
+
+Den første håndfuld linier i datasættet ser således ud:
+
+```{r}
+head(data)
+```
+
+## trin 9
+
+Vi er ikke interesserede i kolonnen "ARBEJDSTID"; den er alligevel den samme
+hver gang.
+
+```{r}
+data <- data %>% 
+  select(-ARBEJDSTID)
+```
+
+## trin 10
+
+Nu kan vi lave et hurtigt plot. Faktisk ugentlig arbejdstid på y-aksen, årstallet 
+for opgørelsen på x-aksen. Et plot for hvert køn, og en linie i grafen for hver 
+aldersgruppe.
+
+```{r}
+data %>% 
+  ggplot(aes(x = TID, y = INDHOLD, colour = ALDER)) +
+  geom_line() +
+  facet_wrap(~KOEN)
+```
+## trin 11
+
+Man kan pivotere dataframen, og få kønnene ud i hver sin kolonne. 
+Det betyder at man kan beregne forskellen i arbejdstid mellem kønnene for
+de forskellige aldersgrupper:
+
+```{r}
+data %>% 
+  pivot_wider(names_from = KOEN, values_from = INDHOLD) %>% 
+  mutate(dif = Mænd - Kvinder)
+```
+
+## trin 12
+
+Den forskel kan man så plotte, og se hvordan det udvikler sig:
+
+```{r}
+data %>% 
+  pivot_wider(names_from = KOEN, values_from = INDHOLD) %>% 
+  mutate(dif = Mænd - Kvinder) %>% 
+  ggplot(aes(x=TID, y = dif, colour = ALDER)) +
+  geom_line()
+```
+
+Det ser overordnet ud som om det bevæger sig den rette vej. Ligestilling på 
+denne parameter er en forskel på 0, og selvom det varierer en del, er den
+overordnede tendens faldende.
+
+## trin 13
+
+vi kan dykke ned i tallene og se på "Alder i alt"
+
+```{r}
+data %>% 
+  pivot_wider(names_from = KOEN, values_from = INDHOLD) %>% 
+  mutate(dif = Mænd - Kvinder) %>% 
+  filter(ALDER == "Alder i alt") %>% 
+  ggplot(aes(x=TID, y = dif)) +
+  geom_line()
+```
+Der er klart tale om at det totalt går i den rigtige retning.
+
+## trin 14
+
+men hvornår er vi i mål?
+
+Vi laver samme beregninger som før. Og så laver vi en lineær model, trækker 
+koefficienterne ud, og regner ud hvornår forskellen i Faktisk ugentlig arbejdstid,
+når 0 og ligestillingen er opnået på dette punkt:
+
+```{r}
+i_mål <- data %>% 
+  pivot_wider(names_from = KOEN, values_from = INDHOLD) %>% 
+  mutate(dif = Mænd - Kvinder) %>% 
+  filter(ALDER == "Alder i alt") %>% 
+  lm(formula = dif~TID, data = .) %>% 
+  coef() %>% 
+  { -.[["(Intercept)"]] / .[["TID"]] } %>% 
+  round()
+```
+
+Det gør vi i år `r i_mål`. Så jeg når ikke at se det ske.
+
+## trin 15
+
+Men hvornår har mændene så deres sidste arbejdsdag? Hvornår skal de holde fri,
+for at kønnene kan komme til at bidrage lige meget til arbejdsmarkedet?
+
+Det er let at beregne. Hvis mændene arbejder 35 timer om ugen, og kvinderne 31,
+så kan mændene holde fri efter 31/35*365 = `r 31/35*365` dage.
+
+Det skal vi have regnet om til en dato. Og der bliver vi nødt til at tage
+højde for skudår. Vi skriver en funktion:
+
+```{r}
+dag_til_dato <- function(dag_nummer, aar) {
+  as.Date(paste0(aar, "-01-01")) + (dag_nummer - 1)
+}
+```
+
+
+
+## trin 16
+
+Men nu var tallene jo ikke 35 og 31. Vi havde dem i en tabel. Lad os beregne
+mændenes sidste arbejdsdag for hvert af de år vi har data.
+
+Vi starter med kun at kigge på de samelde tal, og beregner dernæst brøken.
+Og så fjerner vi alle de kolonner vi ikke har brug for:
+
+```{r}
+sidste_dag_aar <- data %>% 
+  pivot_wider(names_from = KOEN, values_from = INDHOLD) %>% 
+  filter(ALDER == "Alder i alt") %>% 
+  mutate(brøk = Kvinder/Mænd) %>% 
+  select(TID, brøk)
+head(sidste_dag_aar)
+```
+## trin 17
+
+Den brøk og årstallet i kolonnen TID bruger vi til at beregne sidste arbejdsdag:
+
+```{r}
+sidste_dag_aar %>% 
+  mutate(sidste_arbejdsdag = map2(brøk*365, TID, dag_til_dato)) %>% 
+  unnest(sidste_arbejdsdag)
+```
+det er nok primært interessant for det seneste år... Og man skal huske at 
+tage højde for om det er et skudår. For det gør beregningen ikke lige nu.
+
+
+den 14. november markerer vi igen Kvindernes Sidste Arbejdsdag, fordi kvinder i 
+gennemsnit tjener 12,4 procent mindre end mænd.
+
+Og to dage tidligere kunne vi have markeret Mændenes Sidste Arbejdsdag, fordi
+kvinder i gennemsnit arbejder xx procent mindre end mænd.
+
+
+Vi kunne også beregne der for de enkelte aldersgrupper.

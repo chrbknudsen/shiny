@@ -52,11 +52,17 @@ function(input, output, session) {
     }
   })
   
+  output_2 <- tagList(
+    h3("Etabler forbindelse til api"),
+    p("sæt endpoint til:"),
+    pre("endpoint <- http://api.danstat.dk")
+  )
+  
   # Dynamisk tekst output
   output$output_tekst <- renderUI({
     switch(vis_hvilket(),
            h3("Output 1: Velkommen til app'en!"),
-           h3("Output 2: Her kommer et flot plot."),
+           output_2,
            h3("Output 3: Her vises en simpel tabel."),
            if (is.null(resultat_funktion_4())) {
              h3("Output 4: Funktion kører, vent venligst...")
