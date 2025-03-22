@@ -269,5 +269,14 @@ gennemsnit tjener 12,4 procent mindre end mænd.
 Og to dage tidligere kunne vi have markeret Mændenes Sidste Arbejdsdag, fordi
 kvinder i gennemsnit arbejder xx procent mindre end mænd.
 
+## trin noget
+
+Men det afhænger selvfølgelig af hvilken 
+aldersgruppe du hører hjemme i.
+
+knap til valg af hvor gammel du er.
+
+Kalender der opdateres med hvornår du kan holde
+fri - hvis altså du er mand.
 
 Vi kunne også beregne der for de enkelte aldersgrupper.
