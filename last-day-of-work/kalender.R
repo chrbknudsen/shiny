@@ -2,6 +2,7 @@ library(ggplot2)
 library(lubridate)
 
 # Parametre
+
 year <- 2024
 month <- 11
 special_date <- as.Date("2024-11-12")  # Datoen, hvor der skal sættes et rødt kryds
@@ -43,7 +44,8 @@ if (special_date >= first_date && special_date <= last_date) {
                     label = "×", 
                     color = "red", 
                     size = 10, 
-                    fontface = "bold")
-}
-p
 
+                      fontface = "bold")
+}
+
+print(p)
