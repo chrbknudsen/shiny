@@ -1,5 +1,6 @@
 library(shiny)
 library(readr)
+library(tidyverse)
 library(dplyr)
 library(readxl)
 
@@ -9,6 +10,8 @@ debug <- TRUE
 # Læs data
 df <- read_excel("data.xlsx") |> 
   mutate(across(everything(), ~replace_na(., "")))
+
+#write_csv(df, "statChoser/example.csv")
 
 ui <- fluidPage(
   titlePanel("Beslutningsstøtte"),
@@ -30,7 +33,13 @@ ui <- fluidPage(
   h3("Anbefaling:"),
   textOutput("recommendation"),
   p(em("hej")),
-  uiOutput("final_route")
+  uiOutput("final_route"),
+  tags$script(HTML("
+  Shiny.addCustomMessageHandler('reset_ui', function(msg) {
+    Shiny.unbindAll();
+    Shiny.bindAll();
+  });
+"))
 )
 
 server <- function(input, output, session) {
@@ -46,17 +55,35 @@ server <- function(input, output, session) {
     output$final_route <- renderUI({ NULL })
   }, ignoreInit = TRUE)
   
+  # observeEvent(input$back, {
+  #   h <- history()
+  #   if (length(h) >= 1) {
+  #     current_id(tail(h, 1))
+  #     history(head(h, -1))
+  #     rute <- valg_rute()
+  #     if (nrow(rute) > 0) valg_rute(rute[-nrow(rute), ])
+  #     output$recommendation <- renderText({ "" })
+  #     output$final_route <- renderUI({ NULL })
+  #   }
+  # }, ignoreInit = TRUE)
+  
   observeEvent(input$back, {
     h <- history()
     if (length(h) >= 1) {
       current_id(tail(h, 1))
       history(head(h, -1))
+      
       rute <- valg_rute()
       if (nrow(rute) > 0) valg_rute(rute[-nrow(rute), ])
+      
       output$recommendation <- renderText({ "" })
       output$final_route <- renderUI({ NULL })
+      
+      # Trigger UI opdatering (tving Shiny til at re-rendere spørgsmål og svar)
+      session$sendCustomMessage(type = "reset_ui", message = list())
     }
   }, ignoreInit = TRUE)
+  
   
   output$question_ui <- renderUI({
     q_rows <- df %>% filter(id == current_id())
@@ -100,12 +127,25 @@ server <- function(input, output, session) {
       observeEvent(input[[ans_id]], {
         chosen <- q_rows[i, ]
         history(c(history(), current_id()))
-        valg_rute(rbind(valg_rute(), data.frame(
-          id = chosen$id,
-          question = chosen$question,
-          svar = chosen$svar
-        )))
+        # valg_rute(rbind(valg_rute(), data.frame(
+        #   id = chosen$id,
+        #   question = chosen$question,
+        #   svar = chosen$svar
+        # )))
+        rute <- valg_rute()
         
+        # hvis vi allerede er på samme id (efter "gå tilbage"), så overskriv
+        if (nrow(rute) > 0 && rute[nrow(rute), "id"] == chosen$id) {
+          rute[nrow(rute), ] <- list(chosen$id, chosen$question, chosen$svar)
+        } else {
+          rute <- rbind(rute, data.frame(
+            id = chosen$id,
+            question = chosen$question,
+            svar = chosen$svar
+          ))
+        }
+        
+        valg_rute(rute)
         if (chosen$anbefaling != "") {
           output$recommendation <- renderText({ chosen$anbefaling })
           
