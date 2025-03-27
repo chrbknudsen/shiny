@@ -1,84 +1,84 @@
-id,question,svar,next_id,anbefaling
-Q1,Only one vairable of interest?,yes,Q2,
-Q1,Only one vairable of interest?,no,Q20,
-Q2,One-sample problem?,yes,Q3,
-Q2,One-sample problem?,no,Q9,
-Q3,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q3),yes,Q4,
-Q3,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q3),no,Q6,
-Q4,Inference concerning mu,yes,Q5,
-Q4,Inference concerning mu,no,,inference concerning sigma: One-sample chi-square test for variances. (caution: this test is very sensitive to nonnormality pp 242-243)
-Q5,sigma known,yes,,one-sample z test pp 220-21
-Q5,sigma known,no,,"one-sample t test pp 214,217"
-Q6,Underlying distribution is normal?,yes,Q8,
-Q6,Underlying distribution is normal?,no,Q7,
-Q7,Underlying distribution is poisson?,Yes,,"One-sample Poisson-test, pp 251,252,254"
-Q7,Underlying distribution is poisson?,no,,"Use another underlying distribution or use non-parametric methos pp 330,336"
-Q8,One-sample binomial test: Normal approximation valid?,no,,Exact methods page 247
-Q8,One-sample binomial test: Normal approximation valid?,yes,,Normal-theory methods pages 245-246
-Q9,two-sample problem (Q9),yes,Q10,
-Q9,two-sample problem (Q9),no,Q38,
-Q10,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q10),yes,Q11,
-Q10,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q10),No,Q12,
-Q11,Inferences concerning means?,yes,Q17,
-Q11,Inferences concerning means?,no,,inferences concerning variances: Tow-sample F test to compare variances. (Caution: This test is very sensitive to nonnormality) p 284
-Q12,Underlying distribution is binomial?,yes,Q13,
-Q12,Underlying distribution is binomial?,no,Q15,
-Q13,Are samples independent? (Q13),yes,Q14,
-Q13,Are samples independent? (Q13),no,,Use mcnemar s test pages 375 377
-Q14,Are all expected values større end eller lig  5?,yes,Q36,
-Q14,Are all expected values >= 5?,no,,Use Fisher s exact test p 371
-Q15,Person-time data?,no,,Use another underlying distribution or use non-parametric methos pp 341
-Q15,Person-time data?,yes,Q31,
-Q17,Are samples independent? (Q17),no,,Use paired t-test p 272
-Q17,Are samples independent? (Q17),yes,Q16,
-Q16,Are variances of two samples significantly different? Note test using F-test,No,,Use two-sample t test with equal variances p. 277
-Q16,Are variances of two samples significantly different? Note test using F-test,yes,,Use two-sample t test with unequal variances p. 288
-Q20,Interested in relationships between two variables,yes,Q19,
-Q20,Interested in relationships between two variables,no,Q30,
-Q19,Both variables continuous,yes,Q18,
-Q19,Both variables continuous,No,Q22,
-Q18,Interested in predicting one variable from another?,yes,,simple linear regression p 438
-Q18,Interested in predicting one variable from another?,no,Q21,
-Q21,interested in studying the correlation between two variables?. Both variables normal?,yes,,"Pearson correlation methods p 452, 456"
-Q21,interested in studying the correlation between two variables?. Both variables normal?,no,,Rank correlation methods p 495-496
-Q22,One variable continuous and one categorical?,yes,Q23,
-Q22,One variable continuous and one categorical?,no,Q99,
-Q23,"Analysis of variance, ANOVA. Number of ways in which the categorical variable can be classified",1,Q24,
-Q23,"Analysis of variance, ANOVA. Number of ways in which the categorical variable can be classified",2,Q27,
-Q23,"Analysis of variance, ANOVA. Number of ways in which the categorical variable can be classified",3,Q28,
-Q24,Outcome variable normal or can central-limit theorem be assumed to hold?,yes,Q25,
-Q24,Outcome variable normal or can central-limit theorem be assumed to hold?,no,,Nonparametric ANOVA - Kruskal-wallis test. P 556-557
-Q25,Other covariates to be controlled for? (Q25),yes,,One-way ANCOVA p 545-548
-Q25,Other covariates to be controlled for? (Q25),no,,one-way anova p 516-538
-Q27,Other covariates to be controlled for? (Q27),yes,,two-way ancova p 553-555
-Q27,Other covariates to be controlled for? (Q27),no,,two-way anova p 548-553
-Q28,Other covariates to be controlled for? (Q28),yes,,Higher-way ANCOVA p 555
-Q28,Other covariates to be controlled for? (Q28),no,,Higher-way ANOVA p 555
-Q30,more than two variables of interest: Outcome variable continous or binary,Binary,Q29,
-Q30,more than two variables of interest: Outcome variable continous or binary,Continous,,Multiple rgression methods. P 468-484
-Q29,Time of events important?,yes,Q31,
-Q29,Time of events important?,no,,Multiple logistic regression methods p 629
-Q99,Ordinal data?,no,Q26,
-Q99,Ordinal data?,yes,,Rank correlation methods p 495-496
-Q26,Both variables categorical. Interested in tests of association or reproducibility,Association,,"Use contingency table methods p 362, 392"
-Q26,Both variables categorical. Interested in tests of association or reproducibility,reproducibility,,Use Kappa statistic p 406
-Q31,Survival analysis methods: One-sample problem?,yes,,Use one-sample test for incidence rates p 727-728
-Q31,Survival analysis methods: One-sample problem?,no,Q33,
-Q33,Incidence rates remain constant over time?,yes,Q32,
-Q33,Incidence rates remain constant over time?,no,Q34,
-Q32,two-sample problem (Q32),Yes,,"Use two-sample test for comparison of incidence rates, if no confounding is present. Or methods for statified person-time data, if confounding is present. P 731,734,744"
-Q32,two-sample problem (Q32),No,,Interested in test of trend over more than two exposure groups. Use test of trend for incidence rates p 756
-Q34,use survival-analysis methods: Interested in comparison of survival curves of two groups with limited control of covariates?,yes,,Use log-rank test p769
-Q34,use survival-analysis methods: Interested in comparison of survival curves of two groups with limited control of covariates?,no,Q35,
-Q35,Interested in effects of several risk factors on survival. Willing to assume several curve comes from a weibull distribution?,yes,,use parameter survival methods based on weibull distribution. P 795-801
-Q35,Interested in effects of several risk factors on survival. Willing to assume several curve comes from a weibull distribution?,no,,Use Cox proportional hazards model p 774
-Q36,2x2 contingency table?,yes,,"use two-sample test for binomial proportions, or 2x2 contingency table methods if no confounding is present or the mantel-haenszel test if confounding is present. P 354,362,,364"
-Q36,2x2 contingency table?,No,Q37,
-Q37,2xk contingency table?,Yes,Q40,
-Q37,2xk contingency table?,no,,"rRxC contingency table R>2, C>2. Use chi-square test for RxC tables. P 392"
-Q38,"Underlying distribution normal, or can central-limit theorem be assumed to hold?",yes,,One-way ANOVA p.-516-538
-Q38,"Underlying distribution normal, or can central-limit theorem be assumed to hold?",no,Q39,
-Q39,Categorical data?,yes,,Use RxC contingency table methods. P 392
-Q39,Categorical data?,no,,Use another underlying distribution or use nonparametric methods such as kruskal-wallis test. P. 556-557
-Q40,Interested in trend over k binomial proportions?,yes,,"Use chi-square test for trend, if no confounding is present or the Mantel Extension test if confounding is present. P. 364+623"
-Q40,Interested in trend over k binomial proportions?,No,,Use chi-square test for heterogeneity for 2xk tables p. 392
+id,question_en,svar_en,next_id,anbefaling_en,question_da,svar_da,anbefaling_da,link
+Q1,Only one vairable of interest?,yes,Q2,,Only one vairable of interest?,yes,,
+Q1,Only one vairable of interest?,no,Q20,,Only one vairable of interest?,no,,
+Q2,One-sample problem?,yes,Q3,,One-sample problem?,yes,,
+Q2,One-sample problem?,no,Q9,,One-sample problem?,no,,
+Q3,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q3),yes,Q4,,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q3),yes,,
+Q3,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q3),no,Q6,,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q3),no,,
+Q4,Inference concerning mu,yes,Q5,,Inference concerning mu,yes,,
+Q4,Inference concerning mu,no,,inference concerning sigma: One-sample chi-square test for variances. (caution: this test is very sensitive to nonnormality pp 242-243),Inference concerning mu,no,inference concerning sigma: One-sample chi-square test for variances. (caution: this test is very sensitive to nonnormality pp 242-243),www.example.com
+Q5,sigma known,yes,,one-sample z test pp 220-21,sigma known,yes,one-sample z test pp 220-21,
+Q5,sigma known,no,,"one-sample t test pp 214,217",sigma known,no,"one-sample t test pp 214,217",
+Q6,Underlying distribution is normal?,yes,Q8,,Underlying distribution is normal?,yes,,
+Q6,Underlying distribution is normal?,no,Q7,,Underlying distribution is normal?,no,,
+Q7,Underlying distribution is poisson?,Yes,,"One-sample Poisson-test, pp 251,252,254",Underlying distribution is poisson?,Yes,"One-sample Poisson-test, pp 251,252,254",
+Q7,Underlying distribution is poisson?,no,,"Use another underlying distribution or use non-parametric methos pp 330,336",Underlying distribution is poisson?,no,"Use another underlying distribution or use non-parametric methos pp 330,336",
+Q8,One-sample binomial test: Normal approximation valid?,no,,Exact methods page 247,One-sample binomial test: Normal approximation valid?,no,Exact methods page 247,
+Q8,One-sample binomial test: Normal approximation valid?,yes,,Normal-theory methods pages 245-246,One-sample binomial test: Normal approximation valid?,yes,Normal-theory methods pages 245-246,
+Q9,two-sample problem (Q9),yes,Q10,,two-sample problem (Q9),yes,,
+Q9,two-sample problem (Q9),no,Q38,,two-sample problem (Q9),no,,
+Q10,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q10),yes,Q11,,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q10),yes,,
+Q10,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q10),No,Q12,,Underlying distribution normal or can central-limit theorem be assumed to hold? (Q10),No,,
+Q11,Inferences concerning means?,yes,Q17,,Inferences concerning means?,yes,,
+Q11,Inferences concerning means?,no,,inferences concerning variances: Tow-sample F test to compare variances. (Caution: This test is very sensitive to nonnormality) p 284,Inferences concerning means?,no,inferences concerning variances: Tow-sample F test to compare variances. (Caution: This test is very sensitive to nonnormality) p 284,
+Q12,Underlying distribution is binomial?,yes,Q13,,Underlying distribution is binomial?,yes,,
+Q12,Underlying distribution is binomial?,no,Q15,,Underlying distribution is binomial?,no,,
+Q13,Are samples independent? (Q13),yes,Q14,,Are samples independent? (Q13),yes,,
+Q13,Are samples independent? (Q13),no,,Use mcnemar s test pages 375 377,Are samples independent? (Q13),no,Use mcnemar s test pages 375 377,
+Q14,Are all expected values større end eller lig  5?,yes,Q36,,Are all expected values større end eller lig  5?,yes,,
+Q14,Are all expected values >= 5?,no,,Use Fisher s exact test p 371,Are all expected values >= 5?,no,Use Fisher s exact test p 371,
+Q15,Person-time data?,no,,Use another underlying distribution or use non-parametric methos pp 341,Person-time data?,no,Use another underlying distribution or use non-parametric methos pp 341,
+Q15,Person-time data?,yes,Q31,,Person-time data?,yes,,
+Q17,Are samples independent? (Q17),no,,Use paired t-test p 272,Are samples independent? (Q17),no,Use paired t-test p 272,
+Q17,Are samples independent? (Q17),yes,Q16,,Are samples independent? (Q17),yes,,
+Q16,Are variances of two samples significantly different? Note test using F-test,No,,Use two-sample t test with equal variances p. 277,Are variances of two samples significantly different? Note test using F-test,No,Use two-sample t test with equal variances p. 277,
+Q16,Are variances of two samples significantly different? Note test using F-test,yes,,Use two-sample t test with unequal variances p. 288,Are variances of two samples significantly different? Note test using F-test,yes,Use two-sample t test with unequal variances p. 288,
+Q20,Interested in relationships between two variables,yes,Q19,,Interested in relationships between two variables,yes,,
+Q20,Interested in relationships between two variables,no,Q30,,Interested in relationships between two variables,no,,
+Q19,Both variables continuous,yes,Q18,,Both variables continuous,yes,,
+Q19,Both variables continuous,No,Q22,,Both variables continuous,No,,
+Q18,Interested in predicting one variable from another?,yes,,simple linear regression p 438,Interested in predicting one variable from another?,yes,simple linear regression p 438,
+Q18,Interested in predicting one variable from another?,no,Q21,,Interested in predicting one variable from another?,no,,
+Q21,interested in studying the correlation between two variables?. Both variables normal?,yes,,"Pearson correlation methods p 452, 456",interested in studying the correlation between two variables?. Both variables normal?,yes,"Pearson correlation methods p 452, 456",
+Q21,interested in studying the correlation between two variables?. Both variables normal?,no,,Rank correlation methods p 495-496,interested in studying the correlation between two variables?. Both variables normal?,no,Rank correlation methods p 495-496,
+Q22,One variable continuous and one categorical?,yes,Q23,,One variable continuous and one categorical?,yes,,
+Q22,One variable continuous and one categorical?,no,Q99,,One variable continuous and one categorical?,no,,
+Q23,"Analysis of variance, ANOVA. Number of ways in which the categorical variable can be classified",1,Q24,,"Analysis of variance, ANOVA. Number of ways in which the categorical variable can be classified",1,,
+Q23,"Analysis of variance, ANOVA. Number of ways in which the categorical variable can be classified",2,Q27,,"Analysis of variance, ANOVA. Number of ways in which the categorical variable can be classified",2,,
+Q23,"Analysis of variance, ANOVA. Number of ways in which the categorical variable can be classified",3,Q28,,"Analysis of variance, ANOVA. Number of ways in which the categorical variable can be classified",3,,
+Q24,Outcome variable normal or can central-limit theorem be assumed to hold?,yes,Q25,,Outcome variable normal or can central-limit theorem be assumed to hold?,yes,,
+Q24,Outcome variable normal or can central-limit theorem be assumed to hold?,no,,Nonparametric ANOVA - Kruskal-wallis test. P 556-557,Outcome variable normal or can central-limit theorem be assumed to hold?,no,Nonparametric ANOVA - Kruskal-wallis test. P 556-557,
+Q25,Other covariates to be controlled for? (Q25),yes,,One-way ANCOVA p 545-548,Other covariates to be controlled for? (Q25),yes,One-way ANCOVA p 545-548,
+Q25,Other covariates to be controlled for? (Q25),no,,one-way anova p 516-538,Other covariates to be controlled for? (Q25),no,one-way anova p 516-538,
+Q27,Other covariates to be controlled for? (Q27),yes,,two-way ancova p 553-555,Other covariates to be controlled for? (Q27),yes,two-way ancova p 553-555,
+Q27,Other covariates to be controlled for? (Q27),no,,two-way anova p 548-553,Other covariates to be controlled for? (Q27),no,two-way anova p 548-553,
+Q28,Other covariates to be controlled for? (Q28),yes,,Higher-way ANCOVA p 555,Other covariates to be controlled for? (Q28),yes,Higher-way ANCOVA p 555,
+Q28,Other covariates to be controlled for? (Q28),no,,Higher-way ANOVA p 555,Other covariates to be controlled for? (Q28),no,Higher-way ANOVA p 555,
+Q30,more than two variables of interest: Outcome variable continous or binary,Binary,Q29,,more than two variables of interest: Outcome variable continous or binary,Binary,,
+Q30,more than two variables of interest: Outcome variable continous or binary,Continous,,Multiple rgression methods. P 468-484,more than two variables of interest: Outcome variable continous or binary,Continous,Multiple rgression methods. P 468-484,
+Q29,Time of events important?,yes,Q31,,Time of events important?,yes,,
+Q29,Time of events important?,no,,Multiple logistic regression methods p 629,Time of events important?,no,Multiple logistic regression methods p 629,
+Q99,Ordinal data?,no,Q26,,Ordinal data?,no,,
+Q99,Ordinal data?,yes,,Rank correlation methods p 495-496,Ordinal data?,yes,Rank correlation methods p 495-496,
+Q26,Both variables categorical. Interested in tests of association or reproducibility,Association,,"Use contingency table methods p 362, 392",Both variables categorical. Interested in tests of association or reproducibility,Association,"Use contingency table methods p 362, 392",
+Q26,Both variables categorical. Interested in tests of association or reproducibility,reproducibility,,Use Kappa statistic p 406,Both variables categorical. Interested in tests of association or reproducibility,reproducibility,Use Kappa statistic p 406,
+Q31,Survival analysis methods: One-sample problem?,yes,,Use one-sample test for incidence rates p 727-728,Survival analysis methods: One-sample problem?,yes,Use one-sample test for incidence rates p 727-728,
+Q31,Survival analysis methods: One-sample problem?,no,Q33,,Survival analysis methods: One-sample problem?,no,,
+Q33,Incidence rates remain constant over time?,yes,Q32,,Incidence rates remain constant over time?,yes,,
+Q33,Incidence rates remain constant over time?,no,Q34,,Incidence rates remain constant over time?,no,,
+Q32,two-sample problem (Q32),Yes,,"Use two-sample test for comparison of incidence rates, if no confounding is present. Or methods for statified person-time data, if confounding is present. P 731,734,744",two-sample problem (Q32),Yes,"Use two-sample test for comparison of incidence rates, if no confounding is present. Or methods for statified person-time data, if confounding is present. P 731,734,744",
+Q32,two-sample problem (Q32),No,,Interested in test of trend over more than two exposure groups. Use test of trend for incidence rates p 756,two-sample problem (Q32),No,Interested in test of trend over more than two exposure groups. Use test of trend for incidence rates p 756,
+Q34,use survival-analysis methods: Interested in comparison of survival curves of two groups with limited control of covariates?,yes,,Use log-rank test p769,use survival-analysis methods: Interested in comparison of survival curves of two groups with limited control of covariates?,yes,Use log-rank test p769,
+Q34,use survival-analysis methods: Interested in comparison of survival curves of two groups with limited control of covariates?,no,Q35,,use survival-analysis methods: Interested in comparison of survival curves of two groups with limited control of covariates?,no,,
+Q35,Interested in effects of several risk factors on survival. Willing to assume several curve comes from a weibull distribution?,yes,,use parameter survival methods based on weibull distribution. P 795-801,Interested in effects of several risk factors on survival. Willing to assume several curve comes from a weibull distribution?,yes,use parameter survival methods based on weibull distribution. P 795-801,
+Q35,Interested in effects of several risk factors on survival. Willing to assume several curve comes from a weibull distribution?,no,,Use Cox proportional hazards model p 774,Interested in effects of several risk factors on survival. Willing to assume several curve comes from a weibull distribution?,no,Use Cox proportional hazards model p 774,
+Q36,2x2 contingency table?,yes,,"use two-sample test for binomial proportions, or 2x2 contingency table methods if no confounding is present or the mantel-haenszel test if confounding is present. P 354,362,,364",2x2 contingency table?,yes,"use two-sample test for binomial proportions, or 2x2 contingency table methods if no confounding is present or the mantel-haenszel test if confounding is present. P 354,362,,364",
+Q36,2x2 contingency table?,No,Q37,,2x2 contingency table?,No,,
+Q37,2xk contingency table?,Yes,Q40,,2xk contingency table?,Yes,,
+Q37,2xk contingency table?,no,,"rRxC contingency table R>2, C>2. Use chi-square test for RxC tables. P 392",2xk contingency table?,no,"rRxC contingency table R>2, C>2. Use chi-square test for RxC tables. P 392",
+Q38,"Underlying distribution normal, or can central-limit theorem be assumed to hold?",yes,,One-way ANOVA p.-516-538,"Underlying distribution normal, or can central-limit theorem be assumed to hold?",yes,One-way ANOVA p.-516-538,
+Q38,"Underlying distribution normal, or can central-limit theorem be assumed to hold?",no,Q39,,"Underlying distribution normal, or can central-limit theorem be assumed to hold?",no,,
+Q39,Categorical data?,yes,,Use RxC contingency table methods. P 392,Categorical data?,yes,Use RxC contingency table methods. P 392,
+Q39,Categorical data?,no,,Use another underlying distribution or use nonparametric methods such as kruskal-wallis test. P. 556-557,Categorical data?,no,Use another underlying distribution or use nonparametric methods such as kruskal-wallis test. P. 556-557,
+Q40,Interested in trend over k binomial proportions?,yes,,"Use chi-square test for trend, if no confounding is present or the Mantel Extension test if confounding is present. P. 364+623",Interested in trend over k binomial proportions?,yes,"Use chi-square test for trend, if no confounding is present or the Mantel Extension test if confounding is present. P. 364+623",
+Q40,Interested in trend over k binomial proportions?,No,,Use chi-square test for heterogeneity for 2xk tables p. 392,Interested in trend over k binomial proportions?,No,Use chi-square test for heterogeneity for 2xk tables p. 392,
