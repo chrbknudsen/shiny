@@ -7,9 +7,10 @@ library(stringr)
 # === Brug debug mode til fejlfinding ===
 debug <- TRUE
 
-# Læs data
-df <- read_excel("data.xlsx") |> 
-  mutate(across(everything(), ~replace_na(., ""))) 
+# Læs data fra Excel og rens for backslashes (MathJax)
+df <- read_excel("data.xlsx") |>
+  mutate(across(everything(), ~replace_na(., ""))) |>
+  mutate(across(everything(), ~gsub("\\\\", "\\", ., fixed = TRUE)))
 
 ui <- fluidPage(
   titlePanel("Beslutningsstøtte"),
@@ -23,6 +24,7 @@ ui <- fluidPage(
     ),
     
     mainPanel(
+      withMathJax(),
       uiOutput("step_info"),
       uiOutput("question_ui"),
       br(),
@@ -32,10 +34,11 @@ ui <- fluidPage(
       ),
       br(),
       h3("Anbefaling:"),
-      textOutput("recommendation"),
+      uiOutput("recommendation"),
       uiOutput("recommendation_link"),
       p(em("hej")),
       uiOutput("final_route"),
+      
       tags$script(HTML("
         Shiny.addCustomMessageHandler('reset_ui', function(msg) {
           Shiny.unbindAll();
@@ -57,7 +60,7 @@ server <- function(input, output, session) {
     current_id("Q1")
     history(character())
     valg_rute(data.frame(id = character(), question = character(), svar = character()))
-    output$recommendation <- renderText({ "" })
+    output$recommendation <- renderUI({ NULL })
     output$recommendation_link <- renderUI({ NULL })
     output$final_route <- renderUI({ NULL })
   }, ignoreInit = TRUE)
@@ -71,7 +74,7 @@ server <- function(input, output, session) {
       rute <- valg_rute()
       if (nrow(rute) > 0) valg_rute(rute[-nrow(rute), ])
       
-      output$recommendation <- renderText({ "" })
+      output$recommendation <- renderUI({ NULL })
       output$recommendation_link <- renderUI({ NULL })
       output$final_route <- renderUI({ NULL })
       
@@ -98,10 +101,10 @@ server <- function(input, output, session) {
     }
     
     tagList(
-      h4(label_text),
+      withMathJax(HTML(paste0("<h4>", label_text, "</h4>"))),
       lapply(seq_len(nrow(q_rows)), function(i) {
         ans_id <- paste0("answer_", current_id(), "_", i)
-        actionButton(ans_id, q_rows[[svar_col]][i], class = "btn-primary m-1")
+        withMathJax(actionButton(ans_id, q_rows[[svar_col]][i], class = "btn-primary m-1"))
       })
     )
   })
@@ -109,12 +112,12 @@ server <- function(input, output, session) {
   output$breadcrumb <- renderUI({
     rute <- valg_rute()
     if (nrow(rute) == 0) return("Ingen valg endnu.")
-    HTML(paste0(
+    withMathJax(HTML(paste0(
       apply(rute, 1, function(row) {
         paste0("<b>[", row["id"], "] ", row["question"], ":</b> ", row["svar"])
       }),
       collapse = "<br>"
-    ))
+    )))
   })
   
   observe({
@@ -144,7 +147,9 @@ server <- function(input, output, session) {
         valg_rute(rute)
         
         if (chosen[[anbefaling_col]] != "") {
-          output$recommendation <- renderText({ chosen[[anbefaling_col]] })
+          output$recommendation <- renderUI({
+            withMathJax(HTML(paste0("<p>", chosen[[anbefaling_col]], "</p>")))
+          })
           
           output$recommendation_link <- renderUI({
             if (chosen$link != "") tags$a(href = chosen$link, target = "_blank", "Link til materiale")
@@ -152,18 +157,18 @@ server <- function(input, output, session) {
           })
           
           output$final_route <- renderUI({
-            HTML(paste0("<hr><h4>Din fulde rute:</h4><ul>",
-                        paste0(
-                          apply(valg_rute(), 1, function(row) {
-                            paste0("<li><b>[", row["id"], "] ", row["question"], ":</b> ", row["svar"], "</li>")
-                          }),
-                          collapse = ""
-                        ),
-                        "</ul>"
-            ))
+            withMathJax(HTML(paste0("<hr><h4>Din fulde rute:</h4><ul>",
+                                    paste0(
+                                      apply(valg_rute(), 1, function(row) {
+                                        paste0("<li><b>[", row["id"], "] ", row["question"], ":</b> ", row["svar"], "</li>")
+                                      }),
+                                      collapse = ""
+                                    ),
+                                    "</ul>"
+            )))
           })
         } else {
-          output$recommendation <- renderText({ "" })
+          output$recommendation <- renderUI({ NULL })
           output$recommendation_link <- renderUI({ NULL })
           output$final_route <- renderUI({ NULL })
           current_id(chosen$next_id)
