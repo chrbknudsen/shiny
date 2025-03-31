@@ -225,9 +225,12 @@ så kan mændene holde fri efter 31/35*365 = `r 31/35*365` dage.
 
 Det skal vi have regnet om til en dato. Og der bliver vi nødt til at tage
 højde for skudår. Vi skriver en funktion:
+Og den funktion skal tage højde for skudår, og derfor skal den have
+en brøk, snarere end en dag.
 
 ```{r}
-dag_til_dato <- function(dag_nummer, aar) {
+frac_til_dato <- function(fraction, aar) {
+  dag_nummer <- round(fraction*(365+lubridate::leap_year(aar)))
   as.Date(paste0(aar, "-01-01")) + (dag_nummer - 1)
 }
 ```
@@ -255,9 +258,9 @@ head(sidste_dag_aar)
 Den brøk og årstallet i kolonnen TID bruger vi til at beregne sidste arbejdsdag:
 
 ```{r}
-sidste_dag_aar %>% 
-  mutate(sidste_arbejdsdag = map2(brøk*365, TID, dag_til_dato)) %>% 
-  unnest(sidste_arbejdsdag)
+(sidste_dag_aar <- sidste_dag_aar %>% 
+  mutate(sidste_arbejdsdag = map2(brøk, TID, frac_til_dato)) %>% 
+  unnest(sidste_arbejdsdag))
 ```
 det er nok primært interessant for det seneste år... Og man skal huske at 
 tage højde for om det er et skudår. For det gør beregningen ikke lige nu.
@@ -268,6 +271,67 @@ gennemsnit tjener 12,4 procent mindre end mænd.
 
 Og to dage tidligere kunne vi have markeret Mændenes Sidste Arbejdsdag, fordi
 kvinder i gennemsnit arbejder xx procent mindre end mænd.
+
+## trin 18
+
+Og den dag, `r sidste_dag_aar %>% slice_max(TID) %>% pull(sidste_arbejdsdag)`, kan vi så vise i en fin kalender:
+
+```{r echo  =FALSE}
+library(ggplot2)
+library(lubridate)
+
+# Parametre
+special_date <- sidste_dag_aar %>% slice_max(TID) %>% pull(sidste_arbejdsdag) %>% as.Date()  # Datoen, hvor der skal sættes et rødt kryds
+
+kalender_kryds <- function(special_date){year <- year(special_date)
+month <- month(special_date)
+
+# Bestem første og sidste dag i måneden
+first_date <- as.Date(paste(year, month, "1", sep = "-"))
+last_date <- ceiling_date(first_date, "month") - days(1)
+
+# Opret en data frame med alle datoer i måneden
+dates <- seq(first_date, last_date, by = "day")
+calendar_df <- data.frame(date = dates)
+calendar_df$day <- day(calendar_df$date)
+calendar_df$wday <- wday(calendar_df$date, week_start = 1)  # Mandag = 1
+
+# Beregn hvilken uge i måneden dagen tilhører
+first_wday <- wday(first_date, week_start = 1)
+calendar_df$week <- ceiling((calendar_df$day + first_wday - 1) / 7)
+
+# Plot kalenderen
+p <- ggplot(calendar_df, aes(x = wday, y = -week)) + 
+  geom_tile(fill = "white", color = "black") +
+  geom_text(aes(label = day), size = 5) +
+  scale_x_continuous(breaks = 1:7, labels = c("Man", "Tir", "Ons", "Tor", "Fre", "Lør", "Søn")) +
+  theme_minimal() +
+  labs(title = paste(month.name[month], year)) +
+  theme(axis.title = element_blank(), 
+        axis.text.y = element_blank(), 
+        axis.ticks = element_blank())
+
+# Hvis special_date er i den viste måned, tilføj et rødt kryds
+if (special_date >= first_date && special_date <= last_date) {
+  special_day <- day(special_date)
+  special_wday <- wday(special_date, week_start = 1)
+  special_week <- ceiling((special_day + first_wday - 1) / 7)
+  
+  p <- p + annotate("text", 
+                    x = special_wday, 
+                    y = -special_week, 
+                    label = "×", 
+                    color = "red", 
+                    size = 10, 
+                      fontface = "bold")
+}
+
+p}
+
+kalender_kryds(special_date)
+
+```
+
 
 ## trin noget
 
@@ -280,3 +344,24 @@ Kalender der opdateres med hvornår du kan holde
 fri - hvis altså du er mand.
 
 Vi kunne også beregne der for de enkelte aldersgrupper.
+
+```{r}
+sidste_dag_aar <- data %>% 
+  pivot_wider(names_from = KOEN, values_from = INDHOLD) %>% 
+  mutate(brøk = Kvinder/Mænd) %>% 
+  select(TID, ALDER, brøk)
+
+# Alder i alt				
+# 15-24 år				
+# 25-34 år				
+# 35-44 år				
+# 45-54 år				
+# 55-64 år
+
+sidste_dag_aar  %>% 
+  mutate(sidste_arbejdsdag = map2(brøk, TID, frac_til_dato)) %>% 
+  unnest(sidste_arbejdsdag) %>% 
+  filter(ALDER == "15-24 år") %>% 
+  slice_max(TID)
+```
+
