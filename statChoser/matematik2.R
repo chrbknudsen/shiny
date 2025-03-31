@@ -13,9 +13,12 @@ df <- read_excel("data.xlsx") |>
   mutate(across(everything(), ~gsub("\\\\", "\\", ., fixed = TRUE)))
 
 ui <- fluidPage(
-  titlePanel("Beslutningsstøtte"),
-  uiOutput("intro_text"),
-  
+  div(
+    style = "background-color:#f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);",
+    titlePanel("Beslutningsstøtte"),
+    uiOutput("intro_text")
+  ),
+
   sidebarLayout(
     sidebarPanel(
       selectInput("sprog", "Sprog / Language", choices = c("Dansk" = "da", "English" = "en")),
