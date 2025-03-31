@@ -47,8 +47,9 @@ ui <- fluidPage(
         actionButton("reset", "🔄 Start forfra", class = "btn btn-outline-secondary")
       ),
       br(),
-      h3("Anbefaling:"),
-      uiOutput("recommendation"),
+      uiOutput("recommendation_box"),
+      
+      
       uiOutput("recommendation_link"),
       p(em("Decision tree from Rosner 7ed.")),
       p(em("Use recommendations on you own SOMETHING")),
@@ -197,18 +198,24 @@ server <- function(input, output, session) {
         
         valg_rute(rute)
         
+        # Vis anbefaling hvis vi er fremme
         if (chosen[[anbefaling_col]] != "") {
-          output$recommendation <- renderUI({
-            withMathJax(HTML(paste0("<p>", chosen[[anbefaling_col]], "</p>")))
+          output$recommendation_box <- renderUI({
+            div(
+              style = "background-color:#e9f9ee; border-left: 5px solid #28a745; padding: 20px; margin-top: 20px; border-radius: 5px;",
+              h4(if (input$sprog == "da") "✅ Anbefaling" else "✅ Recommendation"),
+              withMathJax(HTML(paste0("<p>", chosen[[anbefaling_col]], "</p>")))
+            )
           })
           
+          # Link og rute vises stadig separat (hvis relevant)
           output$recommendation_link <- renderUI({
             if (chosen$link != "") tags$a(href = chosen$link, target = "_blank", "Link til materiale")
             else NULL
           })
           
           output$final_route <- renderUI({
-            withMathJax(HTML(paste0("<hr><h4>Din fulde rute:</h4><ul>",
+            withMathJax(HTML(paste0("<hr><h4>", if (input$sprog == "da") "Din fulde rute:" else "Your full path:", "</h4><ul>",
                                     paste0(
                                       apply(valg_rute(), 1, function(row) {
                                         paste0("<li><b>[", row["id"], "] ", row["question"], ":</b> ", row["svar"], "</li>")
@@ -219,7 +226,8 @@ server <- function(input, output, session) {
             )))
           })
         } else {
-          output$recommendation <- renderUI({ NULL })
+          # Hvis ikke anbefaling endnu – ryd
+          output$recommendation_box <- renderUI({ NULL })
           output$recommendation_link <- renderUI({ NULL })
           output$final_route <- renderUI({ NULL })
           current_id(chosen$next_id)
@@ -227,6 +235,7 @@ server <- function(input, output, session) {
       }, ignoreInit = TRUE, once = TRUE)
     })
   })
+  
 }
 
 shinyApp(ui, server)
