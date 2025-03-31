@@ -15,8 +15,13 @@ df <- read_excel("data.xlsx") |>
 ui <- fluidPage(
   div(
     style = "background-color:#f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);",
-    titlePanel("Beslutningsstøtte"),
-    uiOutput("intro_text")
+    fluidRow(
+      column(2, tags$img(src = "logo.png", height = "80px", style = "margin-top: 5px;")),
+      column(10,
+             h1("Beslutningsstøtte", style = "margin-top: 0;"),
+             uiOutput("intro_text")
+      )
+    )
   ),
 
   sidebarLayout(
@@ -32,9 +37,14 @@ ui <- fluidPage(
       uiOutput("step_info"),
       uiOutput("question_ui"),
       br(),
-      fluidRow(
-        column(4, actionButton("back", "⬅ Gå tilbage")),
-        column(4, actionButton("reset", "🔄 Start forfra"))
+      # fluidRow(
+      #   column(4, actionButton("back", "⬅ Gå tilbage")),
+      #   column(4, actionButton("reset", "🔄 Start forfra"))
+      # ),
+      div(
+        style = "margin-top: 10px;",
+        actionButton("back", "⬅ Gå tilbage", class = "btn btn-secondary me-2"),
+        actionButton("reset", "🔄 Start forfra", class = "btn btn-outline-secondary")
       ),
       br(),
       h3("Anbefaling:"),
