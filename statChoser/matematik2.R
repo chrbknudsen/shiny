@@ -201,18 +201,28 @@ server <- function(input, output, session) {
         # Vis anbefaling hvis vi er fremme
         if (chosen[[anbefaling_col]] != "") {
           output$recommendation_box <- renderUI({
+            link <- q_rows$link[1]  # Brug q_rows, ikke chosen!
+            vis_link <- !is.null(link) && !is.na(link) && nzchar(link)
             div(
               style = "background-color:#e9f9ee; border-left: 5px solid #28a745; padding: 20px; margin-top: 20px; border-radius: 5px;",
               h4(if (input$sprog == "da") "✅ Anbefaling" else "✅ Recommendation"),
-              withMathJax(HTML(paste0("<p>", chosen[[anbefaling_col]], "</p>")))
+              withMathJax(HTML(paste0("<p>", chosen[[anbefaling_col]], "</p>"))),
+              if (vis_link) {
+                tags$p(
+                  tags$a(
+                    href = link, target = "_blank",
+                    if (input$sprog == "da") "Link til materiale" else "Link to material"
+                  )
+                )
+              }
             )
           })
           
-          # Link og rute vises stadig separat (hvis relevant)
-          output$recommendation_link <- renderUI({
-            if (chosen$link != "") tags$a(href = chosen$link, target = "_blank", "Link til materiale")
-            else NULL
-          })
+          # # Link og rute vises stadig separat (hvis relevant)
+          # output$recommendation_link <- renderUI({
+          #   if (chosen$link != "") tags$a(href = chosen$link, target = "_blank", "Link til materiale")
+          #   else NULL
+          # })
           
           output$final_route <- renderUI({
             withMathJax(HTML(paste0("<hr><h4>", if (input$sprog == "da") "Din fulde rute:" else "Your full path:", "</h4><ul>",
