@@ -51,8 +51,6 @@ ui <- fluidPage(
       
       
       uiOutput("recommendation_link"),
-      p(em("Decision tree from Rosner 7ed.")),
-      p(em("Use recommendations on you own SOMETHING")),
       uiOutput("final_route"),
       
       tags$script(HTML("
