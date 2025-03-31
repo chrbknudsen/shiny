@@ -128,6 +128,7 @@ server <- function(input, output, session) {
     question_col <- get_col("question")
     svar_col <- get_col("svar")
     anbefaling_col <- get_col("anbefaling")
+    header_col <- get_col("header")
     
     label_text <- if (debug) {
       paste0("[", q_rows$id[1], "] ", q_rows[[question_col]][1])
@@ -135,21 +136,27 @@ server <- function(input, output, session) {
       q_rows[[question_col]][1]
     }
     
-    # Tjek: hvis vi er fremme ved en anbefaling der allerede er givet
-    sidste <- tail(valg_rute(), 1)
-    if (nrow(sidste) > 0 && sidste$id == current_id() && q_rows[[anbefaling_col]][1] != "") {
-      return(withMathJax(HTML(paste0("<h4>", label_text, "</h4>"))))
-    }
+    header_text <- q_rows[[header_col]][1]
     
-    # Ellers vis spørgsmål + knapper
+    sidste <- tail(valg_rute(), 1)
+    er_ved_anbefaling <- (
+      nrow(sidste) > 0 &&
+        sidste$id == current_id() &&
+        q_rows[[anbefaling_col]][1] != ""
+    )
+    
     tagList(
-      withMathJax(HTML(paste0("<h4>", label_text, "</h4>"))),
-      lapply(seq_len(nrow(q_rows)), function(i) {
-        ans_id <- paste0("answer_", current_id(), "_", i)
-        withMathJax(actionButton(ans_id, q_rows[[svar_col]][i], class = "btn-primary m-1"))
-      })
+      if (header_text != "") h4(header_text),
+      withMathJax(HTML(paste0("<p><strong>", label_text, "</strong></p>"))),
+      if (!er_ved_anbefaling) {
+        lapply(seq_len(nrow(q_rows)), function(i) {
+          ans_id <- paste0("answer_", current_id(), "_", i)
+          withMathJax(actionButton(ans_id, q_rows[[svar_col]][i], class = "btn btn-primary m-1"))
+        })
+      }
     )
   })
+  
   
   
   output$breadcrumb <- renderUI({
