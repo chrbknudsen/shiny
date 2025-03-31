@@ -14,6 +14,7 @@ df <- read_excel("data.xlsx") |>
 
 ui <- fluidPage(
   titlePanel("Beslutningsstøtte"),
+  uiOutput("intro_text"),
   
   sidebarLayout(
     sidebarPanel(
@@ -36,7 +37,8 @@ ui <- fluidPage(
       h3("Anbefaling:"),
       uiOutput("recommendation"),
       uiOutput("recommendation_link"),
-      p(em("hej")),
+      p(em("Decision tree from Rosner 7ed.")),
+      p(em("Use recommendations on you own SOMETHING")),
       uiOutput("final_route"),
       
       tags$script(HTML("
@@ -56,6 +58,26 @@ server <- function(input, output, session) {
   valg_rute <- reactiveVal(data.frame(id = character(), question = character(), svar = character()))
   
   get_col <- function(base) paste0(base, "_", input$sprog)
+  
+  output$intro_text <- renderUI({
+    if (input$sprog == "da") {
+      div(class = "lead", HTML("
+      <p>Dette værktøj hjælper dig med at vælge en passende statistisk test
+      baseret på dine data og analyseformål.</p>
+      <p>Besvar spørgsmålene trin for trin. Når du når frem til en anbefaling,
+      vises den nederst sammen med en eventuel henvisning.</p>
+      <p>Du kan gå ét trin tilbage eller starte forfra når som helst.</p>
+    "))
+    } else {
+      div(class = "lead", HTML("
+      <p>This tool helps you choose an appropriate statistical test
+      based on your data and analytical goals.</p>
+      <p>Answer the questions step by step. When you reach a recommendation,
+      it will be displayed below along with a reference if available.</p>
+      <p>You can go one step back or start over at any time.</p>
+    "))
+    }
+  })
   
   observeEvent(input$reset, {
     current_id("Q1")
