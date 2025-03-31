@@ -82,7 +82,7 @@ server <- function(input, output, session) {
       vises den nederst sammen med en eventuel henvisning.</p>
       <p>Du kan gå ét trin tilbage eller starte forfra når som helst.</p>
       <p>Beslutningstræet er hentet fra 'Fundamentals of Biostatistics' 7. udgave af Bernard Rosner</p>
-      <p>Brug anbefalingerne på egen risiko, og kontroller altid, at de er relevante for din specifikke situation.</p>
+      <p>Brug anbefalingerne på eget ansvar, og kontroller altid, at de er relevante for din specifikke situation.</p>
     "))
     } else {
       div(class = "lead", HTML("
