@@ -1,0 +1,43 @@
+ID,Recommendation,Vurdering,Kommentar
+Q1,Use a one-sample z-test,✅,Korrekt ved kendt varians og normalfordeling
+Q2,Use a one-sample t-test,✅,Standardvalg ved ukendt varians
+Q3,Use a sign test,✅,Non-parametrisk alternativ til one-sample t-test
+Q4,Use Wilcoxon signed-rank test,✅,Non-parametrisk alternativ til paired t-test
+Q5,Use paired-sample t-test,✅,"Afhængige observationer, normalfordelt"
+Q6,Use Welch's t-test,✅,"Ved forskellig varians, uafhængige grupper"
+Q7,Use Mann-Whitney U test,✅,Non-parametrisk alternativ til two-sample t-test
+Q8,Use two-sample t-test,✅,"To uafhængige grupper, normalfordelt"
+Q9,Use one-way ANOVA,✅,"Tre eller flere grupper, én faktor"
+Q10,Use two-way ANOVA,✅,"To faktorer, evt. interaktion"
+Q11,Use repeated measures ANOVA,✅,Gentagne målinger over tid eller betingelser
+Q12,Use Friedman test,✅,Non-parametrisk alternativ til repeated ANOVA
+Q13,Use Kruskal-Wallis test,✅,Non-parametrisk alternativ til one-way ANOVA
+Q14,Use chi-squared test of independence,✅,"Nominale variabler, krydstabel"
+Q15,Use chi-squared test of goodness-of-fit,✅,Forventede frekvenser mod observerede
+Q16,Use Fisher's exact test,✅,Bedre ved små celler (<5)
+Q17,Use McNemar's test,✅,"Parvise binære data, 2x2"
+Q18,Use Cochran's Q test,✅,Udvidelse af McNemar's til >2 betingelser
+Q19,Use Pearson correlation,✅,"Begge variabler kontinuerte, lineær sammenhæng"
+Q20,Use Spearman correlation,✅,Ved ordinal eller ikke-normal data
+Q21,Use point-biserial correlation,✅,Dikotom + kontinuer
+Q22,Use linear regression,✅,Prædiktor(er) for kontinuer respons
+Q23,Use logistic regression,✅,Dikotomt respons
+Q24,Use Poisson regression,✅,"Tælletal, fx antal hændelser"
+Q25,Use ordinal regression,✅,Ordinal respons
+Q26,Use multinomial logistic regression,✅,Multinomial respons
+Q27,Use survival analysis,✅,"Tid til hændelse, censureret data"
+Q28,Use Cox proportional hazards model,✅,Multipel kovariat survival analyse
+Q29,Use Kaplan-Meier method,✅,"Overlevelseskurver, censureret data"
+Q30,Use log-rank test,✅,Sammenlign overlevelseskurver
+Q31,Use generalized linear model,✅,Udvidelse af regressionsmodeller
+Q32,Use MANOVA,✅,Multivariat afhængig variabel
+Q33,Use canonical correlation,✅,Sammenhæng mellem variable sæt
+Q34,Use principal component analysis,✅,"Datareduktion, uafhængige komponenter"
+Q35,Use factor analysis,✅,Latente konstrukter
+Q36,Use discriminant analysis,✅,Klassifikation
+Q37,Use cluster analysis,✅,Opdag strukturer i data
+Q38,Use time series analysis,✅,Tidsafhængige observationer
+Q39,Use ARIMA model,✅,Auto-regressive modeller
+Q40,Use GARCH model,✅,Heteroskedasticitet i tidsserier
+Q41,Use bootstrap methods,✅,Distribution-free estimation
+Q42,Other or unspecified test,✅,Resampling for konfidensintervaller eller test
