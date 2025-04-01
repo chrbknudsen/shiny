@@ -317,7 +317,6 @@ if (special_date >= first_date && special_date <= last_date) {
   special_wday <- wday(special_date, week_start = 1)
   special_week <- ceiling((special_day + first_wday - 1) / 7)
   
-  p <- p + annotate("text", 
                     x = special_wday, 
                     y = -special_week, 
                     label = "×", 
