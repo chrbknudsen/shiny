@@ -28,8 +28,7 @@ server <- function(input, output, session) {
     metadata = NULL,
     data_raw = NULL,
     data_df = NULL,
-    i_maal = NULL,
-    sidste_dag_aar = NULL
+    sidst_dag_aar = NULL
   )
   
   # Dynamisk UI: Hvert trin vises forskelligt
@@ -58,7 +57,7 @@ our_body <- list(lang = 'da', table = 'AKU410A')"),
     } else if(s == 3) {
       tagList(
         h3("Trin 3: Hent metadata"),
-        p("Tryk på knappen for at udføre API-kaldet, og hent metadata fra Danmarks Statistik:"),
+        p("Klik på knappen for at udføre API-kaldet og hente metadata:"),
         actionButton("getMeta", "Hent Metadata"),
         verbatimTextOutput("metaOutput")
       )
@@ -157,6 +156,33 @@ endpoint <- 'http://api.statbank.dk/v1/data'"),
     }
   })
 
+# --- Observer til at styre aktivering af "Videre"-knappen ---
+observe({
+  s <- step()
+  canProceed <- TRUE
+  if (s == 3) {
+    canProceed <- !is.null(values$metadata)
+  } else if (s == 7) {
+    canProceed <- !is.null(values$data_df)
+  } else if (s == 16) {
+    # Her kan du fx tjekke, at data til beregning af sidste arbejdsdag er klar
+    canProceed <- !is.null(values$data_df)
+  } else if (s == 17) {
+    canProceed <- !is.null(values$sidst_dag_aar)
+  }
+  shinyjs::toggleState("nextBtn", condition = canProceed)
+})
+
+# --- Navigation: "Videre"-knap ---
+observeEvent(input$nextBtn, {
+  # Når brugeren klikker "Videre", går vi til næste trin
+  step(step() + 1)
+  # Hvis det nye trin kræver kodekørsel, deaktiver knappen med det samme
+  if(step() %in% c(3, 7, 16, 17)) {
+    shinyjs::disable("nextBtn")
+  }
+})
+
 # --- Trin 3: Hent metadata ---
 observeEvent(input$getMeta, {
   endpoint <- "http://api.statbank.dk/v1/tableinfo"
@@ -190,7 +216,6 @@ observeEvent(input$getData, {
   endpoint <- "http://api.statbank.dk/v1/data"
   res <- POST(endpoint, body = data_body, encode = "json")
   values$data_raw <- res
-  # Konverter til data frame
   data_text <- content(res, type = "text")
   values$data_df <- read_csv2(data_text)
 })
@@ -268,7 +293,6 @@ output$modelOutput <- renderPrint({
   model <- lm(dif ~ TID, data = df)
   coef_model <- coef(model)
   i_maal <- round(-coef_model[1] / coef_model[2])
-  values$i_maal <- i_maal
   paste("Ligestilling opnås ca. i år:", i_maal)
 })
 
@@ -285,7 +309,7 @@ output$sidsteDagAarOutput <- renderPrint({
     pivot_wider(names_from = KOEN, values_from = INDHOLD) %>% 
     mutate(brøk = Kvinder / Mænd) %>% 
     select(TID, brøk)
-  values$sidste_dag_aar <- df
+  values$sidst_dag_aar <- df
   head(df)
 })
 
@@ -297,8 +321,8 @@ frac_til_dato <- function(fraction, aar) {
 
 # --- Trin 17: Beregn og vis sidste arbejdsdag som dato ---
 output$sidsteDagAarOutput2 <- renderPrint({
-  req(values$sidste_dag_aar)
-  df <- values$sidste_dag_aar %>% 
+  req(values$sidst_dag_aar)
+  df <- values$sidst_dag_aar %>% 
     mutate(sidste_arbejdsdag = map2(brøk, TID, frac_til_dato)) %>% 
     unnest(sidste_arbejdsdag)
   df
@@ -306,12 +330,12 @@ output$sidsteDagAarOutput2 <- renderPrint({
 
 # --- Trin 18: Vis kalender med markeret sidste arbejdsdag ---
 output$calendarPlot <- renderPlot({
-  req(values$sidste_dag_aar)
-  df <- values$sidste_dag_aar %>% 
+  req(values$sidst_dag_aar)
+  df <- values$sidst_dag_aar %>% 
     mutate(sidste_arbejdsdag = map2(brøk, TID, frac_til_dato)) %>% 
     unnest(sidste_arbejdsdag)
-  special_date <- df %>% slice_max(TID, n = 1, with_ties = FALSE) %>% pull(sidste_arbejdsdag) %>% as.Date()
-  
+  special_date <- df %>% slice_max(TID, n = 1, with_ties = FALSE) %>% 
+    pull(sidste_arbejdsdag) %>% as.Date()
   year_val <- year(special_date)
   month_val <- month(special_date)
   
@@ -348,11 +372,6 @@ output$calendarPlot <- renderPlot({
                       fontface = "bold")
   }
   p
-})
-
-# Når "Videre" trykkes, opdateres til næste trin
-observeEvent(input$nextBtn, {
-  step(step() + 1)
 })
 }
 
