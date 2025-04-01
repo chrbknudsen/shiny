@@ -14,7 +14,8 @@ ui <- fluidPage(
   mainPanel(
     uiOutput("stepUI"),
     br(),
-    actionButton("nextBtn", "Videre")
+    # Knappen er fast placeret, men vi kan skjule den med shinyjs, når der ikke er flere trin.
+    div(id = "nextBtnDiv", actionButton("nextBtn", "Videre"))
   )
 )
 
@@ -156,7 +157,7 @@ endpoint <- 'http://api.statbank.dk/v1/data'"),
     }
   })
 
-# --- Observer til at styre aktivering af "Videre"-knappen ---
+# Observer, som aktiverer/deaktiverer "Videre"-knappen, afhængig af trinnet
 observe({
   s <- step()
   canProceed <- TRUE
@@ -165,7 +166,6 @@ observe({
   } else if (s == 7) {
     canProceed <- !is.null(values$data_df)
   } else if (s == 16) {
-    # Her kan du fx tjekke, at data til beregning af sidste arbejdsdag er klar
     canProceed <- !is.null(values$data_df)
   } else if (s == 17) {
     canProceed <- !is.null(values$sidst_dag_aar)
@@ -173,12 +173,20 @@ observe({
   shinyjs::toggleState("nextBtn", condition = canProceed)
 })
 
-# --- Navigation: "Videre"-knap ---
+# Skjul "Videre"-knappen, hvis der ikke er flere trin
+observe({
+  if (step() >= 18) {
+    shinyjs::hide("nextBtnDiv")
+  } else {
+    shinyjs::show("nextBtnDiv")
+  }
+})
+
+# Navigation: Når "Videre" trykkes, opdateres til næste trin
 observeEvent(input$nextBtn, {
-  # Når brugeren klikker "Videre", går vi til næste trin
   step(step() + 1)
-  # Hvis det nye trin kræver kodekørsel, deaktiver knappen med det samme
-  if(step() %in% c(3, 7, 16, 17)) {
+  # Hvis det nye trin kræver, at en beregning skal udføres (og knappen derfor skal deaktiveres)
+  if (step() %in% c(3, 7, 16, 17)) {
     shinyjs::disable("nextBtn")
   }
 })
@@ -192,7 +200,7 @@ observeEvent(input$getMeta, {
 })
 
 output$metaOutput <- renderPrint({
-  if(is.null(values$metadata)) {
+  if (is.null(values$metadata)) {
     "Metadata ikke hentet endnu."
   } else {
     values$metadata
@@ -221,7 +229,7 @@ observeEvent(input$getData, {
 })
 
 output$dataStatus <- renderPrint({
-  if(is.null(values$data_raw)) {
+  if (is.null(values$data_raw)) {
     "Data ikke hentet endnu."
   } else {
     paste("Status kode:", values$data_raw$status_code)
@@ -229,7 +237,7 @@ output$dataStatus <- renderPrint({
 })
 
 output$dataHead <- renderPrint({
-  if(is.null(values$data_df)) {
+  if (is.null(values$data_df)) {
     "Dataframe ikke oprettet endnu."
   } else {
     head(values$data_df)
@@ -237,7 +245,7 @@ output$dataHead <- renderPrint({
 })
 
 output$dataHead2 <- renderPrint({
-  if(is.null(values$data_df)) {
+  if (is.null(values$data_df)) {
     "Dataframe ikke oprettet endnu."
   } else {
     head(values$data_df %>% select(-ARBEJDSTID))
