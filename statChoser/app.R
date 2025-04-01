@@ -37,20 +37,14 @@ ui <- fluidPage(
       uiOutput("step_info"),
       uiOutput("question_ui"),
       br(),
-      # fluidRow(
-      #   column(4, actionButton("back", "⬅ Gå tilbage")),
-      #   column(4, actionButton("reset", "🔄 Start forfra"))
-      # ),
       div(
         style = "margin-top: 10px;",
         actionButton("back", "⬅ Gå tilbage", class = "btn btn-secondary me-2"),
         actionButton("reset", "🔄 Start forfra", class = "btn btn-outline-secondary")
       ),
       br(),
-      uiOutput("recommendation_box"),
-      
-      
-      uiOutput("recommendation_link"),
+      uiOutput("recommendation_box"),  # viser anbefaling hvis der er en.
+      uiOutput("recommendation_link"), # viser link til anbefaling, hvis der er et.
       uiOutput("final_route"),
       
       tags$script(HTML("
@@ -65,8 +59,8 @@ ui <- fluidPage(
 
 
 server <- function(input, output, session) {
-  current_id <- reactiveVal("Q1")
-  history <- reactiveVal(character())
+  current_id <- reactiveVal("Q1")          # vi starter med Q1
+  history <- reactiveVal(character())      # 
   valg_rute <- reactiveVal(data.frame(id = character(), question = character(), svar = character()))
   
   get_col <- function(base) paste0(base, "_", input$sprog)
