@@ -10,7 +10,7 @@ library(lubridate)
 
 ui <- fluidPage(
   shinyjs::useShinyjs(),
-  titlePanel("Trinvis Databehandling App"),
+  titlePanel("Mændenes sidste arbejdsdag"),
   mainPanel(
     uiOutput("stepUI"),
     br(),
@@ -37,8 +37,14 @@ server <- function(input, output, session) {
     s <- step()
     if(s == 1) {
       tagList(
-        h3("Trin 1: Indlæsning af biblioteker"),
-        p("Dette trin viser koden, som indlæser de nødvendige biblioteker:"),
+        h3("Hvornår kan vi holde fri?"),
+        p("Lige resultater er vigtige. Og en oplagt parameter at måle på er, hvor mange
+          timer man lægger på arbejdsmarkedet. De timer man bruger dér kan jo ikke
+          bruges på det der giver mening i livet. Så hvornår har mænd lagt lige så
+          mange timer på jobbet som kvinder? Og hvornår kan de så holde fri?"),
+        p("Den slags holder Danmarks Statistik styr på, og vi kan trække data fra
+          dem, der kan give os svaret på hvornår mænd kan holde deres sidste arbejdsdag."),
+        p("Det gør vi ved hjælp af R, og vi skal starte med at indlæse en række biblioteker:"),
         pre("library(shiny)
 library(shinyjs)
 library(future)
@@ -50,21 +56,38 @@ library(magrittr)")
       )
     } else if(s == 2) {
       tagList(
-        h3("Trin 2: Opsætning af API-oplysninger for metadata"),
+        h3("Opsætning af API-oplysninger for metadata"),
+        p("Vi har kigget på deres hjemmeside, og fundet ud af at det er tabellen 'AKU410A',
+          der indeholder de relevante data. Så vi definerer det endpoint vi skal tale med 
+          hos Danmarks Statistik, og det 'body', vi skal sende til API'en for at få 
+          information om tabellen returneret:"),
         pre("endpoint <- 'http://api.statbank.dk/v1/tableinfo'
 our_body <- list(lang = 'da', table = 'AKU410A')"),
-        p("Når du trykker 'Videre', kan du i næste trin hente metadata.")
+        p("Når du trykker 'Videre', henter vi metadata på tabellen, som vi skal bruge til
+          at hente de egentlige data.")
       )
     } else if(s == 3) {
       tagList(
-        h3("Trin 3: Hent metadata"),
-        p("Klik på knappen for at udføre API-kaldet og hente metadata:"),
+        h3("Hent metadata"),
+        p("Klik på knappen for at udføre API-kaldet og hente metadata på tabellen:"),
         actionButton("getMeta", "Hent Metadata"),
         verbatimTextOutput("metaOutput")
       )
     } else if(s == 4) {
       tagList(
-        h3("Trin 4: Visning af metadata"),
+        h3("Hvad betyder de metadata?"),
+        p("Når vi nærlæser outputtet, kan vi se, at det er den værdi af 'ARBEJDSTID', der
+          er '022' vi er på jagt efter. Det er 'Faktisk ugentlig arbejdstid, 1-95 timer (mindst en times arbejde i referenceugen)'. 
+          Vi vil gerne have det for alle aldersgrupper, så vi skal bede om '*' fra
+          variablen 'ALDER'. Vi er interesseret i begge køn, men har ikke brug 
+          for at Danmarks Statistik lægger tallene sammen for os, så i variablen 
+          'KOEN', skal vi have værdierne 'M' og 'K'."),
+        p("Hvis vi vil se på om vi kommer tættere på ligestilling, skal vi også
+          have værdierne for forskellige år, så vi kan sammenligne. Det er også
+          '*'."),
+        p("Da R er glad for at parse input, og API'en er glad for input der 
+          ikke er parset - pakker vi de værdier hvor det kan gå galt, ind i 
+          funktionen 'I' som beskytter værdierne mod R:"),
         verbatimTextOutput("metaOutput")
       )
     } else if(s == 5) {
@@ -75,12 +98,15 @@ our_body <- list(lang = 'da', table = 'AKU410A')"),
   list(code = 'ALDER', values = I('*')),
   list(code = 'KOEN', values = c('M', 'K')),
   list(code = 'Tid', values = I('*'))
-)"),
-        p("Dette definerer de variable, vi ønsker fra API'et.")
+)")
       )
     } else if(s == 6) {
       tagList(
-        h3("Trin 6: Opsætning af API-kald for data"),
+        h3("Opsætning af API-kald for data"),
+        p("Nu har vi det vi skal bruge for at hente data. Vi beder om at få svar
+          på dansk, at det godt må formatteres som csv (for JSON er noget bøvl). Og
+          så skal vi huske at ændre på endpointet til API'en, for nu er det data
+          vi skal hente:"),
         pre("data_body <- list(
   table = 'AKU410A', 
   lang = 'da', 
