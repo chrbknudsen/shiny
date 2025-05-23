@@ -85,14 +85,16 @@ our_body <- list(lang = 'da', table = 'AKU410A')"),
         p("Hvis vi vil se på om vi kommer tættere på ligestilling, skal vi også
           have værdierne for forskellige år, så vi kan sammenligne. Det er også
           '*'."),
-        p("Da R er glad for at parse input, og API'en er glad for input der 
-          ikke er parset - pakker vi de værdier hvor det kan gå galt, ind i 
-          funktionen 'I' som beskytter værdierne mod R:"),
         verbatimTextOutput("metaOutput")
       )
     } else if(s == 5) {
       tagList(
-        h3("Trin 5: Opsætning af variabler for datahentning"),
+        h3("Opsætning af variabler for datahentning"),
+        p("Vi noterede hvad det var vi skulle have med. Og lægger det ind 
+          i en liste, som vi kan sende til API'en."),
+        p("Da R er glad for at parse input, og API'en er glad for input der 
+          ikke er parset - pakker vi de værdier hvor det kan gå galt, ind i 
+          funktionen 'I' som beskytter værdierne mod R:"),
         pre("variables <- list(
   list(code = 'ARBEJDSTID', values = I('022')),
   list(code = 'ALDER', values = I('*')),
