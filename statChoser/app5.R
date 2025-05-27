@@ -81,14 +81,21 @@ server <- function(input, output, session) {
     if (input$sprog == "da") {
       tagList(
         h2("Beslutningsstøtte"),
-        p("Dette værktøj hjælper dig med at vælge en passende statistisk test..."),
-        p("Besvar trin for trin. Du kan gå tilbage eller genstarte når som helst.")
+        p("Dette værktøj hjælper dig med at vælge en passende statistisk test baseret på dine data og analyseformål."),
+        p("Besvar spørgsmålene trin for trin. Når du når frem til en anbefaling, vises den nederst sammen med en eventuel henvisning."),
+        p("Du kan gå ét trin tilbage eller starte forfra når som helst."),
+        p("Beslutningstræet er hentet fra 'Fundamentals of Biostatistics' 7. udgave af Bernard Rosner"),
+        p("Brug anbefalingerne på eget ansvar, og kontroller altid, at de er relevante for din specifikke situation.")
       )
     } else {
       tagList(
         h2("Decision Support"),
-        p("This tool helps you choose an appropriate statistical test..."),
-        p("Answer step by step. You can go back or restart at any time.")
+        p("This tool helps you choose an appropriate statistical test based on your data and analytical goals."),
+        p("Answer the questions step by step. When you reach a recommendation, it will be displayed below along with a reference if available."),
+        p("You can go one step back or start over at any time."),
+        p("The decision tree is adapted from 'Fundamentals of Biostatistics' 7. edition by Bernard Rosner."),
+        p("Use the recommendations at your own risk, and always verify that they are applicable to your specific situation.")
+        
       )
     }
   })
