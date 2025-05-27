@@ -85,7 +85,9 @@ server <- function(input, output, session) {
         p("Besvar spørgsmålene trin for trin. Når du når frem til en anbefaling, vises den nederst sammen med en eventuel henvisning."),
         p("Du kan gå ét trin tilbage eller starte forfra når som helst."),
         p("Beslutningstræet er hentet fra 'Fundamentals of Biostatistics' 7. udgave af Bernard Rosner"),
-        p("Brug anbefalingerne på eget ansvar, og kontroller altid, at de er relevante for din specifikke situation.")
+        p("Det er også her sidehenvisningerne er til"),
+        p("Brug anbefalingerne på eget ansvar, og kontroller altid, at de er relevante for din specifikke situation."),
+        p("Hvis anbefalingslinket fører til musikvideoer - så har vi ikke fået lavet en side endnu.")
       )
     } else {
       tagList(
