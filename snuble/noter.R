@@ -2,6 +2,13 @@
 # 'Accept: application/json'
 
 
+# Det står klart at der ikke er koordinater på stenene - links, der i øvrigt
+# ikke virker specielt godt, linker til adressen. Så der skal geokodes på 
+# adresserne.
+
+# vi kan heller ikke trække data hver gang appen loades. Så der skal findes
+# noget "data er x-dage ældre end i dag, indlæs data"
+
 library(httr2)
 library(jsonlite)
 
