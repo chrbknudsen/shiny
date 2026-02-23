@@ -211,4 +211,22 @@ server <- function(input, output, session) {
     "nej"
   )
 })
+
+output$min_distance_text <- renderText({
+
+  d <- ship_cache()
+  req(d)
+
+  min_distance_km <- min(d$distance_km, na.rm = TRUE)
+  min_distance_km <- round(min_distance_km, 1)
+
+  if (min_distance_km < 500) {
+    "Ja"
+  } else if (min_distance_km < 1000) {
+    paste0("Ja, men ", min_distance_km, " km væk")
+  } else {
+    paste0("Nej, den nærmeste usanske hospitalsbåd er ",
+           min_distance_km, " km væk")
+  }
+})
 }
