@@ -1,0 +1,15 @@
+[
+  {
+    "nanoid": "HQd1a5NUxyiDpk",
+    "name": "QTV Gambia",
+    "stream_urls": [
+      "https://player.qtv.gm/hls/live.stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "gm",
+    "isGeoBlocked": false
+  }
+]

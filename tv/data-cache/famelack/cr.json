@@ -1,0 +1,442 @@
+[
+  {
+    "nanoid": "fp34BcAXOlbIfX",
+    "name": "¡OPA! (1080i)",
+    "stream_urls": [
+      "https://5fc584f3f19c9.streamlock.net/genteopa/videogenteopa/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LA4o1ry7L0C9al",
+    "name": "360 RFTV",
+    "stream_urls": [
+      "https://acceso.mediosdecostarica.com:3638/live/360rftvcrlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "H8TtlIKgrW2bwo",
+    "name": "Antena Seis TV",
+    "stream_urls": [
+      "https://video1.azulstream.com:8081/antenaseistv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "X0fe1ozGC5qVsh",
+    "name": "Canal 1",
+    "stream_urls": [
+      "https://vid.canal1cr.com:3424/multi_live/play_720.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9cN6rSKGfOi3ha",
+    "name": "Canal 3 KMK TV",
+    "stream_urls": [
+      "https://live20.bozztv.com/giatv/giatv-KMKTV/KMKTV/chunks.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lhFBUBQYMx1tnO",
+    "name": "Canal 10",
+    "stream_urls": [
+      "https://acceso.mediosdecostarica.com:3606/live/canal10costaricalive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Z3J6UkFFEng975",
+    "name": "Canal 17 TV Nosara",
+    "stream_urls": [
+      "https://latamvdo.com:3870/hybrid/play.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "O4M3Z3Jo7F6qrX",
+    "name": "Cartago Medios TV",
+    "stream_urls": [
+      "https://acceso.mediosdecostarica.com:3511/stream/play.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bK2TlT0v8UWAuh",
+    "name": "Colosal TV",
+    "stream_urls": [
+      "https://5eac7b031d945.streamlock.net/COLOSAL/COLOSAL/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "0QTowwNml7pc3D",
+    "name": "Costa Rica Channel",
+    "stream_urls": [
+      "https://video0.rogohosting.com:19360/8006/8006.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wXST2Lc3NQDzOF",
+    "name": "Coto Brus TV",
+    "stream_urls": [
+      "https://cloudvideo.servers10.com:8081/8030/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xMyWNZNLNYysjq",
+    "name": "Enlace",
+    "stream_urls": [
+      "https://livecdn.enlace.plus/enlace/smil:enlace-hd.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ejJZfMgOR7K5m8",
+    "name": "Extrema Kids TV",
+    "stream_urls": [
+      "https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "g2oDIGkwBMwsy6",
+    "name": "Extrema TV",
+    "stream_urls": [
+      "https://627bb251f23c7.streamlock.net:444/ExtremaTV/ExtremaTV/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GD6GIT9MV0x6kz",
+    "name": "Garabito TV",
+    "stream_urls": [
+      "https://59ef525c24caa.streamlock.net/garabitoTV/garabitotv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vPLx0tYa5CbY79",
+    "name": "Gex TV",
+    "stream_urls": [
+      "https://live20.bozztv.com/akamaissh101/ssh101/gextvaccess/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2TkyCEIMqFLsTQ",
+    "name": "IQ Channel",
+    "stream_urls": [
+      "https://rtmp.info/iqtv/envivo/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "L0Xj3EMr6sq9Oz",
+    "name": "Los Santos TV",
+    "stream_urls": [
+      "https://lstv.duckdns.org:449/hls/lstv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fNzNQyxrdQA2dG",
+    "name": "Multimedios Costa Rica",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/QVK3kfjZP3g"
+    ],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "K2jiXD7UiZELMV",
+    "name": "Nicoya TV",
+    "stream_urls": [
+      "https://59ef525c24caa.streamlock.net/nicoyatv/nicoyatv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4hISVyUvSKd79p",
+    "name": "Norte Informativo TV",
+    "stream_urls": [
+      "https://videohd.live:19360/8076/8076.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gVTlfz80oD0tzA",
+    "name": "Quince UCR",
+    "stream_urls": [
+      "https://wowza.ucr.ac.cr/quinceucr/_definst_/quinceucr.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "KWtXBE79zVCsGO",
+    "name": "San José TV",
+    "stream_urls": [
+      "https://rtmp.info/sanjosetv/envivo/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RYVkiPv8DNw6UC",
+    "name": "Sarapiqui TV",
+    "stream_urls": [
+      "https://lstv.duckdns.org:449/hls/stv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TBkO2VeN8pxR9c",
+    "name": "TDtv",
+    "stream_urls": [
+      "https://cloudvideo.servers10.com:8081/8230/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FY9JMfvI9sWSMw",
+    "name": "TeleBrunca",
+    "stream_urls": [
+      "https://59ef525c24caa.streamlock.net/telebrunca/telebrunca/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "0dNDSI0p6Xtcvm",
+    "name": "TeleMas",
+    "stream_urls": [
+      "https://mist01.homestream.fun/hls/tlmas904/0_1/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "nCrZkPwSbsCSnz",
+    "name": "Telered Television",
+    "stream_urls": [
+      "https://k20.usastreams.com:8081/telered/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aeI6TVNDKNvZiP",
+    "name": "TeleSUR Costa Rica",
+    "stream_urls": [
+      "https://s1.tvdatta.com:3582/live/telesurlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xLJatClo1nNRli",
+    "name": "TicaVision",
+    "stream_urls": [
+      "https://5eac7b031d945.streamlock.net/TICAVISION/TICAVISION/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Y3sTV1ejuknKgG",
+    "name": "TV Sur Canal 14",
+    "stream_urls": [
+      "https://k20.usastreams.com:8081/tvsur/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sue3ShLLkmrNlc",
+    "name": "Urbano TV",
+    "stream_urls": [
+      "https://59ef525c24caa.streamlock.net/tvurbano/tvurbano/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lyisHWGyNS2hyW",
+    "name": "VoiceOver Radio TV",
+    "stream_urls": [
+      "https://cloudvideo.servers10.com:8081/8198/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CLjMxTVbFP2ZHP",
+    "name": "Zurquí TV",
+    "stream_urls": [
+      "https://videoserver.tmcreativos.com:19360/gesfnvpamn/gesfnvpamn.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  }
+]

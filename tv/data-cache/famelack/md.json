@@ -1,0 +1,80 @@
+[
+  {
+    "nanoid": "zWAnWgBppci4KB",
+    "name": "Moldova 1",
+    "stream_urls": [
+      "https://v0.trm.md/static/streaming-playlists/hls/9b79338b-1870-4cd7-91d4-0f6ce5cac7ca/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "md",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JI8jIu049ZR6mo",
+    "name": "Moldova 2",
+    "stream_urls": [
+      "https://v0.trm.md/static/streaming-playlists/hls/d5fafab0-9c37-4746-9e7a-b2d6c0427015/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "md",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "HSwH6uFzgwd6tN",
+    "name": "Privesc.Eu TV",
+    "stream_urls": [
+      "https://cachestar.privesc.eu/liniar/moldova/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "md",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "cu9S3t2cvLny0T",
+    "name": "PRO TV Chisinau",
+    "stream_urls": [
+      "https://stream.protv.md/live/sursa-1/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "md",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "HCXSb3xpk25kNM",
+    "name": "Rlive TV",
+    "stream_urls": [
+      "https://realitatealive.md/tv/rlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "md",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hNw3JhkAal07LE",
+    "name": "TVR Moldova HD",
+    "stream_urls": [
+      "https://tvr-moldova.lg.mncdn.com/tvrmoldova/smil:tvrmoldova.smil/chunklist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "md",
+    "isGeoBlocked": false
+  }
+]

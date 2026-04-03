@@ -1,0 +1,80 @@
+[
+  {
+    "nanoid": "vntT3Mgu6X5cjh",
+    "name": "AMC",
+    "stream_urls": [
+      "https://amchls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "pus"
+    ],
+    "country": "af",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XPJxz3pe1ma8l2",
+    "name": "Dunya Naw TV",
+    "stream_urls": [
+      "https://dunyanhls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "prd"
+    ],
+    "country": "af",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "kbdcUcRfw9YLk1",
+    "name": "Eslah TV",
+    "stream_urls": [
+      "https://eslahtvhls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "pus"
+    ],
+    "country": "af",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PMA4oYVtGpr60x",
+    "name": "Kayhan TV",
+    "stream_urls": [
+      "https://playout395.livestreamingcdn.com/live/Stream1/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "pus"
+    ],
+    "country": "af",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sZwFjK8uOPwgBp",
+    "name": "Shamshad TV",
+    "stream_urls": [
+      "https://5a1178b42cc03.streamlock.net/shamshadtelevision/shamshadtelevision/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "pus"
+    ],
+    "country": "af",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aEHBVjoRvzZifo",
+    "name": "Tamadon TV",
+    "stream_urls": [
+      "https://hls.tamadon.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "prd"
+    ],
+    "country": "af",
+    "isGeoBlocked": false
+  }
+]

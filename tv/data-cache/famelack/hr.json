@@ -1,0 +1,158 @@
+[
+  {
+    "nanoid": "3l5doVjMXjwPIT",
+    "name": "CMC TV",
+    "stream_urls": [
+      "https://stream.cmctv.hr:49998/cmc/live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Krnvg7lhNu9QZe",
+    "name": "Diadora TV",
+    "stream_urls": [
+      "https://diadoratv.stream/live/diadora/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "enIKIkknsZ9r2w",
+    "name": "Extra TV",
+    "stream_urls": [
+      "https://streaming.social3.hr/ExtraTVudzdhr5/uUankWqpXD/1.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "slWlDUbLMcYHFX",
+    "name": "HRT 1",
+    "stream_urls": [
+      "https://webtvstream.bhtelecom.ba/hrt1.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "QFU5ZJnYCQuugW",
+    "name": "HRT 2",
+    "stream_urls": [
+      "https://webtvstream.bhtelecom.ba/hrt2.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "T7TXmLpBD9IwXz",
+    "name": "HRT 3",
+    "stream_urls": [
+      "https://webtvstream.bhtelecom.ba/hrt3.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "A6l4ELIarmqL6n",
+    "name": "Klape i Tambure TV",
+    "stream_urls": [
+      "https://stream.cmctv.hr:49998/kit/live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Gt7ai637m4G99w",
+    "name": "Libertas TV",
+    "stream_urls": [
+      "https://stream.luci.xyz/hls/LTV.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vwVV88p4oCjCFy",
+    "name": "Radio Televizija Banovina",
+    "stream_urls": [
+      "https://pool.alter-media.hr:1936/live/myStream/playlist.m3u8?DVR="
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "N20HHEdGRq23oN",
+    "name": "SBTV",
+    "stream_urls": [
+      "https://live.leveex.hr/hls/live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "J3nEPCNB7tfIfa",
+    "name": "TV Jadran",
+    "stream_urls": [
+      "https://tvjadran.stream.agatin.hr:3412/live/tvjadranlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "YYX03S5xOVCpAS",
+    "name": "TV Nova",
+    "stream_urls": [
+      "https://stream.agatin.hr:3727/live/tvnovalive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  }
+]

@@ -1,0 +1,704 @@
+[
+  {
+    "nanoid": "aoIXV21LUXbgqK",
+    "name": "A7TV",
+    "stream_urls": [
+      "https://a7tvlive.ro/A7TV/A7TV/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "g5kkuBi9J5OPSY",
+    "name": "Agro TV",
+    "stream_urls": [
+      "https://agrotv.streamnet.ro/mobile_tv/agrotv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hNpror6ZnqPuws",
+    "name": "Aleph Business",
+    "stream_urls": [
+      "https://streamw.m.ro/Aleph/ngrp:Alephbiz.stream_all/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uj3o1x3ruhm3Sf",
+    "name": "Aleph News",
+    "stream_urls": [
+      "https://stream-aleph.m.ro/Aleph/ngrp:Alephnewsmain.stream_all/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JSGP3ao4TkoM4K",
+    "name": "Alfa Omega TV",
+    "stream_urls": [
+      "https://aom-live.maghost.ro/aomTV/streams/OOztu5o9Fx6dh9mD1711027803849.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XZ0ppzFYNKAs79",
+    "name": "Angelus TV",
+    "stream_urls": [
+      "https://video.angelustv.ro/hls/angelustv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9UqseJeoJNwuVC",
+    "name": "Antena Monden",
+    "stream_urls": [
+      "https://stream1.antenaplay.ro/live/AntenaMonden/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2UXhXxAP9FifSB",
+    "name": "Arges TV",
+    "stream_urls": [
+      "https://btutzctahuf0wjoq.cdn.streamingserver.io/hls/yjvam8hlp2g3u08z02tv0yz66rq3cy.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "c1gByRg7bGFR8Z",
+    "name": "Atomic Academy TV",
+    "stream_urls": [
+      "https://atomic.streamnet.ro/academia.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "HHRin5dp3UTQFP",
+    "name": "Atomic TV",
+    "stream_urls": [
+      "https://atomic.streamnet.ro/atomictv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RIYeoEqG7KpyCd",
+    "name": "Bucovina TV (576i)",
+    "stream_urls": [
+      "https://www.bucovinatv.ro/proxy/video/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "QDT0Nt5qZTPoXG",
+    "name": "Comedy Play",
+    "stream_urls": [
+      "https://stream1.antenaplay.ro/live/ComedyPlay/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "rpSBQXW9F7j6Ri",
+    "name": "Dotto TV",
+    "stream_urls": [
+      "https://live.dottotv.ro/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mHg6rpXR6VaVXj",
+    "name": "Hello Taste",
+    "stream_urls": [
+      "https://stream1.antenaplay.ro/live/HelloTaste/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4ghiPmfhBHh5Ly",
+    "name": "IasiTV Life",
+    "stream_urls": [
+      "https://tv.streambox.ro/hls/itv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "nbZMDeOIAOPG4m",
+    "name": "Impact TV Dance",
+    "stream_urls": [
+      "https://online.tvimpact.live/hls/dancetv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "s2CfErSAqt8tzT",
+    "name": "Impact TV Manele",
+    "stream_urls": [
+      "https://online.tvimpact.live/hls/impact_tv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "dwPib6Di7weUvt",
+    "name": "Informatia TV",
+    "stream_urls": [
+      "https://informatia.streamnet.ro/mobile_tv/informatiatv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "E9smyEh0BaQpif",
+    "name": "JOB TV",
+    "stream_urls": [
+      "https://jobtvserver.eu/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "H8lAJKYghBWOpW",
+    "name": "Kanal D",
+    "stream_urls": [
+      "https://stream1.kanald.ro/iphone/knd-live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3hq4NpWZFKw05F",
+    "name": "Kiss TV",
+    "stream_urls": [
+      "https://tv.broadcasting.ro/kisstv/a629c031-2170-4ee9-a36d-87a891aa3131.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NodY8gBnmYHwO8",
+    "name": "Magic TV",
+    "stream_urls": [
+      "https://tv.broadcasting.ro/magictv/925f90db-5c88-4190-a53d-5163cdffe6f4.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LOoaceDLue8eJw",
+    "name": "MediCOOL TV",
+    "stream_urls": [
+      "https://stream1.antenaplay.ro/live/MediCOOLTV/chunklist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "dfvV9SkyUqJgjs",
+    "name": "MeteoTV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/PzApvbns2c0"
+    ],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "U81csRB9YHDFcc",
+    "name": "Mireasa",
+    "stream_urls": [
+      "https://stream1.antenaplay.ro/live/MireasaExtra/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FOsU86TnzYmDGQ",
+    "name": "MISA TV",
+    "stream_urls": [
+      "https://vidl.misatv.ro:5050/MSTV/romanian_720p_baseline/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wAAXdhWFrvqJmH",
+    "name": "Mooz Dance",
+    "stream_urls": [
+      "https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "HXUJ0Y6Fs5W3Ui",
+    "name": "Mooz Hits",
+    "stream_urls": [
+      "https://rtmp.digitalbroadcast.ro/moozhits/moozhits.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2U91fowazsObgI",
+    "name": "Mooz Ro!",
+    "stream_urls": [
+      "https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CWCTvHjrmevuWH",
+    "name": "Muscel TV",
+    "stream_urls": [
+      "https://cdn.streamnet.pro/musceltv/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GJqoGQwicVaUST",
+    "name": "Nasul TV",
+    "stream_urls": [
+      "https://live.nasul.tv/live/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TwIkx7pihLoO6V",
+    "name": "Observator News",
+    "stream_urls": [
+      "https://live1ag.antenaplay.ro/live_ObservatorNews/live_ObservatorNews.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "6q00FwKF9RQHrm",
+    "name": "Pro TV News",
+    "stream_urls": [
+      "https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "R7k8oMS31tDfb7",
+    "name": "PROFI 24 TV",
+    "stream_urls": [
+      "https://owncast-jjg42-u20330.vm.elestio.app/hls/0/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ANI4hASUhHAk6D",
+    "name": "Rock TV",
+    "stream_urls": [
+      "https://tv.broadcasting.ro/rocktv/85c83a80-4f71-4f2d-a8d6-43f676896bcb.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "o5xFTwZ5XqqWJt",
+    "name": "Tele7ABC HD",
+    "stream_urls": [
+      "https://live.tele7abc.ro/hls/stream/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Njn8bJGKqOkI3F",
+    "name": "Tele7music",
+    "stream_urls": [
+      "https://live.tele7music.ro/hls/stream/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hIj4Fm6gOaC8Wj",
+    "name": "TeleMoldova +",
+    "stream_urls": [
+      "https://vdo.ssl-stream.com:3247/stream/play.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xgGgBivUKaFSsJ",
+    "name": "Telestar1",
+    "stream_urls": [
+      "https://dvb.tennet.ro/mobile_tv/telestar.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zOxDRevVPSzLb6",
+    "name": "TRINITAS TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/-yivulGb_HQ"
+    ],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8x10WRiweiEa7q",
+    "name": "Tu Decizi",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ANmeb1AcsHM"
+    ],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "rMcJnRPCctPt1F",
+    "name": "TVR 1",
+    "stream_urls": [
+      "https://tvr-1.lg.mncdn.com/tvr1/smil:tvr1.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aSwhkd8O6WnBnD",
+    "name": "TVR 2",
+    "stream_urls": [
+      "https://tvr-2.lg.mncdn.com/tvr2/smil:tvr2.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "L8huPDS6MhGzMC",
+    "name": "TVR 3",
+    "stream_urls": [
+      "https://tvr-3.lg.mncdn.com/tvr3/smil:tvr3.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VtcHR41kw8nIt8",
+    "name": "TVR Cluj",
+    "stream_urls": [
+      "https://tvr-cluj.lg.mncdn.com/tvrcluj/smil:tvrcluj.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5U2zNKFRDXgbSV",
+    "name": "TVR Craiova",
+    "stream_urls": [
+      "https://tvr-craiova.lg.mncdn.com/tvrcraiova/smil:tvrcraiova.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "AgdBh1G6zjQQ1P",
+    "name": "TVR Cultural",
+    "stream_urls": [
+      "https://tvr-cultural.lg.mncdn.com/tvrcultural/smil:tvrcultural.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9cILsiM6Ok0SlN",
+    "name": "TVR Iasi",
+    "stream_urls": [
+      "https://tvr-iasi.lg.mncdn.com/tvriasi/smil:tvriasi.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "QmyDk7u02PWKpA",
+    "name": "TVR Info",
+    "stream_urls": [
+      "https://tvr-info.lg.mncdn.com/tvrinfo/smil:tvrinfo.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "otbytoTxWQ2OOt",
+    "name": "TVR International",
+    "stream_urls": [
+      "https://tvr-international.lg.mncdn.com/tvrinternational/smil:tvrinternational.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lX8llbHeMkmnOY",
+    "name": "TVR Sport",
+    "stream_urls": [
+      "https://tvr-sport.lg.mncdn.com/tvrsport/smil:tvrsport.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZDopo4R7djDObF",
+    "name": "TVR Targu-Mures",
+    "stream_urls": [
+      "https://tvr-tgmures.lg.mncdn.com/tvrtgmures/smil:tvrtgmures.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jtHnKdBTp3Dn99",
+    "name": "TVR Timisoara",
+    "stream_urls": [
+      "https://tvr-timisoara.lg.mncdn.com/tvrtimisoara/smil:tvrtimisoara.smil/chunklist_b5160000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wEoUUNJpcYsZs6",
+    "name": "Z-TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/BBsmpnxp-RU"
+    ],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  }
+]

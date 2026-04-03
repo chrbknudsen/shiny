@@ -1,0 +1,78 @@
+[
+  {
+    "nanoid": "1mg1i4tpsnA6yL",
+    "name": "Malta",
+    "stream_urls": [
+      "https://webtvstream.bhtelecom.ba/malta.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yLVZgzeSuuMtfC",
+    "name": "NTV IC Kakanj",
+    "stream_urls": [
+      "https://lon.rtsp.me/dEqnY-myGj84bKrieCIPfA/1743271667/hls/3dH3YAD6.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "bos"
+    ],
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "V8QFLQrHQiMeTN",
+    "name": "RTRS Plus",
+    "stream_urls": [
+      "https://pluslive.rtrs.tv/plus/plus/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "srp"
+    ],
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "akWVtaxPSDAixs",
+    "name": "RTV Herceg-Bosne",
+    "stream_urls": [
+      "https://prd-hometv-live-open.spectar.tv/ERO_1_083/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WcSJpdrhx3iG3n",
+    "name": "RTV Zenica",
+    "stream_urls": [
+      "https://stream.rtvze.ba/live/123/123.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "bos"
+    ],
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aDxZ6NMX7FAxtt",
+    "name": "Televizija M",
+    "stream_urls": [
+      "https://live.tv-m.net/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "bos"
+    ],
+    "country": "ba",
+    "isGeoBlocked": false
+  }
+]

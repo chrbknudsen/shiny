@@ -1,0 +1,120 @@
+[
+  {
+    "nanoid": "FonAbye6aTHG2B",
+    "name": "Canal Clave",
+    "stream_urls": [
+      "https://tv.picta.cu/clave/clave_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "kmgZCVMju22EeN",
+    "name": "Canal Educativo",
+    "stream_urls": [
+      "https://tv.picta.cu/educativo/educativo_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "K3el31a2gq3vxi",
+    "name": "Canal Educativo 2",
+    "stream_urls": [
+      "https://tv.picta.cu/educativo2/educativo2_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "7hGoLNKV2XJ3w0",
+    "name": "Canal Habana",
+    "stream_urls": [
+      "https://tv.picta.cu/infantil/infantil_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "li9kQdkq955cJo",
+    "name": "Cubavision",
+    "stream_urls": [
+      "https://tv.picta.cu/cubavision/cubavision_0.m3u8",
+      "https://tvhd.picta.cu/cubavisionhd/cubavisionhd_master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Qs1GHXRh3BCYdu",
+    "name": "Cubavision Internacional",
+    "stream_urls": [
+      "https://tv.picta.cu/cvi/cvi_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "l7OqRkDjIvYTcC",
+    "name": "Multivision",
+    "stream_urls": [
+      "https://tv.picta.cu/multivision/multivision_1.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wS0tNGRy6cDuOe",
+    "name": "Prensa Latina TV",
+    "stream_urls": [
+      "https://eu1.servers10.com:8081/8192/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4Me0RU4rvtok1Y",
+    "name": "Tele Rebelde",
+    "stream_urls": [
+      "https://tv.picta.cu/telerebelde/telerebelde_1.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cu",
+    "isGeoBlocked": false
+  }
+]

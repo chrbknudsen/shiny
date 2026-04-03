@@ -1,446 +1,222 @@
 library(shiny)
+library(httr2)
 library(jsonlite)
 library(dplyr)
-library(purrr)
-library(httr2)
-library(htmltools)
 library(tibble)
+library(purrr)
+library(readr)
+library(fs)
 
-repo_api <- "https://api.github.com/repos/famelack/famelack-data/contents/tv/raw/countries"
-raw_base <- "https://raw.githubusercontent.com/famelack/famelack-data/refs/heads/main/tv/raw/countries"
+CACHE_DIR <- "data-cache/famelack"
+MANIFEST_FILE <- fs::path(CACHE_DIR, "manifest.csv")
 
-`%||%` <- function(x, y) {
-  if (is.null(x) || length(x) == 0 || (length(x) == 1 && is.na(x))) {
-    y
-  } else {
-    x
-  }
-}
+REPO_OWNER <- "famelack"
+REPO_NAME  <- "famelack-data"
+REPO_PATH  <- "tv/raw/countries"
 
-get_country_codes <- function() {
-  resp <- request(repo_api) |>
-    req_user_agent("shiny-tv-wall") |>
+# ------------------------------------------------------------
+# GitHub metadata
+# ------------------------------------------------------------
+
+get_github_country_manifest <- function() {
+  api_url <- sprintf(
+    "https://api.github.com/repos/%s/%s/contents/%s",
+    REPO_OWNER, REPO_NAME, REPO_PATH
+  )
+
+  resp <- request(api_url) |>
+    req_user_agent("famelack-cache-shiny") |>
+    req_headers(Accept = "application/vnd.github+json") |>
+    req_options(timeout = 10) |>
     req_perform()
 
   txt <- resp_body_string(resp)
 
-  fromJSON(txt) |>
+  fromJSON(txt, simplifyVector = TRUE) |>
     as_tibble() |>
     filter(type == "file", grepl("\\.json$", name)) |>
-    mutate(code = sub("\\.json$", "", name)) |>
-    pull(code) |>
-    sort()
+    transmute(
+      country_code = sub("\\.json$", "", name),
+      name,
+      path,
+      sha,
+      download_url
+    ) |>
+    arrange(country_code)
 }
 
-parse_channel_item <- function(item, country_code) {
-  stream_url <- if (!is.null(item$stream_urls) && length(item$stream_urls) > 0) {
-    item$stream_urls[[1]]
-  } else {
-    NA_character_
+# ------------------------------------------------------------
+# Manifest
+# ------------------------------------------------------------
+
+read_local_manifest <- function() {
+  if (!file.exists(MANIFEST_FILE)) {
+    return(tibble(
+      country_code = character(),
+      name = character(),
+      path = character(),
+      sha = character(),
+      download_url = character()
+    ))
   }
 
-  youtube_url <- if (!is.null(item$youtube_urls) && length(item$youtube_urls) > 0) {
-    item$youtube_urls[[1]]
-  } else {
-    NA_character_
-  }
-
-  type <- case_when(
-    !is.na(stream_url) ~ "hls",
-    is.na(stream_url) & !is.na(youtube_url) ~ "youtube",
-    TRUE ~ NA_character_
-  )
-
-  tibble(
-    nanoid = item$nanoid %||% NA_character_,
-    name = item$name %||% NA_character_,
-    stream_url = stream_url,
-    youtube_url = youtube_url,
-    type = type,
-    url = coalesce(stream_url, youtube_url),
-    country = item$country %||% country_code,
-    isGeoBlocked = isTRUE(item$isGeoBlocked)
-  )
+  read_csv(MANIFEST_FILE, show_col_types = FALSE)
 }
 
-get_channels_for_country <- function(country_code) {
-  url <- sprintf("%s/%s.json", raw_base, country_code)
+write_local_manifest <- function(manifest) {
+  fs::dir_create(fs::path_dir(MANIFEST_FILE))
+  write_csv(manifest, MANIFEST_FILE)
+}
 
-  resp <- request(url) |>
-    req_user_agent("shiny-tv-wall") |>
+# ------------------------------------------------------------
+# Download
+# ------------------------------------------------------------
+
+download_one_country_file <- function(download_url, dest_file) {
+  resp <- request(download_url) |>
+    req_user_agent("famelack-cache-shiny") |>
+    req_options(timeout = 15) |>
     req_perform()
 
-  txt <- resp_body_string(resp)
+  raw <- resp_body_raw(resp)
 
-  items <- fromJSON(txt, simplifyVector = FALSE)
+  fs::dir_create(fs::path_dir(dest_file))
+  writeBin(raw, dest_file)
 
-  map_dfr(items, parse_channel_item, country_code = country_code) |>
-    filter(!is.na(url), nzchar(url)) |>
-    distinct(url, .keep_all = TRUE)
+  TRUE
 }
 
-looks_like_live_stream <- function(type, url, timeout_sec = 5) {
-  if (is.na(url) || !nzchar(url)) {
-    return(FALSE)
-  }
+safe_download <- purrr::safely(download_one_country_file)
 
-  if (identical(type, "youtube")) {
-    return(grepl("^https://www\\.youtube-nocookie\\.com/embed/", url))
-  }
+# ------------------------------------------------------------
+# Check
+# ------------------------------------------------------------
 
-  if (!identical(type, "hls")) {
-    return(FALSE)
-  }
+check_country_files <- function() {
+  fs::dir_create(CACHE_DIR)
 
-  if (!grepl("\\.m3u8($|\\?)", url, ignore.case = TRUE)) {
-    return(FALSE)
-  }
+  remote <- get_github_country_manifest()
+  local  <- read_local_manifest()
 
-  out <- tryCatch(
-    {
-      resp <- request(url) |>
-        req_method("GET") |>
-        req_options(timeout = timeout_sec) |>
-        req_headers(
-          `User-Agent` = "Mozilla/5.0",
-          Accept = "application/vnd.apple.mpegurl, application/x-mpegURL, */*"
-        ) |>
-        req_perform()
-
-      status <- resp_status(resp)
-      body <- tryCatch(resp_body_string(resp), error = function(e) "")
-
-      status < 400 && grepl("#EXTM3U", body, fixed = TRUE)
-    },
-    error = function(e) FALSE
-  )
-
-  isTRUE(out)
-}
-
-prefilter_streams <- function(channels, max_check = 20) {
-  if (nrow(channels) == 0) {
-    return(channels)
-  }
-
-  youtube_ok <- channels |>
-    filter(type == "youtube") |>
-    mutate(live_ok = TRUE)
-
-  hls_candidates <- channels |>
-    filter(type == "hls")
-
-  if (nrow(hls_candidates) > max_check) {
-    hls_candidates <- hls_candidates |>
-      slice_sample(n = max_check)
-  }
-
-  hls_checked <- hls_candidates |>
-    mutate(live_ok = map2_lgl(type, url, looks_like_live_stream))
-
-  bind_rows(youtube_ok, hls_checked) |>
-    filter(live_ok)
-}
-
-pick_four <- function(channels) {
-  n_pick <- min(4, nrow(channels))
-
-  if (n_pick == 0) {
-    return(channels[0, , drop = FALSE])
-  }
-
-  channels |>
-    slice_sample(n = n_pick)
-}
-
-make_player <- function(id, name, type, url) {
-  if (identical(type, "youtube")) {
-    src <- paste0(
-      url,
-      if (grepl("\\?", url)) "&" else "?",
-      "autoplay=1&mute=1&playsinline=1&controls=1"
-    )
-
-    return(
-      div(
-        class = "tv-box",
-        div(class = "tv-title", name),
-        tags$iframe(
-          src = src,
-          allow = "autoplay; encrypted-media; picture-in-picture",
-          allowfullscreen = NA,
-          referrerpolicy = "strict-origin-when-cross-origin",
-          style = "width:100%; height:100%; border:0;"
-        )
+  remote |>
+    left_join(
+      local |> select(country_code, local_sha = sha),
+      by = "country_code"
+    ) |>
+    mutate(
+      status = case_when(
+        is.na(local_sha) ~ "new",
+        sha != local_sha ~ "changed",
+        TRUE ~ "unchanged"
       )
-    )
-  }
+    ) |>
+    arrange(desc(status), country_code)
+}
 
-  video_id <- paste0("video_", id)
+# ------------------------------------------------------------
+# Download updates
+# ------------------------------------------------------------
 
-  div(
-    class = "tv-box",
-    div(class = "tv-title", name),
-    tags$video(
-      id = video_id,
-      muted = NA,
-      autoplay = NA,
-      playsinline = NA,
-      controls = NA,
-      style = "width:100%; height:100%; background:black;"
+download_updates <- function(comparison) {
+  to_download <- comparison |>
+    filter(status %in% c("new", "changed"))
+
+  results <- purrr::pmap(
+    list(
+      url = to_download$download_url,
+      file = fs::path(CACHE_DIR, to_download$name)
     ),
-    tags$script(HTML(sprintf(
-      "
-      (function() {
-        var video = document.getElementById('%s');
-        var src = %s;
-        if (!video) return;
+    function(url, file) {
+      res <- safe_download(url, file)
 
-        if (video.canPlayType('application/vnd.apple.mpegurl')) {
-          video.src = src;
-        } else if (window.Hls && Hls.isSupported()) {
-          var hls = new Hls({
-            enableWorker: true,
-            lowLatencyMode: true
-          });
-          hls.loadSource(src);
-          hls.attachMedia(video);
-        } else {
-          video.outerHTML =
-            '<div style=\"color:white;padding:1rem;\">HLS understøttes ikke i denne browser.</div>';
-          return;
-        }
+      tibble(
+        file = basename(file),
+        success = is.null(res$error),
+        error = if (!is.null(res$error)) res$error$message else NA_character_
+      )
+    }
+  ) |> bind_rows()
 
-        video.muted = true;
-        video.volume = 0;
+  # opdater manifest uanset hvad
+  new_manifest <- comparison |>
+    select(country_code, name, path, sha, download_url)
 
-        var p = video.play();
-        if (p && typeof p.catch === 'function') {
-          p.catch(function(e) {
-            console.log('Autoplay failed', e);
-          });
-        }
-      })();
-      ",
-      video_id,
-      toJSON(url, auto_unbox = TRUE)
-    )))
+  write_local_manifest(new_manifest)
+
+  list(
+    downloaded = to_download,
+    results = results
   )
 }
+
+# ------------------------------------------------------------
+# UI
+# ------------------------------------------------------------
 
 ui <- fluidPage(
-  tags$head(
-    tags$script(src = "https://cdn.jsdelivr.net/npm/hls.js@latest"),
-    tags$style(HTML("
-      html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background: #111;
-        color: white;
-        overflow: hidden;
-      }
-      .topbar {
-        min-height: 88px;
-        padding: 10px 14px;
-        box-sizing: border-box;
-        background: #1b1b1b;
-        border-bottom: 1px solid #333;
-      }
-      .toprow {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .statusline {
-        margin-top: 8px;
-        font-size: 13px;
-        color: #ccc;
-        white-space: pre-wrap;
-      }
-      .grid-wrap {
-        height: calc(100vh - 104px);
-        padding: 10px;
-        box-sizing: border-box;
-      }
-      .tv-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-        width: 100%;
-        height: 100%;
-      }
-      .tv-box {
-        position: relative;
-        background: black;
-        border: 1px solid #333;
-        overflow: hidden;
-      }
-      .tv-title {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        background: rgba(0, 0, 0, 0.65);
-        padding: 6px 10px;
-        font-size: 14px;
-      }
-      .tv-box iframe,
-      .tv-box video {
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-      .empty-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px dashed #555;
-        background: #181818;
-        color: #bbb;
-        font-size: 16px;
-      }
-    "))
-  ),
-  div(
-    class = "topbar",
-    div(
-      class = "toprow",
-      uiOutput("country_ui"),
-      actionButton("reload_countries", "Genindlæs lande"),
-      actionButton("load_four", "Vælg 4 nye"),
-      checkboxInput("prefer_live", "Forsøg at vælge streams der ser levende ud", value = TRUE)
-    ),
-    div(class = "statusline", textOutput("status_text"))
-  ),
-  div(
-    class = "grid-wrap",
-    uiOutput("grid")
-  )
+  titlePanel("Famelack cache-opdatering"),
+
+  actionButton("run", "Tjek og hent ændringer"),
+
+  br(), br(),
+
+  verbatimTextOutput("summary"),
+
+  h4("Ændringer"),
+  tableOutput("changes"),
+
+  h4("Download status"),
+  tableOutput("download_status")
 )
 
+# ------------------------------------------------------------
+# Server
+# ------------------------------------------------------------
+
 server <- function(input, output, session) {
-  country_codes <- reactiveVal(character())
-  current_channels <- reactiveVal(tibble())
-  selected_four <- reactiveVal(tibble())
 
-  load_country_codes <- function(selected = "ar") {
-    codes <- tryCatch(
-      get_country_codes(),
-      error = function(e) character()
-    )
+  result <- reactiveVal(NULL)
 
-    country_codes(codes)
+  observeEvent(input$run, {
 
-    if (length(codes) > 0) {
-      updateSelectInput(
-        session = session,
-        inputId = "country_code",
-        choices = codes,
-        selected = if (selected %in% codes) selected else codes[[1]]
-      )
-    }
-  }
+    comparison <- check_country_files()
 
-  load_and_pick <- function(country_code, prefer_live = TRUE) {
-    dat <- tryCatch(
-      get_channels_for_country(country_code),
-      error = function(e) tibble()
-    )
+    dl <- download_updates(comparison)
 
-    current_channels(dat)
+    result(list(
+      comparison = comparison,
+      downloaded = dl$downloaded,
+      status = dl$results
+    ))
+  })
 
-    pool <- dat
+  output$summary <- renderText({
+    x <- result()
+    if (is.null(x)) return("Klik på knappen")
 
-    if (prefer_live && nrow(dat) > 0) {
-      checked <- prefilter_streams(dat)
+    comp <- x$comparison
 
-      if (nrow(checked) >= 4) {
-        pool <- checked
-      } else if (nrow(checked) > 0) {
-        pool <- bind_rows(
-          checked,
-          anti_join(dat, checked, by = names(dat))
-        )
-      }
-    }
-
-    selected_four(pick_four(pool))
-  }
-
-  output$country_ui <- renderUI({
-    selectInput(
-      inputId = "country_code",
-      label = "Landekode",
-      choices = country_codes(),
-      selected = if ("ar" %in% country_codes()) "ar" else NULL,
-      width = "180px"
+    paste(
+      "Nye:", sum(comp$status == "new"),
+      "\nÆndrede:", sum(comp$status == "changed"),
+      "\nUændrede:", sum(comp$status == "unchanged")
     )
   })
 
-  observe({
-    load_country_codes("ar")
+  output$changes <- renderTable({
+    x <- result()
+    if (is.null(x)) return(NULL)
+
+    x$comparison |>
+      filter(status != "unchanged") |>
+      select(country_code, name, status)
   })
 
-  observeEvent(input$reload_countries, {
-    load_country_codes(isolate(input$country_code))
-  })
+  output$download_status <- renderTable({
+    x <- result()
+    if (is.null(x)) return(NULL)
 
-  observeEvent(input$country_code, {
-    req(input$country_code)
-    load_and_pick(input$country_code, isTRUE(input$prefer_live))
-  }, ignoreInit = FALSE)
-
-  observeEvent(input$load_four, {
-    req(input$country_code)
-    load_and_pick(input$country_code, isTRUE(input$prefer_live))
-  })
-
-  output$status_text <- renderText({
-    total <- nrow(current_channels())
-    shown <- nrow(selected_four())
-    cc <- input$country_code %||% ""
-    example <- if (total > 0) current_channels()$name[[1]] else "ingen"
-
-    paste0(
-      "Land: ", cc,
-      " | kandidater: ", total,
-      " | vist: ", shown,
-      " | første kanal: ", example
-    )
-  })
-
-  output$grid <- renderUI({
-    dat <- selected_four()
-
-    if (nrow(dat) == 0) {
-      return(
-        div(
-          class = "tv-grid",
-          div(class = "empty-box", "Ingen streams fundet"),
-          div(class = "empty-box", ""),
-          div(class = "empty-box", ""),
-          div(class = "empty-box", "")
-        )
-      )
-    }
-
-    boxes <- lapply(seq_len(min(4, nrow(dat))), function(i) {
-      make_player(
-        id = i,
-        name = dat$name[[i]],
-        type = dat$type[[i]],
-        url = dat$url[[i]]
-      )
-    })
-
-    while (length(boxes) < 4) {
-      boxes[[length(boxes) + 1]] <- div(class = "empty-box", "Ingen ekstra stream")
-    }
-
-    div(class = "tv-grid", tagList(boxes))
+    x$status
   })
 }
 

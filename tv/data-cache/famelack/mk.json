@@ -1,0 +1,55 @@
+[
+  {
+    "nanoid": "aqHJks1jEeRohC",
+    "name": "M-Net HD",
+    "stream_urls": [
+      "https://live.mnet.mk/hls/mnet.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "mkd"
+    ],
+    "country": "mk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yBKcXwhhC0xgHN",
+    "name": "M-Net Info",
+    "stream_urls": [
+      "https://live.mnet.mk/hls/mnet-info.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "mkd"
+    ],
+    "country": "mk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "H7YKUTmTDg1xzR",
+    "name": "M-Net Sport",
+    "stream_urls": [
+      "https://live.mnet.mk/hls/mnet-sport.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "mkd"
+    ],
+    "country": "mk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "6jTUHlY33vUmQu",
+    "name": "Sky Folk TV",
+    "stream_urls": [
+      "https://eu.live.skyfolk.mk/live.m3u8",
+      "https://skyfolk.mk/live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "mkd"
+    ],
+    "country": "mk",
+    "isGeoBlocked": false
+  }
+]

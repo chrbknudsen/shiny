@@ -1,0 +1,171 @@
+[
+  {
+    "nanoid": "cYXM1U8SiVQdBO",
+    "name": "Asia TV",
+    "stream_urls": [
+      "https://stream.asiatvnet.com/1/live/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8GtOpx9EPmjKvR",
+    "name": "Hiru TV",
+    "stream_urls": [
+      "https://tv.hiruhost.com:1936/8012/8012/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Peq2FVjvdeypXQ",
+    "name": "Jaya Tv Live",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/Lw7thETJjss"
+    ],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SfoZRyfL73LUNW",
+    "name": "Karma",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/8xfN8FLGRRU"
+    ],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "84MzFsqan8hkeY",
+    "name": "LiveFM Sri Lanka",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/H7KiZQzLvEs"
+    ],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GqCp27T0s0lfCz",
+    "name": "Methmaga TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/3q4ut6IXRkE"
+    ],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Lb91CXq3a9VbL6",
+    "name": "NDTV LANKA",
+    "stream_urls": [
+      "https://g4wlkqqwl23a-hls-live.5centscdn.com/NDTVLANKA/1ff5fa54d14c3ff6c6bd3918bbb7db5d.sdp/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "tam"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2kFmLsUZ8zPq3c",
+    "name": "Newsfirst Sri Lanka",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/xr_p4vrCPBU"
+    ],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "iGtWdanOFXXJW6",
+    "name": "Pragna TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/76QGhfJgmE0"
+    ],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PV4q0CxdmR4YKH",
+    "name": "Sathi TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/pn4KYPOiHsg"
+    ],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1svuli9OcB1Brg",
+    "name": "Shraddha TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/2GUI-W1lTKE"
+    ],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "93ImfKCer0mJxB",
+    "name": "Siyatha TV",
+    "stream_urls": [
+      "https://rtmp01.voaplus.com/hls/6x6ik312qk4grfxocfcv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BhmoGwl2ZbKr5D",
+    "name": "The Buddhist TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/uU36MCXGlrI"
+    ],
+    "languages": [
+      "sin"
+    ],
+    "country": "lk",
+    "isGeoBlocked": false
+  }
+]

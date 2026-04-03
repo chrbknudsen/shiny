@@ -1,0 +1,665 @@
+[
+  {
+    "nanoid": "8Bv8hcX2tNuzZb",
+    "name": "Antena Uno RadioVideo",
+    "stream_urls": [
+      "https://tvdatta.com:3578/live/antenaunolive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "E9zUPixFiovro2",
+    "name": "Asomavisión",
+    "stream_urls": [
+      "https://asomatv.cloud-ip.cc/livestream/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wNDe4JNBUCreJE",
+    "name": "Austral TV",
+    "stream_urls": [
+      "https://stmv3.voxtvhd.com.br/australtv/australtv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hS6UHUBQ4QoIRq",
+    "name": "Bacán Te Veo",
+    "stream_urls": [
+      "https://stmv6.voxtvhd.com.br/vacantveo2/vacantveo2/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "z55XBR4UrpAo4V",
+    "name": "Canal Sur",
+    "stream_urls": [
+      "https://avm.ecuamedia.net/canalsur/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "m1fqGkSb3kQ4GK",
+    "name": "Ciracu TV",
+    "stream_urls": [
+      "https://cloud37.ecuatel.com/ciracutv/live/manifest.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uvYhuImFYPqlJm",
+    "name": "Curiquingue TV",
+    "stream_urls": [
+      "https://video2.lhdserver.es/pjtv/live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zHfJMORTmUY70P",
+    "name": "Ecotel TV",
+    "stream_urls": [
+      "https://ecoteltv.streamseguro.com:5443/LiveApp/streams/streaming.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "DUbDXmBZU3srKm",
+    "name": "Ecuador TV",
+    "stream_urls": [
+      "https://samson.streamerr.co:8081/shogun/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "eeAmlC3Q8mXg2D",
+    "name": "Ecuavisa Guayaquil",
+    "stream_urls": [
+      "https://dai.google.com/linear/hls/event/GyPkTVDZSXGhpOvxPK7m2g/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "In4LvC44XoPkwN",
+    "name": "Ecuavisa Quito",
+    "stream_urls": [
+      "https://redirector.dps.live/hls-video/c54ac2799874375c81c1672abb700870537c5223/ecuavisa/ecuavisa.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sJtHUQ2FEosClO",
+    "name": "Educa TV",
+    "stream_urls": [
+      "https://avm.ecuamedia.net/educatv/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "c6puAkcPu1cmVK",
+    "name": "El Sol Network TV",
+    "stream_urls": [
+      "https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XUbd7x9yt2DTFl",
+    "name": "FM Mundo",
+    "stream_urls": [
+      "https://video2.makrodigital.com/fmmundo/fmmundo/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "c0ayJmoC3gtMTu",
+    "name": "Hechos Ecuador",
+    "stream_urls": [
+      "https://online.hechosecuador.com:5443/WebRTCApp/streams/hechosecuador.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "IpJn6TkjLhDwxt",
+    "name": "IeanJesus Ecuador",
+    "stream_urls": [
+      "https://cloud37.ecuatel.com/iglesia2020/Stream1/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2m0gEtXYdWeCIN",
+    "name": "Infinita TV",
+    "stream_urls": [
+      "https://s2.tvdatta.com:3753/hybrid/play.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BQiZCJpf4JlMdt",
+    "name": "La Nueva Radio TV 97.7",
+    "stream_urls": [
+      "https://sv72.ecuaradiotv.net/lanuevatv/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "L7QnCoaelggBZN",
+    "name": "La Perla Radio TV",
+    "stream_urls": [
+      "https://eu1.servers10.com:8081/8068/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "6sh2TBEF2ZIvFo",
+    "name": "Latacunga TV",
+    "stream_urls": [
+      "https://stmv1.voxtvhd.com.br/latacungatv/latacungatv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2UL8hACEyKl0pF",
+    "name": "Loreto TV",
+    "stream_urls": [
+      "https://loretotv.moxapps.shop/live/QFM7KYOlxWd47ybXB3Z1u2P13Py1/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "eY8XIdgCVwivBP",
+    "name": "Majestad Televisión",
+    "stream_urls": [
+      "https://videoserver.tmcreativos.com:19360/majestadtv/majestadtv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "E3rLmWg3JB8sKD",
+    "name": "MakroDigital Television",
+    "stream_urls": [
+      "https://makrodigitaltv.makrodigital.com/makrodigitaltelevision/iptv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FGyCVJPaRuIHAX",
+    "name": "Manavisión",
+    "stream_urls": [
+      "https://play.once.net.ec/play/Ily2oYdd3E1fi9wK2zORoRovFU9P5xM0g3CNVK2MT0M/.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "6NiB9jvMcOgHX5",
+    "name": "Mel Radio TV",
+    "stream_urls": [
+      "https://eu1.servers10.com:8081/8334/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "nZf5oRgjRdisx5",
+    "name": "Metropoli Medios TV",
+    "stream_urls": [
+      "https://eu1.servers10.com:8081/8214/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uyqGhNahms3fZ0",
+    "name": "Multicanal Catamayo",
+    "stream_urls": [
+      "https://multicanal.streamseguro.com:5443/LiveApp/streams/streaming.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CR0jUhLqfPaEmf",
+    "name": "Nortvisión",
+    "stream_urls": [
+      "https://server.asilivehd.com:3242/live/nortvisionlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1rUb7jXosDq9U6",
+    "name": "Ñuka TV",
+    "stream_urls": [
+      "https://cloudvideo.servers10.com:8081/8118/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4ytSfKDZHX9kDO",
+    "name": "Ondas Quevedeñas TV",
+    "stream_urls": [
+      "https://stmv6.voxtvhd.com.br/radiosuprema/radiosuprema/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LRZplckRTbzRYe",
+    "name": "Oromar TV",
+    "stream_urls": [
+      "https://stream.oromar.tv/hls/oromartv_hi/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "if95kHJ4URww0a",
+    "name": "PJ Digital Radio TV",
+    "stream_urls": [
+      "https://vdo1.panelstreaming.live:3363/hybrid/play.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xWGjAVSP39eb8X",
+    "name": "Plus TV",
+    "stream_urls": [
+      "https://plustv.streamseguro.com:5443/LiveApp/streams/streaming.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yQP21gjr5nH5Wg",
+    "name": "Puruwa TV",
+    "stream_urls": [
+      "https://live.tvcontrolcp.com:1936/puruwatv/puruwatv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zXlX9cxqgTkhd2",
+    "name": "Radio Bonita 106.7",
+    "stream_urls": [
+      "https://cloudvideo.servers10.com:8081/8154/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LlQAZHVUJoGSEm",
+    "name": "Radio Cuenca Estéreo",
+    "stream_urls": [
+      "https://eu1.servers10.com:8081/8074/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PZkl1QNtloGB1B",
+    "name": "Radio Impacto 2",
+    "stream_urls": [
+      "https://panel.streamingtv-mediacp.online:1936/jawepvrvyz/jawepvrvyz/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "QpaipzMOWMjyyR",
+    "name": "Radio Monumental TV",
+    "stream_urls": [
+      "https://cloud37.ecuatel.com/monumentaltv/live/manifest.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xVqW7TFhiaRWy0",
+    "name": "Red TVE Ventanas",
+    "stream_urls": [
+      "https://s2.tvdatta.com:3825/live/redtvelive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SaGLTOGoC0bQPx",
+    "name": "RTRTV",
+    "stream_urls": [
+      "https://tv3ecuador.site/hls/stream/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "0Vw6NdTRGURL25",
+    "name": "RTU",
+    "stream_urls": [
+      "https://video1.makrodigital.com/rtu/rtu/chunks.m3u8?nimblesessionid="
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GMkpwotjB860aV",
+    "name": "RTV Riobamba",
+    "stream_urls": [
+      "https://sv72.ecuaradiotv.net/rtvhd/live/manifest.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WCNgs5Fvq7rKOn",
+    "name": "Señal Positiva TV",
+    "stream_urls": [
+      "https://eu1.servers10.com:8081/8108/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gU9qpItJjz9ZDd",
+    "name": "Sono Onda TV",
+    "stream_urls": [
+      "https://live.obslivestream.com/sonoondatv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3TCmSy7n4qBhND",
+    "name": "Telemar",
+    "stream_urls": [
+      "https://cloudpro.servidoresdestream.com:8081/8020/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LX5wXVXTxx5iPK",
+    "name": "Telerama",
+    "stream_urls": [
+      "https://play.once.net.ec/telerama/live.tv/538.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "7rCpyg4PCpPsco",
+    "name": "TV Color Canal 36",
+    "stream_urls": [
+      "https://video.compuwebecuador.com:3067/live/tvcolorlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LfL7xtgZtyuyhr",
+    "name": "TV Universal Ecuador",
+    "stream_urls": [
+      "https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uhXaKy0zwMPJAb",
+    "name": "UNIANDES TV",
+    "stream_urls": [
+      "https://video.compuwebecuador.com:3323/live/uniandeslive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9TUqw93GWA6FwZ",
+    "name": "Vos y TV",
+    "stream_urls": [
+      "https://cloud37.ecuatel.com/vostv/live/manifest.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "M10FM4kxvf869B",
+    "name": "Zaracay TV",
+    "stream_urls": [
+      "https://video2.makrodigital.com/zaracay/zaracay/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "ec",
+    "isGeoBlocked": false
+  }
+]

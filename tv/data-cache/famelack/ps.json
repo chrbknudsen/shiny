@@ -1,0 +1,159 @@
+[
+  {
+    "nanoid": "PtKPvCho1AKJIx",
+    "name": "Al Madina",
+    "stream_urls": [
+      "https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1tmOFuhpyGCSup",
+    "name": "Al Najah News",
+    "stream_urls": [
+      "https://streaming.najah.edu:8443/hls/AlNajah.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "foEVFoZwWIxidj",
+    "name": "Falastini TV",
+    "stream_urls": [
+      "https://rp.tactivemedia.com/palestiniantv_source/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qtsvyZ238Pd7nc",
+    "name": "MusawaChannel",
+    "stream_urls": [
+      "https://pbc.furrera.ps/musawahd/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qHPud6QAjClK6g",
+    "name": "Palestine Edu",
+    "stream_urls": [
+      "https://pbc.furrera.ps/PalestineEDU/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "kMBDQu4FHfVDdk",
+    "name": "Palestine Mubasher",
+    "stream_urls": [
+      "https://pbc.furrera.ps/palestinelivehd/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fwZ0THu9CrthiO",
+    "name": "Palestine Satellite Channel",
+    "stream_urls": [
+      "https://pbc.furrera.ps/palestinehd/index.m3u8",
+      "https://cdn-globecast.akamaized.net/live/eds/palestinian_satellite_channel/hls_roku/palestinian_satellite_channel.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JNDKGXOqR8Ky21",
+    "name": "Palestine Today",
+    "stream_urls": [
+      "https://live.paltodaytv.com/paltv/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "szNEw4C0KNRO1w",
+    "name": "Radio Albalad TV",
+    "stream_urls": [
+      "https://streaming.zaytonatube.com:8081/radioalbalad/radioalbalad/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yN7j4xBxGOsptK",
+    "name": "Rajeen TV",
+    "stream_urls": [
+      "https://mn-nl.mncdn.com/palabroad/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "symrkwvSEOlnh3",
+    "name": "Shabab FM",
+    "stream_urls": [
+      "https://streaming.zaytonatube.com:8081/ShababFM/shabab/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zJ9zGl534t9s19",
+    "name": "Watar TV",
+    "stream_urls": [
+      "https://htvint.mada.ps/orient/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ps",
+    "isGeoBlocked": false
+  }
+]

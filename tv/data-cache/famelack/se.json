@@ -1,0 +1,144 @@
+[
+  {
+    "nanoid": "v8Zzxjpx6SD9DW",
+    "name": "ATG Live",
+    "stream_urls": [
+      "https://kanal75xto-llhls.akamaized.net/live/Data/atg-kanal-15-02a-rr/HLS-Legacy-HL/atg-kanal-15-02a-rr.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "swe"
+    ],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xr1LfFDuhPVb7E",
+    "name": "Di TV",
+    "stream_urls": [
+      "https://cdn0-03837-liveedge0.dna.ip-only.net/03837-liveedge0/smil:03837-tx4/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "swe"
+    ],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vVfgeuE3MFU5jS",
+    "name": "Expressen TV",
+    "stream_urls": [
+      "https://cdn0-03837-liveedge0.dna.ip-only.net/03837-liveedge0/smil:03837-tx2/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "swe"
+    ],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MFBhdF22oHPsQx",
+    "name": "Komala TV",
+    "stream_urls": [
+      "https://komhls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kur"
+    ],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "04GOTYhpn6ZcuB",
+    "name": "Love Magazine",
+    "stream_urls": [
+      "https://amg01821-lovetvchannels-lovemagazineuk-samsungse-p1sf1.amagi.tv/playlist/amg01821-lovetvchannels-lovemagazineuk-samsungse/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "K6jDHU82waG31p",
+    "name": "Love Pets",
+    "stream_urls": [
+      "https://amg01576-blueskyeenterta-lovepetsemea-samsungse-ctamh.amagi.tv/playlist/amg01576-blueskyeenterta-lovepetsemea-samsungse/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "An1Is33qOccMLw",
+    "name": "Miracle TV",
+    "stream_urls": [
+      "https://live.miracleonline.org/hls/miracle1.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LWXmSBrEE8B8bT",
+    "name": "Myzen Fit",
+    "stream_urls": [
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-samsungen-samsungse/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "raRWEECGiZDqmU",
+    "name": "NatureTime",
+    "stream_urls": [
+      "https://amg00090-blueantmedia-naturetime-samsungse-axgcn.amagi.tv/playlist/amg00090-blueantmedia-naturetime-samsungse/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "G98RV2eeyHyp1d",
+    "name": "The Chat Show Channel",
+    "stream_urls": [
+      "https://amg00426-littledotstudio-thechatshow-samsungse-n39q0.amagi.tv/playlist/amg00426-littledotstudio-thechatshow-samsungse/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yRFpQt0Uge4TEm",
+    "name": "The Wicked Tuna Channel",
+    "stream_urls": [
+      "https://amg00353-lionsgatestudio-wickedtunase-samsungse-w4kcr.amagi.tv/playlist/amg00353-lionsgatestudio-wickedtunase-samsungse/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "se",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wETjJuUNWWDAGH",
+    "name": "Waterbear",
+    "stream_urls": [
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01415-waterbearnetwor-waterbear-samsungse/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "se",
+    "isGeoBlocked": false
+  }
+]

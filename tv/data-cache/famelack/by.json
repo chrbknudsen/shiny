@@ -1,0 +1,54 @@
+[
+  {
+    "nanoid": "yxXfCHd5uHQMJD",
+    "name": "Беларусь 5",
+    "stream_urls": [
+      "https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "by",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "e1Kg7iPhVSl1dS",
+    "name": "БЕЛСАТ NEWS",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/YA9ukP4k_Fk"
+    ],
+    "languages": [
+      "bel"
+    ],
+    "country": "by",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1lACURA3RDW6jo",
+    "name": "Первый информационный",
+    "stream_urls": [
+      "https://ngtrk.dc.beltelecom.by/ngtrk/smil:informacionnyy.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "bel"
+    ],
+    "country": "by",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "tMbsI4ezeoctSl",
+    "name": "СТБ",
+    "stream_urls": [
+      "https://ctv.dc.beltelecom.by/ctv/ctv.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "by",
+    "isGeoBlocked": false
+  }
+]

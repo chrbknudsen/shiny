@@ -1,0 +1,184 @@
+[
+  {
+    "nanoid": "ZOwQAPUGPgS297",
+    "name": "4DmásNoticias TV",
+    "stream_urls": [
+      "https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MC0Hkz9sP3iFPv",
+    "name": "Almaya TV",
+    "stream_urls": [
+      "https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JAreuKNijuO7ug",
+    "name": "Bruno Masi TV",
+    "stream_urls": [
+      "https://rds3.desdeparaguay.net/brunomasitv/brunomasitv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "25sR85AzUm40hS",
+    "name": "Canal 5 TV Max",
+    "stream_urls": [
+      "https://video.wilohosting.com:19360/tvmax/tvmax.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "iwb8ig6ItKcHS0",
+    "name": "Cáritas TV",
+    "stream_urls": [
+      "https://rds3.desdeparaguay.net/caritastv/caritastv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BZ9ohjnwvpwyuR",
+    "name": "Cosmos TV",
+    "stream_urls": [
+      "https://video.hostingcaaguazu.com:19360/cosmostv/cosmostv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RszKNvM58V3E5m",
+    "name": "Dismar Radio TV",
+    "stream_urls": [
+      "https://rds3.desdeparaguay.net/dismartv/dismartv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "KorxP0jgE3cFyZ",
+    "name": "GO TV",
+    "stream_urls": [
+      "https://rds3.desdeparaguay.net/gotv/gotv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "blN8uMLBNq1v02",
+    "name": "LIM TV",
+    "stream_urls": [
+      "https://tv.invasivamedia.com/hls/limtv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ksZqh8hqVd6zjZ",
+    "name": "MiTV",
+    "stream_urls": [
+      "https://rds3.desdeparaguay.net/mitv/mitv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mKiiX9v0iS1lOZ",
+    "name": "Next HD",
+    "stream_urls": [
+      "https://live.enhdtv.com:19360/nexthd/nexthd.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yjn0fCt96jnweK",
+    "name": "República TV",
+    "stream_urls": [
+      "https://rds3.desdeparaguay.net/republicatv/republicatv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZvkiWYEeuwp6wf",
+    "name": "Suceso TV",
+    "stream_urls": [
+      "https://live.enhdtv.com:8081/8060/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ASrUvdpVK7ci3L",
+    "name": "UnionTV",
+    "stream_urls": [
+      "https://tigocloud.desdeparaguay.net/800tv/800tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  }
+]

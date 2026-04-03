@@ -1,0 +1,262 @@
+[
+  {
+    "nanoid": "CyX7gTzMI3L05o",
+    "name": "Agape TV",
+    "stream_urls": [
+      "https://5fc584f3f19c9.streamlock.net/agape/smil:agape.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "V4sGn5fdh6Yqri",
+    "name": "Árbol de Vida TV",
+    "stream_urls": [
+      "https://yupistream.top:19360/livearbol/livearbol.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "YYSyi5o00uvneu",
+    "name": "Canal 3 Impresionante",
+    "stream_urls": [
+      "https://cloud2.streaminglivehd.com:2020/hls/8036/8036.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vNCLFtuOMVJo2z",
+    "name": "Canal 10",
+    "stream_urls": [
+      "https://5ca3e84a76d30.streamlock.net/tves/videotves/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aM75JGWBPQWWgI",
+    "name": "Canal 11 TuTV",
+    "stream_urls": [
+      "https://stream.giostreaming.app/canal11/canal11.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2JuIWNzpBvexFE",
+    "name": "Canal 26 TV IAP",
+    "stream_urls": [
+      "https://vdo.tecnoservix.stream:3899/live/canal26tvlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lZCJ28tnHKpEgP",
+    "name": "El Camino TV",
+    "stream_urls": [
+      "https://5d32e2b9b7eed.streamlock.net:4443/ectv/ectv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Yd25no3suS2myQ",
+    "name": "Elim TV",
+    "stream_urls": [
+      "https://stream.soporteccrtv.xyz/hls/master-dveo.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "d3wecW45nAhRjr",
+    "name": "JFV TV",
+    "stream_urls": [
+      "https://2nbyj587d53k-hls-live.5centscdn.com/09/25b94ec89b2aa708c3c4ad0014b09845.sdp/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "It09WcJXuh2yq1",
+    "name": "Josué TV",
+    "stream_urls": [
+      "https://videoserver.tmcreativos.com:19360/abbftuhxxs/abbftuhxxs.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NLIFoRpmAx5nwO",
+    "name": "Legislative Assembly of El Salvador",
+    "stream_urls": [
+      "https://streaming.asamblea.gob.sv/hls/plenariahd.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jhAGtHDvu4df4q",
+    "name": "Megavisión Canal 19",
+    "stream_urls": [
+      "https://mgvchannel19-ioriver-cdn.encoders.immergo.tv/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9ARAbe35VYipVs",
+    "name": "Megavisión Canal 21",
+    "stream_urls": [
+      "https://mgvchannel21-ioriver-cdn.encoders.immergo.tv/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "IrNZrLk3v8KoJe",
+    "name": "RTV Canal 57",
+    "stream_urls": [
+      "https://stream.giostreaming.app/rtvcanal57/rtvcanal57.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gw44pwRAIbfQlt",
+    "name": "Taber TV",
+    "stream_urls": [
+      "https://5fc584f3f19c9.streamlock.net/tabertv/videotabertv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "oiFEO2uBrrWk1f",
+    "name": "Tigo Sports TV El Salvador",
+    "stream_urls": [
+      "https://channel03.tigosports.com.sv/out/v1/31f36d52d558475ca18799d8ca5e4b40/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Blt46frCkDVO7v",
+    "name": "TV CRET",
+    "stream_urls": [
+      "https://radiocret.net:8082/hls/tvcret.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Jx6LDrmycTsFql",
+    "name": "TV Getsemaní",
+    "stream_urls": [
+      "https://serversv.com:8080/hls/tvgetsemani.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "h8wvrpeqCIA0Cx",
+    "name": "TV León de Judá",
+    "stream_urls": [
+      "https://6110f70ea8d0e.streamlock.net/1838/1838/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "b1EAokD2bBiJTE",
+    "name": "TVCa Televisión Católica Arquidiocesana",
+    "stream_urls": [
+      "https://live20.bozztv.com/akamaissh101/ssh101/tvcaelsalvador/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "sv",
+    "isGeoBlocked": false
+  }
+]
