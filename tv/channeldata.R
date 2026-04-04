@@ -8,6 +8,8 @@ library(fs)
 
 # ------------------------------------------------------------
 # Hjælpefunktion
+# Returnerer y hvis x er na, eller er null eller har længden
+# 0. En "returner y hvis x er ubrugelig"
 # ------------------------------------------------------------
 
 `%||%` <- function(x, y) {
