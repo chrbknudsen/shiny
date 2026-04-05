@@ -6,19 +6,9 @@ library(httr2)
 library(readr)
 library(fs)
 
-# ------------------------------------------------------------
-# Hjælpefunktion
-# Returnerer y hvis x er na, eller er null eller har længden
-# 0. En "returner y hvis x er ubrugelig"
-# ------------------------------------------------------------
-
 `%||%` <- function(x, y) {
   if (is.null(x) || length(x) == 0 || (length(x) == 1 && is.na(x))) y else x
 }
-
-# ------------------------------------------------------------
-# GitHub metadata for country-filer
-# ------------------------------------------------------------
 
 get_github_country_manifest <- function(
   owner = "famelack",
@@ -49,10 +39,6 @@ get_github_country_manifest <- function(
     arrange(country_code)
 }
 
-# ------------------------------------------------------------
-# Lokal manifest-fil
-# ------------------------------------------------------------
-
 read_local_manifest <- function(manifest_file) {
   if (!file.exists(manifest_file)) {
     return(tibble(
@@ -72,10 +58,6 @@ write_local_manifest <- function(manifest, manifest_file) {
   readr::write_csv(manifest, manifest_file)
 }
 
-# ------------------------------------------------------------
-# Download én fil
-# ------------------------------------------------------------
-
 download_one_country_file <- function(download_url, dest_file) {
   fs::dir_create(fs::path_dir(dest_file))
 
@@ -86,10 +68,6 @@ download_one_country_file <- function(download_url, dest_file) {
   writeLines(resp_body_string(resp), dest_file, useBytes = TRUE)
   invisible(dest_file)
 }
-
-# ------------------------------------------------------------
-# Synkroniser lokale json-filer mod GitHub
-# ------------------------------------------------------------
 
 sync_famelack_country_files <- function(
   cache_dir = "data-cache/famelack",
@@ -146,14 +124,17 @@ sync_famelack_country_files <- function(
 
     if (nrow(removed) > 0) {
       removed_files <- fs::path(cache_dir, removed$name)
-      file.exists_vec <- file.exists(removed_files)
+      file_exists_vec <- file.exists(removed_files)
 
-      if (any(file.exists_vec)) {
-        file.remove(removed_files[file.exists_vec])
+      if (any(file_exists_vec)) {
+        file.remove(removed_files[file_exists_vec])
       }
 
       if (verbose) {
-        message("Fjernede lokale filer som ikke længere findes på GitHub: ", nrow(removed))
+        message(
+          "Fjernede lokale filer som ikke længere findes på GitHub: ",
+          nrow(removed)
+        )
       }
     }
   }
@@ -166,10 +147,6 @@ sync_famelack_country_files <- function(
     downloaded = to_download
   ))
 }
-
-# ------------------------------------------------------------
-# Parse én landefil
-# ------------------------------------------------------------
 
 parse_channel_item <- function(item, country_code) {
   stream_url <- if (!is.null(item$stream_urls) && length(item$stream_urls) > 0) {
@@ -194,7 +171,7 @@ parse_channel_item <- function(item, country_code) {
       is.na(stream_url) & !is.na(youtube_url) ~ "youtube",
       TRUE ~ NA_character_
     ),
-    url = coalesce(stream_url, youtube_url),
+    url = dplyr::coalesce(stream_url, youtube_url),
     language = paste(item$languages %||% character(), collapse = ","),
     country = item$country %||% country_code,
     isGeoBlocked = isTRUE(item$isGeoBlocked)
@@ -208,10 +185,6 @@ read_country_json <- function(path) {
 
   map_dfr(items, parse_channel_item, country_code = country_code)
 }
-
-# ------------------------------------------------------------
-# Hent alle kanaler fra lokale filer
-# ------------------------------------------------------------
 
 load_all_famelack_channels_from_cache <- function(
   cache_dir = "data-cache/famelack",
@@ -248,4 +221,28 @@ load_all_famelack_channels_from_cache <- function(
   map_dfr(json_files, read_country_json) |>
     filter(!is.na(url), nzchar(url)) |>
     distinct(country, url, .keep_all = TRUE)
+}
+
+# ------------------------------------------------------------
+# Den ene funktion din Shiny-app skal kalde
+# ------------------------------------------------------------
+
+get_famelack_channels <- function(
+  cache_dir = "data-cache/famelack",
+  sync = TRUE,
+  save_rds = TRUE,
+  rds_name = "channels.rds",
+  verbose = TRUE
+) {
+  channels <- load_all_famelack_channels_from_cache(
+    cache_dir = cache_dir,
+    sync_first = sync,
+    verbose = verbose
+  )
+
+  if (save_rds) {
+    readr::write_rds(channels, fs::path(cache_dir, rds_name))
+  }
+
+  channels
 }
