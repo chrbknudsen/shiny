@@ -1,0 +1,433 @@
+[
+  {
+    "nanoid": "VpnuhazqcUGfL9",
+    "name": "ACNN",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_014/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "D6dxjs1hy0YRqm",
+    "name": "Advocate Broadcasting Network",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_045/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gZ1nRlS0xe1gmU",
+    "name": "AMusic Channel",
+    "stream_urls": [
+      "https://mn-nl.mncdn.com/amusictv/amusicsrt.stream/playlist.m3u8",
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_021/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MP4bBMx7wAtF5b",
+    "name": "Arise News",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/E8PRZmDUiPw"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "oMYsTXZabJichu",
+    "name": "BCS StarCross TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_001/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "eDIRsvbznkqNXS",
+    "name": "Bride TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_013/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sGnhPtaEIv2fu6",
+    "name": "Channels Television",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/W8nThq62Vb4"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mgGC7svsZDR6YC",
+    "name": "Chosen TV English",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_024/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bffZLbFoIaHfFI",
+    "name": "Coza TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_019/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TCsupF1gbD5yUF",
+    "name": "Flame TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_010/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FJT1T5Bg3eMVVa",
+    "name": "Itage TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_011/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "yor"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jsFrBbDFba8Hpn",
+    "name": "Kingsview TV",
+    "stream_urls": [
+      "https://j78dp6reyq5r-hls-live.5centscdn.com/4896_push_1963_001/00cb1f2e4ff89048f2e77e26940c00e6.sdp/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "YSG1ZKKDkWTBCC",
+    "name": "LoveWorld Arabic",
+    "stream_urls": [
+      "https://go5lm6a6dawb-hls-live.5centscdn.com/lwarabic/53132d996b4263ec0d7b602292c46eaf.sdp/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8pEfgic6D8bCYA",
+    "name": "LoveWorld Persia",
+    "stream_urls": [
+      "https://cdn3.wowza.com/5/aVJETlF0UFdmYTFu/LWPP/ngrp:persia.stream_all/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "fas"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TBxSPvQ6n0EnHc",
+    "name": "Loveworld UK",
+    "stream_urls": [
+      "https://cdn3.wowza.com/5/L1Uzd2FrbVlLRG1W/live/smil:lwukweb.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "g0g57daMRjy1h2",
+    "name": "LoveWorld USA",
+    "stream_urls": [
+      "https://cdn3.wowza.com/5/RGtVZkFxL3FOQkxX/LWU/ngrp:lwu.stream_all/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2lSQKgNTcLT9IY",
+    "name": "LoveworldSAT",
+    "stream_urls": [
+      "https://cdnstack.internetmultimediaonline.org/lwsat/lwsat.stream/index.m3u8",
+      "https://cdnstack.internetmultimediaonline.org/lwsat/lwsat.stream/chunklist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "upoMW9Qmuknc8B",
+    "name": "New Vision TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_027/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "HUxeirBEJ9XVlF",
+    "name": "News Central",
+    "stream_urls": [
+      "https://wf.newscentral.ng:8443/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "DGyLo10RdXeXNy",
+    "name": "News Central TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/peQ8R-8HTyI"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "D7CJtpvcn5aeRw",
+    "name": "Nigbati",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_023/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SYkeshgW48vaJo",
+    "name": "Qausain TV",
+    "stream_urls": [
+      "https://acasmedia3.acangroup.org/qausaintv/qausaintv_output/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ieGP7N8F1NST0g",
+    "name": "Rave TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_039/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "pucd0GDLw4l5UG",
+    "name": "Salvation TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_017/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "eTR6HfJcfuibOg",
+    "name": "Sunna TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_015/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Am4Jb6RFmtHHBI",
+    "name": "Superscreen TV",
+    "stream_urls": [
+      "https://video1.getstreamhosting.com:1936/8398/8398/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BMyGZ4b2McxkBQ",
+    "name": "Synagogue TV",
+    "stream_urls": [
+      "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_038/Stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Iz3l4KLYDLXwEs",
+    "name": "TVC News",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/Mv14aabg4mA"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lU3vhIeIZy1ObI",
+    "name": "TVC News Nigeria",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/b-Yzp0l8cAM"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Y3iniHuYhBuCQD",
+    "name": "Wap TV",
+    "stream_urls": [
+      "https://newproxy3.vidivu.tv/waptv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XBCn7LG1vDEDMn",
+    "name": "Wazobia Max TV Nigeria",
+    "stream_urls": [
+      "https://wazobia.live:8333/channel/wmax.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Uu8JpSpXEkB3Wk",
+    "name": "Wazobia Max TV Port Harcourt",
+    "stream_urls": [
+      "https://wazobia.live:8333/channel/wmaxph.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "roS6e38nLtSy8d",
+    "name": "Whole Word TV",
+    "stream_urls": [
+      "https://mn-nl.mncdn.com/wholewordtv/wholewordtv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ng",
+    "isGeoBlocked": false
+  }
+]

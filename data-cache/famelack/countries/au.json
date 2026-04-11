@@ -1,0 +1,395 @@
+[
+  {
+    "nanoid": "yHegYqGe8Y9Q5E",
+    "name": "10 Bold Adelaide",
+    "stream_urls": [
+      "https://dce3793146fef017.mediapackage.us-west-2.amazonaws.com/out/v1/55cdf73af7894775ba6de8f57482b66a/CMAF_HLS/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "l3j5k47cRFPEax",
+    "name": "ABC News",
+    "stream_urls": [
+      "https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "e5UVFol9mf1Sy9",
+    "name": "ABC News Australia",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/vOTiJkg1voo"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1kGzlc1JUirLRX",
+    "name": "Action Hollywood Movies",
+    "stream_urls": [
+      "https://amg01076-lightningintern-actionhollywood-samsungau-rs69y.amagi.tv/playlist/amg01076-lightningintern-actionhollywood-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OTtgOdMuzH3Ad4",
+    "name": "ausbiz TV",
+    "stream_urls": [
+      "https://d9quh89lh7dtw.cloudfront.net/public-output/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aODKbBqnVbvVaT",
+    "name": "Breaking News by LeadStory",
+    "stream_urls": [
+      "https://amg02703-leadstory-leadstory-samsungau-rr75f.amagi.tv/playlist/amg02703-leadstory-leadstory-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GQz6svOBo4mRax",
+    "name": "C31 Melbourne",
+    "stream_urls": [
+      "https://d1k6kax80wecy5.cloudfront.net/RLnAKY/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1U3UtAxYHSHl5p",
+    "name": "Channel 44",
+    "stream_urls": [
+      "https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FGk4W1SOac0zWS",
+    "name": "Come Dine With Me",
+    "stream_urls": [
+      "https://amg00654-itv-amg00654c2-samsung-au-925.playouts.now.amagi.tv/itv-cdwmug/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "IfnxbQq9uKgPVF",
+    "name": "CTB Perth",
+    "stream_urls": [
+      "https://live.ctbperth.net.au/hls/0/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5OROd5MAKjXezh",
+    "name": "CTB Perth Movies",
+    "stream_urls": [
+      "https://movies.ctbperth.net.au/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fKperBii2EQlSc",
+    "name": "CTB Perth News",
+    "stream_urls": [
+      "https://news.ctbperth.net.au/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SDpOmaM8ReQVej",
+    "name": "Escape to the Country",
+    "stream_urls": [
+      "https://amg00145-amg00145c11-samsung-au-6579.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1urxVFjg7HoQcm",
+    "name": "Expo Channel",
+    "stream_urls": [
+      "https://tvsnhlslivetest.akamaized.net/hls/live/2034711/EXPO-MSL4/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XB4BFMqnkxzcGs",
+    "name": "Hardcore Pawn",
+    "stream_urls": [
+      "https://amg00627-banijay-amg00627c8-samsung-au-1827.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "seVHct3Uumavw6",
+    "name": "Highway Thru Hell",
+    "stream_urls": [
+      "https://amg00627-amg00627c15-samsung-au-2899.playouts.now.amagi.tv/playlist/amg00627-banijayfast-highwaythruhell-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "KwAEmvETZkGGal",
+    "name": "History and Warfare Now",
+    "stream_urls": [
+      "https://d28gzbv9fhdm3h.cloudfront.net/playlist/amg00376-magellantv-historyandwarfarenowaunzin-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "pmtAxTGBGTpwKV",
+    "name": "Leaderboard Sports News",
+    "stream_urls": [
+      "https://amg02703-amg02703c20-samsung-au-9093.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Pni7NN9iGNo5rZ",
+    "name": "Mission Asia",
+    "stream_urls": [
+      "https://livecdn.live247stream.com/missionasia/tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uN8s1HXt717tW1",
+    "name": "MTRSPT 1",
+    "stream_urls": [
+      "https://amg02873-kravemedia-mtrspt1-samsungau-2anp4.amagi.tv/playlist/amg02873-kravemedia-mtrspt1-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "siYSLI1pawS79B",
+    "name": "PBS History",
+    "stream_urls": [
+      "https://amg02333-pbs-amg02333c1-samsung-au-1253.playouts.now.amagi.tv/playlist/amg02333-pbsdistributionfast-pbshistory-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aEA9HCmAFla92u",
+    "name": "PBS Science",
+    "stream_urls": [
+      "https://amg02333-pbs-amg02333c13-samsung-au-6858.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "x7UrDCBQovwcLc",
+    "name": "Project Runway",
+    "stream_urls": [
+      "https://amg02189-amg02189c1-samsung-au-5798.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RaAuUrd4DsoNBL",
+    "name": "Pulse",
+    "stream_urls": [
+      "https://amg01076-lightningintern-pulse-samsungau-4a45e.amagi.tv/playlist/amg01076-lightningintern-pulse-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "t3FRxzQWFcum3k",
+    "name": "RCM",
+    "stream_urls": [
+      "https://samsungau-rialtosamsungaustralia-al2rg.amagi.tv/playlist/samsungau-rialtosamsungaustralia/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Rh2TMvjYLEWCNX",
+    "name": "Real Crime",
+    "stream_urls": [
+      "https://lds-realcrime-samsungau.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "86AfUT4ix8tXB4",
+    "name": "Sky News Extra 1",
+    "stream_urls": [
+      "https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XhdBZ8hLIsYvg1",
+    "name": "Sky News Extra 2",
+    "stream_urls": [
+      "https://skynewsau-live.akamaized.net/hls/live/2002690/skynewsau-extra2/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FKERcaDza45HDL",
+    "name": "Sky News Extra 3",
+    "stream_urls": [
+      "https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gP0EIOZBWJnKLv",
+    "name": "Surf Cinema",
+    "stream_urls": [
+      "https://amg13231-actve-amg13231c4-samsung-au-2990.playouts.now.amagi.tv/playlist/amg13231-actvefast-surfer-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3Z4cb3zJdbljQO",
+    "name": "The Hotel Inspector",
+    "stream_urls": [
+      "https://amg00654-itv-amg00654c4-samsung-au-998.playouts.now.amagi.tv/playlist/amg00654-itvstudiosfast-hotelinspector-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "EpPKil5HdOVKkk",
+    "name": "The Wicked Tuna Channel",
+    "stream_urls": [
+      "https://amg00353-lionsgatestudio-wickedtuna-samsungau-26lq4.amagi.tv/playlist/amg00353-lionsgatestudio-wickedtuna-samsungau/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "I3kjTb3ubS1fvS",
+    "name": "TVSN",
+    "stream_urls": [
+      "https://tvsnhlslivetest.akamaized.net/hls/live/2034711/TVSN-MSL4/master.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/SUQblAwSa8c"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  }
+]

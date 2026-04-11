@@ -1,0 +1,15 @@
+get_famelack_channel_categories <- function(
+  cache_dir = "data-cache/famelack/categories",
+  sync = TRUE,
+  save_rds = TRUE,
+  rds_name = "channel_categories.rds",
+  verbose = TRUE
+) 
+
+get_famelack_channels <- function(
+  cache_dir = "data-cache/famelack/countries",
+  sync = TRUE,
+  save_rds = TRUE,
+  rds_name = "channels.rds",
+  verbose = TRUE
+) 

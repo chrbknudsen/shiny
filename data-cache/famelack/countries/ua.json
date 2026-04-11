@@ -1,0 +1,356 @@
+[
+  {
+    "nanoid": "IizLYzsxKE01t8",
+    "name": "5 канал",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/w-FIbz6fpJc"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "D4yTc59L8E3C7q",
+    "name": "24 Канал онлайн",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/eicp3frAlMY"
+    ],
+    "languages": [
+      "rus"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "H0fTRstAnfWOk3",
+    "name": "Avers",
+    "stream_urls": [
+      "https://avers.pp.ua/hls/efir.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OTZ19e4QL89Emf",
+    "name": "Espreso",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ScdUZNkwcYc"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mIGSyXqUZvMvq1",
+    "name": "EWTN Ukraine",
+    "stream_urls": [
+      "https://cdn3.wowza.com/1/WjduMm1tYnlwNXQx/M01NV3Uz/hls/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PrtD19KV7xKB3e",
+    "name": "Freedom (FREEДOM) (UATV) ",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ooJJSOlJZPQ"
+    ],
+    "languages": [
+      "rus"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2ijBxrnqlhILuI",
+    "name": "ITV",
+    "stream_urls": [
+      "https://cdn10.live-tv.cloud/itvrv/abr-lq/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WoGHZ2NiobEniJ",
+    "name": "Izmail TV",
+    "stream_urls": [
+      "https://cdn10.live-tv.cloud/izod/izod-abr-lq/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZqrDz64QgMJgYB",
+    "name": "SONATA TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/I2mWqNL0IsY"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TnYj2ZiJkibGxp",
+    "name": "Suspilne. Sport",
+    "stream_urls": [
+      "https://cdnua05.hls.tv/934/hls/8743361621b245838bee193c9ec28322/4856/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Pqrkg7U9owFXx2",
+    "name": "Telekanal RAI",
+    "stream_urls": [
+      "https://stream.rai.ua/rai/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "KNtnaXZuhjC6uj",
+    "name": "TIS TV",
+    "stream_urls": [
+      "https://cdn10.live-tv.cloud/riood/tisod-abr/riood/tisod720/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "t4HZl9R8oxsSaq",
+    "name": "TV Rivne 1",
+    "stream_urls": [
+      "https://cdn1.live-tv.cloud/rivne1/rivne1-abr/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TSbUr1OhqLkxuT",
+    "name": "TVA",
+    "stream_urls": [
+      "https://rtsp.cdn.ua/tva.ua_live/_definst_/livestream/playlist.m3u8",
+      "https://hls.cdn.ua/tva.ua_live/livestream/chunklist_w396178779.m3u8",
+      "https://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8",
+      "https://rtsp.cdn.ua/tva.ua_live/livestream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hthUrV2rQO5a6H",
+    "name": "Ланет.TV",
+    "stream_urls": [
+      "https://kiev1-cdn.lanet.tv/live/1008.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8guglX3waEEweH",
+    "name": "Луганск 24",
+    "stream_urls": [
+      "https://streaming.televizor-24-tochka.ru/live/29.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "33aYR9EbXeoJbc",
+    "name": "Ми - Україна",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/Mv6PEi0hRmg"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NXqKfcXbbK35QY",
+    "name": "НТК ТВ",
+    "stream_urls": [
+      "https://stream.ntktv.ua/s/ntk/ntk.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LFw2IVZK55i3Eh",
+    "name": "Суспільне Новини",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/SIRlElzXDTk"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aWkEDmohDUdyQY",
+    "name": "Сфера-ТВ",
+    "stream_urls": [
+      "https://cdn10.live-tv.cloud/sferarv/sferarv-abr/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "58lrZlgzryEpin",
+    "name": "Телеканал 1+1: FREEДОМ ",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/lnrp2S2L6qk"
+    ],
+    "languages": [
+      "rus"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "tke53J9UPinmCQ",
+    "name": "Телеканал Конкурент TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ntgtGmQb69k"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "j4guaLVmU1qeBF",
+    "name": "Телеканал Прямий",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/-9FO57Sk_oY"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SMG6eHvZY0KKF6",
+    "name": "Телеканал Рада",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ecD39ojnQxQ"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lgFlddJ7s9T4qn",
+    "name": "ТСН: Єдині новини: 1+1",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/WY8sDvZdWEA"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mzTgarqEQGEgoJ",
+    "name": "Тюсо",
+    "stream_urls": [
+      "https://tuso.cdn-01.cosmonova.net.ua/hls/tuso_ua.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "I6nxwpbCBqRLYc",
+    "name": "ЦЕНТР",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/FlqTZKF3z98"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  }
+]

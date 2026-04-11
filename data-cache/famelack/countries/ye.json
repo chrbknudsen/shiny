@@ -1,0 +1,41 @@
+[
+  {
+    "nanoid": "pNzTqn1VuRMufb",
+    "name": "Al Masirah",
+    "stream_urls": [
+      "https://live.cdnbridge.tv/Almasirah/Almasirah_all/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ye",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "j1LVoh3tQmO0Bh",
+    "name": "Al Masirah Mubacher",
+    "stream_urls": [
+      "https://live2.cdnbridge.tv/AlmasirahMubasher/Mubasher_All/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ye",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lsCpzWr0KhAo1G",
+    "name": "Al-Sahat TV",
+    "stream_urls": [
+      "https://assahat.b-cdn.net/Assahat/assahatobs/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ye",
+    "isGeoBlocked": false
+  }
+]

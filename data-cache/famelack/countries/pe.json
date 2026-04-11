@@ -1,0 +1,625 @@
+[
+  {
+    "nanoid": "FEKfCiEsgtQUuf",
+    "name": "Antena SUR",
+    "stream_urls": [
+      "https://cloudpro.servidoresdestream.com:8081/8010/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "d4L8PBtWXj8rtD",
+    "name": "AsiriTV",
+    "stream_urls": [
+      "https://video2.lhdserver.es/asiritv/live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2OfelL9lkYifhd",
+    "name": "Auténtica Televisión",
+    "stream_urls": [
+      "https://live.obslivestream.com/autenticatvmux/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SKenE1GgpUv74S",
+    "name": "Bethel TV",
+    "stream_urls": [
+      "https://alfa.betheltv.tv/srt/3_abr/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ml8W50urKeRzrc",
+    "name": "BHTV",
+    "stream_urls": [
+      "https://sc1.wasidata.com/Bhtv/index.fmp4.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NcbX3D5e7HA0Yx",
+    "name": "Cadena TV",
+    "stream_urls": [
+      "https://tv.bitstreaming.net:3789/live/cdntvlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1Tx6FQUGbACDss",
+    "name": "Canal 8 Catacaos",
+    "stream_urls": [
+      "https://live.obslivestream.com/canal8/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FzS0czimg1wdVt",
+    "name": "Canal 21 Huancayo",
+    "stream_urls": [
+      "https://play.agenciastreaming.com:8081/tvwanka/tracks-v1/index.fmp4.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JWF3Hmgh7M8jJ3",
+    "name": "Conecta2TV",
+    "stream_urls": [
+      "https://live.obslivestream.com/conecta2/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WscC7Swxpk8hjp",
+    "name": "Congreso del Perú en Vivo",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/asqCwtYnJwU"
+    ],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mlTXxUmbTG3Ish",
+    "name": "Controversia TV",
+    "stream_urls": [
+      "https://live.obslivestream.com/controversiatv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "nGBdTroCUbAU0I",
+    "name": "CR Televisión Moyobamba",
+    "stream_urls": [
+      "https://live.obslivestream.com/crtvmux/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XzRqOxUzNRtPhH",
+    "name": "ECO Television",
+    "stream_urls": [
+      "https://stream.ecoperu.tv/ECOTV/tracks-v1a1/mono.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "M8nsyNmz1k1pVX",
+    "name": "Exitosa TV",
+    "stream_urls": [
+      "https://luna-4-video.mediaserver.digital/exitosatv_233b-4b49-a726-5a451262/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8STBORDBYmEtNC",
+    "name": "Impacto Televisión",
+    "stream_urls": [
+      "https://cloudvideo.servers10.com:8081/impactotv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8VadQ9bvVXyzrj",
+    "name": "Intuitiva TV",
+    "stream_urls": [
+      "https://video2.lhdserver.es/cableperu/live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lM6iZ019g4zRqa",
+    "name": "JN19",
+    "stream_urls": [
+      "https://servilive.com:3028/live/jntv19live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "dXHXpcJZT8sCe9",
+    "name": "La Fabulosa Radio y TV",
+    "stream_urls": [
+      "https://eu1.servers10.com:8081/8004/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qm7kjjw4XjKxtz",
+    "name": "Mega TV Jaen",
+    "stream_urls": [
+      "https://7.innovatestream.pe:19360/megatvjaen/megatvjaen.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZgK3gN33Rh7QOj",
+    "name": "Miel TV",
+    "stream_urls": [
+      "https://7.innovatestream.pe:19360/mieltv/mieltv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "UDdMtzxSFo4KG2",
+    "name": "MO Channel",
+    "stream_urls": [
+      "https://cloudvideo.servers10.com:8081/8070/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "waRvUxbKqXuJg8",
+    "name": "Nativa",
+    "stream_urls": [
+      "https://oneplay.iptvperu.tv:1936/static/nativa1.stream/chunks.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mi7Zl9xYkTcqpw",
+    "name": "Nativa TV Satipo",
+    "stream_urls": [
+      "https://7.innovatestream.pe:19360/nativatv/nativatv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "EXY3gFnP4pv3FX",
+    "name": "ONDA DIGITAL",
+    "stream_urls": [
+      "https://tv.ondadigital.pe/ondadigital/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "rIUi7QauvvK3mU",
+    "name": "Radio Master",
+    "stream_urls": [
+      "https://videoserver.tmcreativos.com:19360/radiomaster/radiomaster.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vy9HTzZfX7NGXL",
+    "name": "Radio Tropical Tarapoto",
+    "stream_urls": [
+      "https://videoserver.tmcreativos.com:19360/raditropical/raditropical.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3Wu9MC7OO3N4Ss",
+    "name": "RadioTV Oriente",
+    "stream_urls": [
+      "https://live.obslivestream.com/tvoriente/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WPq32gb81NkkvQ",
+    "name": "RN Televisión",
+    "stream_urls": [
+      "https://videoserver.tmcreativos.com:19360/rnyurimaguas/rnyurimaguas.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3xHIJhktLp5hmp",
+    "name": "RPP TV",
+    "stream_urls": [
+      "https://redirector.dps.live/hls-video/567ffde3fa319fadf3419efda25619456231dfea/rpptv/rpptv.smil/playlist.m3u8",
+      "https://redirector.rudo.video/hls-video/567ffde3fa319fadf3419efda25619456231dfea/rpptv/rpptv.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "AQVGMaAFvW9hRl",
+    "name": "RSelvaTV",
+    "stream_urls": [
+      "https://live.obslivestream.com/selvatv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NWQzBG1ASDZW7k",
+    "name": "Sol Televisión",
+    "stream_urls": [
+      "https://video03.logicahost.com.br/soltv/soltv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FMvg6xgrss4nnA",
+    "name": "Telecolor Yurimaguas",
+    "stream_urls": [
+      "https://live.obslivestream.com/telecolormux/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wmJ1QxQIvPF4LM",
+    "name": "Teleselva",
+    "stream_urls": [
+      "https://7.innovatestream.pe:19360/tvnoticiassatipo/tvnoticiassatipo.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "oOdusKQUCbc5q3",
+    "name": "Top FM TV",
+    "stream_urls": [
+      "https://tvdatta.com:3084/live/toptvaguaytialive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mdiVt9k5G6ApIq",
+    "name": "Trivu",
+    "stream_urls": [
+      "https://www.chasquirouter.com/salida/sd/trivu.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gh6WHvpQmXShdI",
+    "name": "Turbo Mix Radio TV",
+    "stream_urls": [
+      "https://7.innovatestream.pe:19360/turbomixoficial/turbomixoficial.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9jlzCfuFrzzmTZ",
+    "name": "TV Peru",
+    "stream_urls": [
+      "https://cdnhd.iblups.com/hls/777b4d4cc0984575a7d14f6ee57dbcaf7.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "aym"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JAu8npSaIqe0rd",
+    "name": "TV Peru Internacional",
+    "stream_urls": [
+      "https://cdnhd.iblups.com/hls/ee2450c81e554f4cae0e6292106993c27.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "tgMJA8Yrpo64wp",
+    "name": "TV Peru Noticias",
+    "stream_urls": [
+      "https://cdnhd.iblups.com/hls/902c1a0395264f269f1160efa00660e47.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XOM9Q1cGWigMXK",
+    "name": "TVLibertad ",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/h9iJuC-2OiA"
+    ],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ghJvcjvVzHFJJM",
+    "name": "TVUNO",
+    "stream_urls": [
+      "https://streamtv.onliv3.online:1936/karibtv/karibtv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CXQzBhDcjLd9xW",
+    "name": "Unife TV",
+    "stream_urls": [
+      "https://cdn.mycloudstream.io/hls/live/broadcast/ic1frrzz/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "EfKZO2yd4jlLmt",
+    "name": "Unitel",
+    "stream_urls": [
+      "https://play.agenciastreaming.com:8081/uniteltv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fk1iDtmlMQq6pc",
+    "name": "Uranio TV (Yurimaguas)",
+    "stream_urls": [
+      "https://live.obslivestream.com/uraniotv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "raXRAftVOpO8Gu",
+    "name": "Vía Altomayo",
+    "stream_urls": [
+      "https://live.obslivestream.com/viaaltomayomux/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "I0Rp3YU5Uuox7N",
+    "name": "Vía Televisión (720P)",
+    "stream_urls": [
+      "https://videoserver.tmcreativos.com:19360/cablerasvia/cablerasvia.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "dpLqGa5wjsNEE1",
+    "name": "Viva TV Yurimaguas",
+    "stream_urls": [
+      "https://live.obslivestream.com/vivatv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sAN5lqkNeMhvi8",
+    "name": "VNP",
+    "stream_urls": [
+      "https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "pe",
+    "isGeoBlocked": false
+  }
+]

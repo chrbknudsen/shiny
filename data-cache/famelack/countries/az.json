@@ -1,0 +1,15 @@
+[
+  {
+    "nanoid": "MCEE1okRjYPAEv",
+    "name": "Baku TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/hlNAPTk2iS0"
+    ],
+    "languages": [
+      "aze"
+    ],
+    "country": "az",
+    "isGeoBlocked": false
+  }
+]

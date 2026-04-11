@@ -1,0 +1,156 @@
+[
+  {
+    "nanoid": "2TeFmbSu18GnAQ",
+    "name": "Cadena A",
+    "stream_urls": [
+      "https://5fe2654d6127d.streamlock.net/cadenaa/videocadenaa/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "btaTHB02v7Y9B8",
+    "name": "F10 HD",
+    "stream_urls": [
+      "https://tv2.bitstreaming.net:3235/multi_live/play.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "R8JVtILfHbuO4E",
+    "name": "FAP TV",
+    "stream_urls": [
+      "https://nd106.republicaservers.com/hls/c7284/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4r0QKfGoGD09Z7",
+    "name": "FTV",
+    "stream_urls": [
+      "https://master.tucableip.com/ftvhd/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "YIKke4PY7wnkdl",
+    "name": "Palenque TV",
+    "stream_urls": [
+      "https://tv.bitstreaming.net:3234/live/palenquetvlive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "izfFH8RnAwm70u",
+    "name": "RTP",
+    "stream_urls": [
+      "https://rtp.noxun.net/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JLRlLiosJOhAzH",
+    "name": "UMSA TVU Internacional",
+    "stream_urls": [
+      "https://live.enhdtv.com:8081/8026/tracks-v1a1/mono.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fcllzx7ENtLcnw",
+    "name": "UMSA TVU LP",
+    "stream_urls": [
+      "https://live.enhdtv.com:8081/8190/tracks-v1a1/mono.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "igJmo5J6YhgXmV",
+    "name": "Unifranz",
+    "stream_urls": [
+      "https://live.enhdtv.com:8081/8192/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LFx5rbcyR21noP",
+    "name": "Univalle Televisión",
+    "stream_urls": [
+      "https://master.tucableip.com/univalletv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "T3D6a3NyVvl2H9",
+    "name": "UniversidadMayordeSanAndres",
+    "stream_urls": [
+      "https://live.enhdtv.com:8081/8190/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GMFO5ANQ5nEa2e",
+    "name": "UPEA TV",
+    "stream_urls": [
+      "https://tvstream.upea.bo/hls/oSs0jSWumTFIIVY97559.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  }
+]

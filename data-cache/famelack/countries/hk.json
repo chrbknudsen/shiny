@@ -1,0 +1,52 @@
+[
+  {
+    "nanoid": "B6btjJsaGdIJVI",
+    "name": "Ani-Blast",
+    "stream_urls": [
+      "https://amg19223-amg19223c9-amgplt0019.playout.now3.amagi.tv/playlist/amg19223-amg19223c9-amgplt0019/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "hk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "F2ze7vbKV6XjQT",
+    "name": "KIX",
+    "stream_urls": [
+      "https://liveh34.vtvprime.vn/hls/KIX/04.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "hk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "cq6tthzEoEuekR",
+    "name": "Pet Club TV",
+    "stream_urls": [
+      "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "yue"
+    ],
+    "country": "hk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3BsCNdHaOVE1Yl",
+    "name": "鳳凰資訊 PhoenixTVNews",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/fN9uYWCjQaw"
+    ],
+    "languages": [
+      "zho"
+    ],
+    "country": "hk",
+    "isGeoBlocked": false
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "nanoid": "UDLgW0XuhfviSI",
+    "name": "Alikhbaria Syria",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/4547FRrh8wo"
+    ],
+    "languages": [
+      "ara"
+    ],
+    "country": "sy",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lzj2rgOVC9PJzk",
+    "name": "Althania",
+    "stream_urls": [
+      "https://live.kwikmotion.com/syriatv02live/syriatv02.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "sy",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "nJ79SnxhmuyaOZ",
+    "name": "Damascus Radio",
+    "stream_urls": [
+      "https://radiodamascus.ortas.live/RDimshq/RDimshqLive/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "sy",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Zb4yx0Hhhjqp7h",
+    "name": "Halab Today TV",
+    "stream_urls": [
+      "https://mn-nl.mncdn.com/halabtoday/livestream/index.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/Kjc8hBQ3vaU"
+    ],
+    "languages": [
+      "ara"
+    ],
+    "country": "sy",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FguzmgQdpg9XFC",
+    "name": "Rojava TV",
+    "stream_urls": [
+      "https://hlspackager.akamaized.net/live/DB/ROJAVA_HD/HLS/ROJAVA_HD.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "sy",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XUZvlMOrh5z0lP",
+    "name": "Ronahi TV",
+    "stream_urls": [
+      "https://hlspackager.akamaized.net/live/DB/RONAHI_TV/HLS/RONAHI_TV.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "sy",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZUFftFyddSKOYm",
+    "name": "Syria One",
+    "stream_urls": [
+      "https://live.syriaone.tv/live/syriaone.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "sy",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hGJWMD70oUF4Yo",
+    "name": "Syria TV",
+    "stream_urls": [
+      "https://live.kwikmotion.com/syriatvlive/syriatv.smil/playlist_dvr.m3u8",
+      "https://stream.ads.ottera.tv/playlist.m3u8?network_id=6017",
+      "https://svs.itworkscdn.net/syriatvlive/syriatv.smil/playlist_dvr.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "sy",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "juxXjhcoxJLbzK",
+    "name": "Welat TV (1080i)",
+    "stream_urls": [
+      "https://stream.badinan.xyz/welat/tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "sy",
+    "isGeoBlocked": false
+  }
+]

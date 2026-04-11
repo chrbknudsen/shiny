@@ -1,0 +1,67 @@
+[
+  {
+    "nanoid": "4C34DA8hS5DUmR",
+    "name": "Astro Awani",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/mkVyNaGee8A"
+    ],
+    "languages": [
+      "msa"
+    ],
+    "country": "my",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GNHioLFAvTFsHe",
+    "name": "Berita RTM",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/y99dvC3cRwc"
+    ],
+    "languages": [
+      "msa"
+    ],
+    "country": "my",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZOTkMMGUEIitr9",
+    "name": "Molek TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/mIaYkjKTfXI"
+    ],
+    "languages": [
+      "msa"
+    ],
+    "country": "my",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hliOSpRjIJIon0",
+    "name": "PRO Sport International",
+    "stream_urls": [
+      "https://proshls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "fas"
+    ],
+    "country": "my",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aLRI25BZ5Nmrta",
+    "name": "SuriaTV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/jXoSRCdSTp4"
+    ],
+    "languages": [
+      "msa"
+    ],
+    "country": "my",
+    "isGeoBlocked": false
+  }
+]
