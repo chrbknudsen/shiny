@@ -1,0 +1,1127 @@
+[
+  {
+    "nanoid": "wvLjkMxbINYOUZ",
+    "name": "1-2-3 TV",
+    "stream_urls": [
+      "https://123tv-mx1.flex-cdn.net/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ugGAivxJyE8GHx",
+    "name": "AAC Television",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/cMW1b7x35_Q"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4ekttMMc8433us",
+    "name": "Bajo Techo TV",
+    "stream_urls": [
+      "https://fox.hostlagarto.com:8081/bajotechotv/tracks-v1a1/mono.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "do",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "H2CDIH8qBgxAa8",
+    "name": "CJ OnStyle",
+    "stream_urls": [
+      "https://live-ch1.cjonstyle.net/cjmalllive/stream2/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "h6sGUfEb8F8FM3",
+    "name": "CJ OnStyle Plus",
+    "stream_urls": [
+      "https://live-ch2.cjonstyle.net/cjosplus/live2/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BMO0FRe0mBVXUu",
+    "name": "CoinVaultTV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/QLv1vrkXGhI"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bQZCnoP3gYxqdY",
+    "name": "Cruise1st TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/aTJGSuZPNpM"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "QW25K1cDjYb9vx",
+    "name": "Cutlery Corner Network",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/HZfEQ1n862U"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1urxVFjg7HoQcm",
+    "name": "Expo Channel",
+    "stream_urls": [
+      "https://tvsnhlslivetest.akamaized.net/hls/live/2034711/EXPO-MSL4/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SZKqh8My275jx3",
+    "name": "FairON",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/iLFSXmIKH2g"
+    ],
+    "languages": [
+      "deu"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sNGgqsLaPmiNb6",
+    "name": "Fashion Finds",
+    "stream_urls": [
+      "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc5us/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "W3wX0To0U8aqpL",
+    "name": "Gem Shopping",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/qRlOXPrKAYo"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bcwcJsqO9k052m",
+    "name": "Gem Shopping Network",
+    "stream_urls": [
+      "https://amg01460-gemshoppingnetw-gem-ono-x662c.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "k9Z5raN5ubTZep",
+    "name": "Gems TV",
+    "stream_urls": [
+      "https://lo3.gemporia.com/abrgemporiaukgfx/smil:livestream.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PwiAIPffasG0wh",
+    "name": "Gongyoung Shopping",
+    "stream_urls": [
+      "https://etv.publichs.com/live5.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Ha2TQrOiJuUiVm",
+    "name": "GS My Shop",
+    "stream_urls": [
+      "https://gstv-myshop.gsshop.com/myshop_hd/myshop_hd.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "tTyhlQIbf96cqF",
+    "name": "GS Shop",
+    "stream_urls": [
+      "https://gstv-gsshop.gsshop.com/gsshop_hd/gsshop_hd.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "KWubgLKIN9lBtR",
+    "name": "Handystar",
+    "stream_urls": [
+      "https://sparhandytv.cdn.ses-ps.com/live/channel01/hls/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vUHuDdpPOMwJOv",
+    "name": "Home & Shopping",
+    "stream_urls": [
+      "https://s28.qtcdn.co.kr/media/liveM3U8/idx/518045142/enc/1860408350/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "00SFFti9BYGccf",
+    "name": "HSE",
+    "stream_urls": [
+      "https://hse24.akamaized.net/hls/live/2006663/hse24/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Jz8ammTirg5lLj",
+    "name": "HSE24 Extra",
+    "stream_urls": [
+      "https://hse24extra.akamaized.net/hls/live/2006596/hse24extra/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sB1TZleyJLtWVx",
+    "name": "HSE24 Trend",
+    "stream_urls": [
+      "https://hse24trend.akamaized.net/hls/live/2006597/hse24trend/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fy2D24X7zteSs1",
+    "name": "HSN",
+    "stream_urls": [
+      "https://qvc-amd-live.akamaized.net/hls/live/2034113/lshsn1us/master.m3u8",
+      "https://a-cdn.klowdtv.com/live2/hsn_720p/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wy5bdbG6nJxwPp",
+    "name": "HSN West",
+    "stream_urls": [
+      "https://qvc-amd-live.akamaized.net/hls/live/2034113/lshsn1uswest/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VE36pxWHeOz9JJ",
+    "name": "HSN2",
+    "stream_urls": [
+      "https://qvc-amd-live.akamaized.net/hls/live/2034113/lshsn2us/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "StPpjAo9VIe1ul",
+    "name": "HSNtv: HSN1",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/1ph8qQnjXts"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "exj7xctQaasnvn",
+    "name": "HSNtv: HSN2",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/q-BvtDrTnxc"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JdXXEWHEkhS0rD",
+    "name": "Hyundai Home Shopping",
+    "stream_urls": [
+      "https://livejj.hyundaihmall.com:8443/live/ngrp:hmall.stream_pc/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1xSzaZqPtNC9v8",
+    "name": "Hyundai Home Shopping Plus",
+    "stream_urls": [
+      "https://dtvstreaming.hyundaihmall.com/newcjp3/_definst_/newcjpstream.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zArqxM7ctlhm8i",
+    "name": "Ideal World",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/pNVWQQjMNqQ"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FduEDCfi40g7V8",
+    "name": "In the kitchen",
+    "stream_urls": [
+      "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc4us/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OkxC6uzxWcKhnj",
+    "name": "JTV Live Now",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/nL5H_f37WRE"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fpJtwlTBFuWrLw",
+    "name": "Juwelo",
+    "stream_urls": [
+      "https://sdn-global-live-streaming-packager-cache.3qsdn.com/7441/7441_264_live.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/vbKz0nMFKGY"
+    ],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "110Q3ykWhKraKL",
+    "name": "Juwelo Italia",
+    "stream_urls": [
+      "https://sdn-global-live-streaming-packager-cache.3qsdn.com/7841/7841_264_live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hkGnYbKbnHGzDM",
+    "name": "KaufBei TV",
+    "stream_urls": [
+      "https://api.alpaca.t62a.com/hls/9103/index.m3u8",
+      "https://elephant.t62a.com/hls/8103/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "nfUMYUgBEhhJaP",
+    "name": "Lao SV TV",
+    "stream_urls": [
+      "https://livefta.malimarcdn.com/ftaedge00/laosvtv.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "vie"
+    ],
+    "country": "vn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sk9rJ1dVqtQQej",
+    "name": "Lao-Thai TV",
+    "stream_urls": [
+      "https://livefta.malimarcdn.com/ftaedge00/laothaius.sdp/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "vie"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "IPkLjLkp2JBRTC",
+    "name": "Leomax 24",
+    "stream_urls": [
+      "https://tvshops.bonus-tv.ru/cdn/shop24/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xgn0FUKlpDXRRt",
+    "name": "Lotte Home Shopping",
+    "stream_urls": [
+      "https://pchlslivesw.lotteimall.com/live/livestream/lotteimalllive_mp4.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "6c1onCC872cpGK",
+    "name": "Lotte OneTV",
+    "stream_urls": [
+      "https://onetvhlslive.lotteimall.com/lotteonetvlive/lotteonetvlive.mp4.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mVxVh0IAxmzQFX",
+    "name": "LS TV",
+    "stream_urls": [
+      "https://livefta.malimarcdn.com/ftaedge00/laostv.sdp/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "lao"
+    ],
+    "country": "la",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zp392zIs8jMyat",
+    "name": "momo購物一台 CH48",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/_pZQ1Lk0xMA"
+    ],
+    "languages": [
+      "zho"
+    ],
+    "country": "tw",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9hLyxjNnuvyahG",
+    "name": "momo購物二台 CH35",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/xbNWkUyxQGM"
+    ],
+    "languages": [
+      "zho"
+    ],
+    "country": "tw",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "oNnWdV2miCH9OF",
+    "name": "NS Home Shopping",
+    "stream_urls": [
+      "https://livestream.nsmall.com/IPHONE/nsmallMobile.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8fjuljf7xVUPuM",
+    "name": "NS Shop Plus",
+    "stream_urls": [
+      "https://shoppstream.nsmall.com/IPHONE/mobile.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XSj8RLmWub2bay",
+    "name": "OnTV4U",
+    "stream_urls": [
+      "https://stirr.b-cdn.net/stirr/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "HiMqxCwB3tPMLP",
+    "name": "Pearl TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/7edPeO-8Rs0"
+    ],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "svRWnX3AgAscmw",
+    "name": "QVC",
+    "stream_urls": [
+      "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc1us/master.m3u8",
+      "https://a-cdn.klowdtv.com/live2/qvclive_720p/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "a3LvdeeJhuc5hh",
+    "name": "QVC 2",
+    "stream_urls": [
+      "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc2us/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3qTfwVJ1PSNfkq",
+    "name": "QVC 3",
+    "stream_urls": [
+      "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc3us/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vej8gxvXo5m19M",
+    "name": "QVC Deutschland: QVC 1",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/zyArwYJdK9c"
+    ],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "EnBVymvEEEZceD",
+    "name": "QVC Deutschland: QVC 2",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/UcbiF9UXX8Q"
+    ],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "KEXRYwevZaJ6df",
+    "name": "QVC Germany",
+    "stream_urls": [
+      "https://qvcde-live.akamaized.net/hls/live/2097104/qvc/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "7tvuZiNywlLUlY",
+    "name": "QVC Italia",
+    "stream_urls": [
+      "https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/BVJfAOmkjnQ"
+    ],
+    "languages": [
+      "ita"
+    ],
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "M98NGeM2JJqoWZ",
+    "name": "QVC Japan",
+    "stream_urls": [
+      "https://cdn-live1.qvc.jp/iPhone/1501/1501.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "jpn"
+    ],
+    "country": "jp",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sew4Lhnm1CAV7m",
+    "name": "QVC UK",
+    "stream_urls": [
+      "https://qvcuk-live.akamaized.net/hls/live/2097112/qvc/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aRDPrEEpqrTS9l",
+    "name": "QVC UK Beauty",
+    "stream_urls": [
+      "https://qvcuk-live.akamaized.net/hls/live/2097112/qby/master.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/B-A-co6p2BI"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lGbnR8Wz6iKieR",
+    "name": "QVC UK Extra",
+    "stream_urls": [
+      "https://qvcuk-live.akamaized.net/hls/live/2097112/qex/master.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/8m3sdzsPxXg"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2KW40anjWLCRfl",
+    "name": "QVC UK Main",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/Re4IWynftC0"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "59zGwpG017YKqC",
+    "name": "QVC UK Style",
+    "stream_urls": [
+      "https://qvcuk-live.akamaized.net/hls/live/2097112/qst/master.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/HXjDtuel2Zw"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "kPaNS4YtCeCnqg",
+    "name": "QVC+ HSN+: Fashion Finds",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/RwZYu_c13kA"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "55JLpmGh7eUCrX",
+    "name": "QVC+ HSN+: In The Kitchen",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/hwsW280SX_8"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jEX34wYQSj1bA4",
+    "name": "QVC+ HSN+: Outdoor Escape",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/c728BwxpS5s"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "N7V5PTuGWgF01T",
+    "name": "QVCtv: QVC 1",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ufwLk92fA9k"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yb4btGIHQT2TBE",
+    "name": "QVCtv: QVC 2",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ott_wC2a06I"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qTo3b5DtJQqzFg",
+    "name": "QVCtv: QVC 3",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/xBGuhy6YpbA"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CyzmTDSgy94fJZ",
+    "name": "Shinsegae Shopping TV",
+    "stream_urls": [
+      "https://liveout.catenoid.net/live-02-shinsegaetvshopping/shinsegaetvshopping_720p/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "olJQmVUDZgXj1I",
+    "name": "SHOP CH Thailand",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ilM6K9UOmeY"
+    ],
+    "languages": [
+      "tha"
+    ],
+    "country": "th",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VFHPY4Y8ToG3zS",
+    "name": "Shop Channel",
+    "stream_urls": [
+      "https://stream3.shopch.jp/HLS/master.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/Vq3jz0c7oMs"
+    ],
+    "languages": [
+      "jpn"
+    ],
+    "country": "jp",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RIicoz1oemLhlJ",
+    "name": "Shop LC",
+    "stream_urls": [
+      "https://cdn-shop-lc-01.akamaized.net/Content/HLS_HLS/Live/channel(ott)/master.m3u8",
+      "https://cdn-shop-lc-01.vos360.video/Content/HLS_HLS/Live/channel(ShopLCStirrTV)/master.m3u8",
+      "https://cdn-shop-lc-01.akamaized.net/Content/HLS_HLS/Live/channel(xumo)/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Shv7333JOv8tjv",
+    "name": "Shop LC",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/91e_1g7NvQ0"
+    ],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hiABpRG1XhgOmb",
+    "name": "Shopping NT",
+    "stream_urls": [
+      "https://live.shoppingntmall.com/live/10011.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZqrDz64QgMJgYB",
+    "name": "SONATA TV",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/I2mWqNL0IsY"
+    ],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "P3wFK2is4nhE2c",
+    "name": "Tea TV",
+    "stream_urls": [
+      "https://livefta.malimarcdn.com/ftaedge00/teatv.sdp/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "vie"
+    ],
+    "country": "vn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Yi8DfPzksOTug8",
+    "name": "The Shopping Channel",
+    "stream_urls": [
+      "https://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ca",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "U5azpF1869TOgk",
+    "name": "TJC",
+    "stream_urls": [
+      "https://cdn-shop-lc-01.akamaized.net/Content/HLS_HLS/Live/channel(TJCOTT)/index.m3u8",
+      "https://cdn-shop-lc-01.vos360.video/Content/HLS_HLS/Live/channel(HDTJCcustomGFX)/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hdo4XGj87XeZof",
+    "name": "TJC Style",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/Zswxn5QW_54"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "pYvpjtjzOCuhTz",
+    "name": "TVSConsumerDirect",
+    "stream_urls": [
+      "https://rpn.bozztv.com/gusa/gusa-ConsumerDirect/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "I3kjTb3ubS1fvS",
+    "name": "TVSN",
+    "stream_urls": [
+      "https://tvsnhlslivetest.akamaized.net/hls/live/2034711/TVSN-MSL4/master.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/SUQblAwSa8c"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "au",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gh2TkRWTUyBId2",
+    "name": "Uniquely Thai",
+    "stream_urls": [
+      "https://livefta.malimarcdn.com/ftaedge00/uniquely.sdp/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "vie"
+    ],
+    "country": "vn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4If9DGlBIwVH9j",
+    "name": "W Shopping",
+    "stream_urls": [
+      "https://liveout.catenoid.net/live-05-wshopping/wshopping_1500k/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "kor"
+    ],
+    "country": "kr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xBvNUxKG46FiuF",
+    "name": "Магнат ТВ",
+    "stream_urls": [
+      "https://s1.tv-nano.com/Magnat_HD_5119705/video.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mzTgarqEQGEgoJ",
+    "name": "Тюсо",
+    "stream_urls": [
+      "https://tuso.cdn-01.cosmonova.net.ua/hls/tuso_ua.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ukr"
+    ],
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VRSVNzRuNbdCXJ",
+    "name": "Ювелирочка",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/LqF6fhpn9eY"
+    ],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8iOK4Asu2pvPAa",
+    "name": "Ювелирочка ТВ",
+    "stream_urls": [
+      "https://live-uvelirochka.cdnvideo.ru/uvelirochka/uvelirochka_720p3/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  }
+]

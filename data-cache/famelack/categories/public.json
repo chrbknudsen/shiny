@@ -1,0 +1,267 @@
+[
+  {
+    "nanoid": "gnyX5KuxriCcKL",
+    "name": "3Cat Càmeres del temps",
+    "stream_urls": [
+      "https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "cat"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gOima8j8Qx8bOX",
+    "name": "3Cat El búnquer",
+    "stream_urls": [
+      "https://fast-tailor.3catdirectes.cat/v1/channel/bunquer/hls.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "cat"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MsBPAtiznwuBpL",
+    "name": "3Cat Plats bruts",
+    "stream_urls": [
+      "https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "cat"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SbKSg1Uc6JQCXF",
+    "name": "3CatInfo",
+    "stream_urls": [
+      "https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "cat"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Gt9j6xLi0290D1",
+    "name": "24 Horas",
+    "stream_urls": [
+      "https://ztnr.rtve.es/ztnr/1694255.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Fv2fpsvbcUPHP8",
+    "name": "Aragon TV Internacional",
+    "stream_urls": [
+      "https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MkDG8x514T8qvl",
+    "name": "Bon Dia TV",
+    "stream_urls": [
+      "https://directes-tv-int.3catdirectes.cat/live-content/bondia-hls/master.m3u8",
+      "https://directes-tv-int.3catdirectes.cat/live-origin/bondia-hls/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "cat"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1HbuNXkbC5ZCG3",
+    "name": "Canal 24 Horas Canarias",
+    "stream_urls": [
+      "https://ztnr.rtve.es/ztnr/5473142.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "l6PY3HPMk2VaSf",
+    "name": "Canal 24 Horas Catalunya",
+    "stream_urls": [
+      "https://ztnr.rtve.es/ztnr/4952053.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "cat"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CTfUhDJ1psN0TH",
+    "name": "Canal Extremadura Satelite",
+    "stream_urls": [
+      "https://canalextremadura-live.flumotion.cloud/canalextremadura/live_all/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WsnjAbyAewcp2y",
+    "name": "Canal Sur Andalucia",
+    "stream_urls": [
+      "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8",
+      "https://live-24-canalsur.interactvty.pro/9bb0f4edcb8946e79f5017ddca6c02b0/26af5488cda642ed2eddd27a6328c93b9c03e9181b9d0a825147a7d978e69202.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/Jes7v5Mm0Jc"
+    ],
+    "languages": [
+      "spa"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "O0DUKFHyeCqWS8",
+    "name": "Canal Sur Andalucía 2",
+    "stream_urls": [
+      "https://cdnlive.codev8.net/rtvalive/smil:channel22.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Pf3Zsb1GIIiXjl",
+    "name": "Canal Sur Noticias",
+    "stream_urls": [
+      "https://cdnlive.codev8.net/rtvalive/smil:channel42.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sOkPOE7WwRFhIL",
+    "name": "Clan Internacional Americas",
+    "stream_urls": [
+      "https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/clan_int_main_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WWu5tFGoEPHpSK",
+    "name": "CMM TV HD",
+    "stream_urls": [
+      "https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_gnz6ity9/protocol/https/format/applehttp/flavorIds/1_a9gxgxzy,1_v71ryg4b,1_vbfvtjw6,1_obo1bqsx,1_3shk3s5d/a.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "h9xUZ9qtOT3ejC",
+    "name": "El 33 Originals",
+    "stream_urls": [
+      "https://directes-tv-int.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8",
+      "https://directes-tv-int.3catdirectes.cat/live-origin/c33-super3-hls/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "cat"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ry2G3plOdgjsxG",
+    "name": "ETB Events 1",
+    "stream_urls": [
+      "https://cdn1.etbon.eus/oc1/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eus"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qCNy2ojifNspg9",
+    "name": "FomixTV",
+    "stream_urls": [
+      "https://stream.fomixmedia.nl/FomixTV/video.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "nld"
+    ],
+    "country": "nl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VC0mpDqFEWjXwB",
+    "name": "Galicia TV Europa",
+    "stream_urls": [
+      "https://crtvg-europa.flumotion.cloud/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "glg"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "HhUtzRJjCR6lUu",
+    "name": "TV UFOP",
+    "stream_urls": [
+      "https://app.tvufop.com.br/hls/tvufop.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "por"
+    ],
+    "country": "br",
+    "isGeoBlocked": false
+  }
+]

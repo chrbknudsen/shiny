@@ -1,0 +1,450 @@
+[
+  {
+    "nanoid": "aYAhxfge3884Ci",
+    "name": "Agro TV",
+    "stream_urls": [
+      "https://restr2.bgtv.bg/agro/hls/agro.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "bul"
+    ],
+    "country": "bg",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "g5kkuBi9J5OPSY",
+    "name": "Agro TV",
+    "stream_urls": [
+      "https://agrotv.streamnet.ro/mobile_tv/agrotv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ILvQMuRPiCHupS",
+    "name": "AKC TV",
+    "stream_urls": [
+      "https://broadcast.blivenyc.com/speed/broadcast/22/desktop-playlist.m3u8",
+      "https://install.akctvcontrol.com/speed/broadcast/138/desktop-playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "G1NnGv2sFMTgSA",
+    "name": "AKC TV Meet The Breeds",
+    "stream_urls": [
+      "https://install.akctvcontrol.com/speed/broadcast/139/desktop-playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "7V9slM7vOwb1i3",
+    "name": "AKC TV Puppies 24/7",
+    "stream_urls": [
+      "https://install.akctvcontrol.com/speed/broadcast/140/desktop-playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sPitwPVtngUuVb",
+    "name": "ARDB TV",
+    "stream_urls": [
+      "https://ardbtv.ardb.com.kh:8443/tv-live/tv-online.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "khm"
+    ],
+    "country": "kh",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jDP6MUrSN5cKSo",
+    "name": "DD Kisan",
+    "stream_urls": [
+      "https://cdn-6.pishow.tv/live/9/master.m3u8",
+      "https://mumt04.tangotv.in/DDKISAN/index.m3u8",
+      "https://d2lk5u59tns74c.cloudfront.net/out/v1/4f053f2c12a24641bf701fb7f2376750/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hin"
+    ],
+    "country": "in",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wphelUchf8A8QX",
+    "name": "Duck Hunting TV",
+    "stream_urls": [
+      "https://main.duckhunting.playout.vju.tv/duckhuntingtv/main.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8MkrJaxHtTluMW",
+    "name": "El Mundo del Campo",
+    "stream_urls": [
+      "https://movil.ejeserver.com/live/elmundodelcampo.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "co",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PdzSrk71b7uqDn",
+    "name": "Horse & Country TV",
+    "stream_urls": [
+      "https://hnc-free-viewlift.amagi.tv/HNC_AUSTRALIA.m3u8",
+      "https://hncfree-samsung-uk.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "YJ0VLCpIyYcZ5V",
+    "name": "InTrouble",
+    "stream_urls": [
+      "https://amg00861-terncloud-amg00861c6-cineverse-us-964.playouts.now.amagi.tv/playlist/amg00861-terninternationalfast-introublehd-cineverseus/playlist.m3u8",
+      "https://amg00861-amg00861c6-stirr-us-8229.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "nl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "R8E994mqmmDshs",
+    "name": "Italian Fishing TV",
+    "stream_urls": [
+      "https://fms.premio.link/fishingtv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ita"
+    ],
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5eNJBvozHJiGRG",
+    "name": "Love Nature",
+    "stream_urls": [
+      "https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8",
+      "https://amg01515-amg01515c26-xumo-us-4765.playouts.now.amagi.tv/playlist.m3u8",
+      "https://bamus-klowdtv.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ca",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lQWrqWxPSBgWUI",
+    "name": "Love Nature 4K",
+    "stream_urls": [
+      "https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ca",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "S9c0VGY1z6Bbp9",
+    "name": "Outdoor America",
+    "stream_urls": [
+      "https://d1e354daam8g5r.cloudfront.net/playlist.m3u8",
+      "https://linear-600.frequency.stream/dist/xumo/600/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yWx96N1LT28ilx",
+    "name": "Outdoor Channel",
+    "stream_urls": [
+      "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "P1PoD5jjT64Mum",
+    "name": "Outside TV",
+    "stream_urls": [
+      "https://outsidetv-outsidetv-mgsp6.amagi.tv/playlist/outsidetv-outsidetv/playlist.m3u8",
+      "https://desdobebr2wri.cloudfront.net/Outside.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "XVHhDeQHjuS3Dt",
+    "name": "Peer TV Alto Adige",
+    "stream_urls": [
+      "https://iptv.peer.biz/live/peertv-it.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ita"
+    ],
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "N6SFUaTsOKbZm2",
+    "name": "Peer TV South Tyrol",
+    "stream_urls": [
+      "https://iptv.peer.biz/live/peertv-en.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wRTNWuXxEeSri7",
+    "name": "Peer TV Südtirol",
+    "stream_urls": [
+      "https://iptv.peer.biz/live/peertv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bcFsomEBowqYIB",
+    "name": "Productiva TV",
+    "stream_urls": [
+      "https://copacoradios.desdeparaguay.net/productivatv/productivatv_baja/playlist.m3u8?admin=nacion"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "py",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "KQfyF0f3PWgz6t",
+    "name": "Pursuit UP",
+    "stream_urls": [
+      "https://d1p1siomv3cm7b.cloudfront.net/playlist.m3u8",
+      "https://linear-205.frequency.stream/dist/stirr/205/hls/master/playlist.m3u8",
+      "https://linear-205.frequency.stream/dist/xumo/205/hls/master/playlist.m3u8",
+      "https://linear-205.frequency.stream/dist/glewedtv/205/hls/master/playlist.m3u8",
+      "https://pursuitup-klowdtv.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "jHe1OEHTcksowX",
+    "name": "Red Bull TV AU",
+    "stream_urls": [
+      "https://db34cc6127ac459db55cab5f97cd66b9.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-680-WORBAUENFAST-WHALETVPLUS/680/whaletvplus/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qSTI0JjIhB6uCt",
+    "name": "Red Bull TV BR",
+    "stream_urls": [
+      "https://d03ae6b5c6724c24867e97a3dc04934a.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-1026-WORBBRPTFAST-WHALETVPLUS/1026/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "por"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CFer2v8709wxRy",
+    "name": "Red Bull TV ES",
+    "stream_urls": [
+      "https://886bd3fbc782459f8de7555d32d7e9ce.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-957-WORBLATAMESFAST-WHALETVPLUS/957/whaletvplus/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "znLSEaZWfm2KZE",
+    "name": "Red Bull TV SD",
+    "stream_urls": [
+      "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RV6yi21ilw5X2f",
+    "name": "Red Bull TV US",
+    "stream_urls": [
+      "https://0b73ace69ebb45eaa249bb87837cb958.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-644-WORBUSENFAST-LG_US/644/lgtv/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "0mEe54Ekw1mj61",
+    "name": "Swamiji TV American",
+    "stream_urls": [
+      "https://stream.swamiji.tv/YogaIPTV/smil:YogaStreamUS.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5ZPKeEUbFRktME",
+    "name": "Swamiji TV Australian",
+    "stream_urls": [
+      "https://stream.swamiji.tv/YogaIPTV/smil:YogaStreamAU.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FJL8QhoyygdV5z",
+    "name": "Swamiji TV European",
+    "stream_urls": [
+      "https://stream.swamiji.tv/YogaIPTV/smil:YogaStream.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lOEoXHnp8Sj0dx",
+    "name": "UMC TV",
+    "stream_urls": [
+      "https://streaming5.globalhostla.com/rtplive/unamirad/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "co",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TO1BuEtXll4T9g",
+    "name": "Waypoint TV",
+    "stream_urls": [
+      "https://djb4ma5fajjay.cloudfront.net/Waypoint_TV.m3u8",
+      "https://amg00381-waypointcommuni-waypointtv-xumo-syiru.amagi.tv/playlist.m3u8",
+      "https://aegis-cloudfront-1.tubi.video/5f3c2b46-3b02-48e8-8e7b-3ce1d89395ce/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NpJ5K3Avxx4otV",
+    "name": "WildEarth",
+    "stream_urls": [
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01290-wildearth-oando/playlist.m3u8",
+      "https://wildearth-ono.amagi.tv/playlist/amg01290-wildearth-oando/playlist.m3u8",
+      "https://wildearth-xumo.amagi.tv/master.m3u8",
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01290-wildearthmediap-wildearth-samsungnl/playlist.m3u8",
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01290-wildearthmediap-wildearth-samsungse/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "za",
+    "isGeoBlocked": false
+  }
+]

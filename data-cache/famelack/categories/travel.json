@@ -1,0 +1,432 @@
+[
+  {
+    "nanoid": "aNWcalM8ImXSeK",
+    "name": "Aruba.TV",
+    "stream_urls": [
+      "https://cdn01.setar.aw/Canal49/canal49/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "aw",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BdwSSDTGxvneTK",
+    "name": "Beach TV Florida & Alabama",
+    "stream_urls": [
+      "https://5ed325193d4e1.streamlock.net:444/LiveTV/DTVHD/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "u5TLXa7PdNMbh2",
+    "name": "Beach TV Key West & Florida Keys",
+    "stream_urls": [
+      "https://5ed325193d4e1.streamlock.net:444/LiveTV/KTVHD/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RGeO9EbtqaGTGq",
+    "name": "Beach TV Myrtle Beach & The Grand Strand",
+    "stream_urls": [
+      "https://5ed325193d4e1.streamlock.net:444/LiveTV/MTVHD/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "e2KBiYsFYmCeLC",
+    "name": "Beach TV Panama City",
+    "stream_urls": [
+      "https://5ed325193d4e1.streamlock.net:444/LiveTV/BTVHD/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "eko7uFhNP2g6vo",
+    "name": "Chile Channel",
+    "stream_urls": [
+      "https://v2.tustreaming.cl/chilechannel/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OAc1RsWsrgVUky",
+    "name": "China Travel",
+    "stream_urls": [
+      "https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnchinatravel-distrotvus/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "zho"
+    ],
+    "country": "cn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "0QTowwNml7pc3D",
+    "name": "Costa Rica Channel",
+    "stream_urls": [
+      "https://video0.rogohosting.com:19360/8006/8006.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "U0CRP1XJWZMip7",
+    "name": "Discover Pakistan",
+    "stream_urls": [
+      "https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "urd"
+    ],
+    "country": "pk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WEB2GZQJXf5Tv5",
+    "name": "earthTV Showcase",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/HfgIFGbdGJ0"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "EgGzxbZMFfzTB1",
+    "name": "Fun Roads TV",
+    "stream_urls": [
+      "https://a-cdn.klowdtv.com/live3/funroads_720p/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "LHaPUbDQkhl20K",
+    "name": "Go2Travel",
+    "stream_urls": [
+      "https://go2thls.wns.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FqOEEF2vJ9P2jA",
+    "name": "GoTraveler",
+    "stream_urls": [
+      "https://amg09501-amg09501c1-klowdtv-us-2398.playouts.now.amagi.tv/playlist/amg09501-quester-gotraveler-klowdtvus/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "Vl0QVZKyw8Jx7M",
+    "name": "INTRAVEL",
+    "stream_urls": [
+      "https://amg00861-amg00861c10-firetv-us-4726.playouts.now.amagi.tv/playlist.m3u8",
+      "https://amg00861-amg00861c22-stirr-us-8773.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "nl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "IpMm8lGTn8YwfA",
+    "name": "Journy",
+    "stream_urls": [
+      "https://d3s3a5c7f101eb.cloudfront.net/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "50fISDUbgXCYss",
+    "name": "Living Asia Channel",
+    "stream_urls": [
+      "https://cdn.vegasplus.us/vegas/lac/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ph",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "goNrMuzefDwskd",
+    "name": "Maldives TV",
+    "stream_urls": [
+      "https://lana.psm.mv/live/mtv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "mv",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "u0r5JHswrz2Ecq",
+    "name": "OEPM TV",
+    "stream_urls": [
+      "https://cnn.hostlagarto.com/oepmtelevision/tracks-v1a1/mono.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "do",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "HuAgGKfyx6NIKq",
+    "name": "Palm Beaches TV",
+    "stream_urls": [
+      "https://live.feed.thepalmbeaches.tv/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XVHhDeQHjuS3Dt",
+    "name": "Peer TV Alto Adige",
+    "stream_urls": [
+      "https://iptv.peer.biz/live/peertv-it.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ita"
+    ],
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "N6SFUaTsOKbZm2",
+    "name": "Peer TV South Tyrol",
+    "stream_urls": [
+      "https://iptv.peer.biz/live/peertv-en.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wRTNWuXxEeSri7",
+    "name": "Peer TV Südtirol",
+    "stream_urls": [
+      "https://iptv.peer.biz/live/peertv.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "K8THRi8hdcH82I",
+    "name": "Schladming-Dachstein TV",
+    "stream_urls": [
+      "https://m317.video-stream-hosting.de/gzSoftware-live/_definst_/smil:livestream.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "cfBOOiTtczD84z",
+    "name": "Space Live powered by sen",
+    "stream_urls": [
+      "https://880ca9c9341c405f83d8664a18cc7134.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-1224-SPACELIVE-LG-UK/mt/lg-uk/1224/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xJdfWe2cF6aQkl",
+    "name": "Tanzania Safari Channel",
+    "stream_urls": [
+      "https://stream-134630.castr.net/5fe35eae8c53540cab83659a/live_31dabe40323511f08b8efff0016f3b67/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "tz",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4IxBqGTmogAaSR",
+    "name": "Teletur",
+    "stream_urls": [
+      "https://fox.hostlagarto.com:8081/teleturtv/tracks-v1a1/mono.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "do",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fwm1YJJu2dW30c",
+    "name": "Travel TV",
+    "stream_urls": [
+      "https://streamer103.neterra.tv/travel/live.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "bul"
+    ],
+    "country": "bg",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "b84zpXhOp5BzZX",
+    "name": "Travelxp HD",
+    "stream_urls": [
+      "https://amg00416-amg00416c9-samsung-in-4882.playouts.now.amagi.tv/playlist/amg00416-travelxp-travelxphd-samsungin/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "in",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xCDrIWnNgtribb",
+    "name": "Turismo RDTV",
+    "stream_urls": [
+      "https://streamunoapp.com:3086/live/telemileniolive.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "do",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gc9aeOkbQG1vYx",
+    "name": "Turistik TV",
+    "stream_urls": [
+      "https://cdn1.cef-technology.com/stream_web/turistik/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "mx",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "1ONog0eu0K0fg5",
+    "name": "TV Sayohi",
+    "stream_urls": [
+      "https://live.teleradiocom.tj/16/3m.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "tgk"
+    ],
+    "country": "tj",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wOZe5xcKqXHvTH",
+    "name": "TVS Travel Network",
+    "stream_urls": [
+      "https://rpn.bozztv.com/gusa/gusa-tvstravel/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "llFPiUxpykzPFc",
+    "name": "大陸尋奇",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/In_HXlgUt8w"
+    ],
+    "languages": [
+      "zho"
+    ],
+    "country": "tw",
+    "isGeoBlocked": false
+  }
+]

@@ -1,0 +1,719 @@
+[
+  {
+    "nanoid": "tn94bXCcZQXp4I",
+    "name": "Al Arabiya Programs",
+    "stream_urls": [
+      "https://live.alarabiya.net/alarabiapublish/aaprograms.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "ae",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "7ww4XqjlIRbeax",
+    "name": "Asahi: Documentary",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/XsjNrHnoZow"
+    ],
+    "languages": [
+      "jpn"
+    ],
+    "country": "jp",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5ZGnLxWOqASmvp",
+    "name": "Asharq Discovery",
+    "stream_urls": [
+      "https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "eNsC6GxX1XiJq8",
+    "name": "Asharq Documentary",
+    "stream_urls": [
+      "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Ea8jv31mCEce8j",
+    "name": "Autentic History",
+    "stream_urls": [
+      "https://9e754fa707344ccca6d84955c8fcaf36.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RlaxxTV-eu_AutenticHistory/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BKprRPWc9ugskl",
+    "name": "Backstage",
+    "stream_urls": [
+      "https://d2ah48mnofquik.cloudfront.net/Backstage.m3u8",
+      "https://fuse-backstage-xumo.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "A5X8ark1iIaicP",
+    "name": "BBC Earth",
+    "stream_urls": [
+      "https://amg00793-amg00793c6-firetv-us-4067.playouts.now.amagi.tv/playlist.m3u8",
+      "https://pb-zjy36qhp8e8cz.akamaized.net/BBC_Earth_US.m3u8",
+      "https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist.m3u8",
+      "https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zK7yBiaKTXUpou",
+    "name": "BBC Four UK HD",
+    "stream_urls": [
+      "https://streamer.nexyl.uk/48559ccd-6400-457d-8acc-06b9e24c2ed8.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WH7adDfFfMrDqi",
+    "name": "Bloomberg Originals",
+    "stream_urls": [
+      "https://dai.google.com/linear/hls/event/jKwfd4apQcuxQtyRI9Q6-Q/master.m3u8",
+      "https://aegis-cloudfront-1.tubi.video/c597e8ac-bfb2-4a1c-865c-cad55566f953/playlist.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/OlUMDZchivQ"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zV7a20HW4WTHRY",
+    "name": "BritBox Mysteries",
+    "stream_urls": [
+      "https://pb-ippotemhtglhp.akamaized.net/playlist.m3u8",
+      "https://aegis-cloudfront-1.tubi.video/c95700f8-e51c-4a36-ad46-56f70fc9f1d9/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "u6zpmHPrnF1o3c",
+    "name": "CGTN Documentary",
+    "stream_urls": [
+      "https://mn-nl.mncdn.com/dogusdyg_drone/cgtn/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "tur"
+    ],
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OAc1RsWsrgVUky",
+    "name": "China Travel",
+    "stream_urls": [
+      "https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnchinatravel-distrotvus/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "zho"
+    ],
+    "country": "cn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "itmATVZa5Ggr1u",
+    "name": "Click TV (Coronel)",
+    "stream_urls": [
+      "https://v2.tustreaming.cl/clicktv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "b3SY5CGeJGKaQq",
+    "name": "CNA Insider",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/fSUMKrxPEd8"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "sg",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sm6jSJZU2R13Dv",
+    "name": "Court TV",
+    "stream_urls": [
+      "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-courttv-tablo/playlist.m3u8",
+      "https://pb-2rv53xe17yzvq.akamaized.net/Court_TV_US.m3u8",
+      "https://aegis-cloudfront-1.tubi.video/661c498b-4af0-4ba9-ae1c-4081340ee085/playlist.m3u8",
+      "https://content.uplynk.com/channel/6c0bd0f94b1d4526a98676e9699a10ef.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "LGhrHQJDBR90AW",
+    "name": "Crime360",
+    "stream_urls": [
+      "https://live-manifest.production-public.tubi.io/live/d65f6697-9fd2-477f-a56d-26cea1b939b7/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yN0sLbfA3r2bT8",
+    "name": "DangerTV",
+    "stream_urls": [
+      "https://dk0n7jh428tzj.cloudfront.net/v1/dangertv/samsungheadend_us/latest/main/hls/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jAekBDqlLERFF0",
+    "name": "Dateline 24/7",
+    "stream_urls": [
+      "https://d4whmvwm0rdvi.cloudfront.net/10007/99993007/hls/master.m3u8?ads.xumo_channelId=99993007",
+      "https://dz59iptwz5rxs.cloudfront.net/live/master.m3u8",
+      "https://pb-cpf6bqkmt2btj.akamaized.net/master.m3u8",
+      "https://aegis-cloudfront-1.tubi.video/240e3917-5be6-4a26-a1a2-878c9d40b5cf/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "86GG55Alt5PoRN",
+    "name": "Discovering China",
+    "stream_urls": [
+      "https://amg01314-amg01314c8-distrotv-us-10218.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtndiscoveringchina-distrotvus/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "zho"
+    ],
+    "country": "cn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "6gbtius213QaZ4",
+    "name": "Documentary+",
+    "stream_urls": [
+      "https://ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-859-DOCUMENTARYPLUS-DOCUMENTARYPLUS/mt/documentaryplus/859/hls/master/playlist.m3u8",
+      "https://d1kx9y4yhe8h6h.cloudfront.net/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2fMuVMErYSbQJN",
+    "name": "Documentary+ International",
+    "stream_urls": [
+      "https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-887-DOCUMENTARYINTERNATIONAL-DOCUMENTARYPLUS/mt/documentaryplus/887/hls/master/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FQVKNsI92Y63Vf",
+    "name": "Dokusat",
+    "stream_urls": [
+      "https://muc3.iptv-playoutcenter.de/dokusat/dokusat1/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "deu"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "nFh3xqtwlLRiFW",
+    "name": "Ecovisión",
+    "stream_urls": [
+      "https://streaming.grupomediosdelnorte.com:19360/ecovision/ecovision.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "do",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ok1XbdadbIAXgd",
+    "name": "Francophonie24",
+    "stream_urls": [
+      "https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "fra"
+    ],
+    "country": "fr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5wM1NwxDDPeLH5",
+    "name": "GEM Nature",
+    "stream_urls": [
+      "https://ca-rt.onetv.app/gemnature/index-0.m3u8?token=onetv202"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "fas"
+    ],
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "GOMdLvvyu3y5ss",
+    "name": "GZT",
+    "stream_urls": [
+      "https://mn-nl.mncdn.com/gzttv/gzttv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "tur"
+    ],
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OdnRloFb9PVDPW",
+    "name": "History Asia",
+    "stream_urls": [
+      "https://liveh34.vtvprime.vn/hls/HISTORY/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "eHVFNwpYsplsa2",
+    "name": "History Hit",
+    "stream_urls": [
+      "https://lds-timeline-plex.amagi.tv/playlist.m3u8",
+      "https://amg00426-lds-amg00426c2-samsung-ph-4623.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aLFPGwa8aYFwNo",
+    "name": "History TV18 HD",
+    "stream_urls": [
+      "https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelenglish-samsungin/playlist.m3u8",
+      "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/HistoryTV18HD.m3u8",
+      "https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "in",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "T7TXmLpBD9IwXz",
+    "name": "HRT 3",
+    "stream_urls": [
+      "https://webtvstream.bhtelecom.ba/hrt3.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hrv"
+    ],
+    "country": "hr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8BTlRgfNWp7SGA",
+    "name": "India TV Aap Ki Adalat",
+    "stream_urls": [
+      "https://amg01550-amg01550c6-samsung-in-4679.playouts.now.amagi.tv/playlist/amg01550-indiatvfast-indiatvakasamsung-samsungin/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "hin"
+    ],
+    "country": "in",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aQ7FlLoPCA66dw",
+    "name": "INWILD",
+    "stream_urls": [
+      "https://amg00861-amg00861c7-firetv-us-4725.playouts.now.amagi.tv/playlist.m3u8",
+      "https://amg00861-amg00861c7-stirr-us-8227.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "nl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "iEGZsXTraIc7nB",
+    "name": "KTOO 360TV 3 (FNX)",
+    "stream_urls": [
+      "https://api.v3.invintus.com/StreamURI/persis/2147483647/KTOO360TV.stream/media.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5uo7BGlCPn5nST",
+    "name": "Love Pets",
+    "stream_urls": [
+      "https://d31r8y66tn175.cloudfront.net/Love_Pets.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ca",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "m1LaVg3IHystk9",
+    "name": "Love The Planet",
+    "stream_urls": [
+      "https://amg01821-lovetv-amg01821c8-xumo-us-3443.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "29K3gt1fuyfoWN",
+    "name": "Lucky Dog",
+    "stream_urls": [
+      "https://d3j95sejv6mybj.cloudfront.net/Lucky_Dog.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CqXhOvAoEWsiJe",
+    "name": "MagellanTV TV Now",
+    "stream_urls": [
+      "https://pb-5evqkeieu3o6d.akamaized.net/Magellan_TV_Now.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "kfNMC8gMIZfcGp",
+    "name": "Nat Geo Animals",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/MiQe9ob9aDc"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lw6jSScbMN0yre",
+    "name": "Nature Time France",
+    "stream_urls": [
+      "https://bamusa-naturetime-emea-fra-rakuten.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "fra"
+    ],
+    "country": "ca",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "kc1rOesWp3ooeg",
+    "name": "NatureTime",
+    "stream_urls": [
+      "https://amg00090-blueantllc-lovenatureau-samsungnz-r3iaz.amagi.tv/playlist/amg00090-blueantllc-lovenatureau-samsungnz/playlist.m3u8",
+      "https://amg00090-blueantmedia-naturetime-samsungse-axgcn.amagi.tv/playlist/amg00090-blueantmedia-naturetime-samsungse/playlist.m3u8",
+      "https://amg00090-amgnaturetimeemea-rakuten.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng",
+      "spa"
+    ],
+    "country": "ca",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5dGASmS4TNjspn",
+    "name": "O'zbekiston Tarixi",
+    "stream_urls": [
+      "https://stream8.cinerama.uz/1209/tracks-v1a1/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "uzb"
+    ],
+    "country": "uz",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JGg2rFfUUHYtg9",
+    "name": "Persiana Docs",
+    "stream_urls": [
+      "https://scihls.persiana.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "fas"
+    ],
+    "country": "fr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VMF9bz9jysLZtk",
+    "name": "RT Documentary English",
+    "stream_urls": [
+      "https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8",
+      "https://rt-rtd.rttv.com/live/rtdoc/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "0mulGVhtSW9kDC",
+    "name": "RT Documentary Russian",
+    "stream_urls": [
+      "https://rt-doc.rttv.com/dvr/rtdru/playlist.m3u8",
+      "https://streaming.thestream.cyou/live/554.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "x77twNOeEoFaIl",
+    "name": "Safari TV",
+    "stream_urls": [
+      "https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "mal"
+    ],
+    "country": "in",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "eUaZRmaLUXGRGm",
+    "name": "Terra Mater WILD English",
+    "stream_urls": [
+      "https://amg01775-amg01775c1-amgplt0343.playout.now3.amagi.tv/playlist/amg01775-amg01775c1-amgplt0343/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "tT2v90JHj1tcan",
+    "name": "The Nest",
+    "stream_urls": [
+      "https://fast-channels.sinclairstoryline.com/THENEST/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ExqfRu5vFNM6yj",
+    "name": "Total Crime",
+    "stream_urls": [
+      "https://aegis-cloudfront-1.tubi.video/b062c287-a170-47df-99e4-f5dcd441ee59/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "ca",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "JLRlLiosJOhAzH",
+    "name": "UMSA TVU Internacional",
+    "stream_urls": [
+      "https://live.enhdtv.com:8081/8026/tracks-v1a1/mono.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "bo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NpJ5K3Avxx4otV",
+    "name": "WildEarth",
+    "stream_urls": [
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01290-wildearth-oando/playlist.m3u8",
+      "https://wildearth-ono.amagi.tv/playlist/amg01290-wildearth-oando/playlist.m3u8",
+      "https://wildearth-xumo.amagi.tv/master.m3u8",
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01290-wildearthmediap-wildearth-samsungnl/playlist.m3u8",
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01290-wildearthmediap-wildearth-samsungse/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "za",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fjXXoh4ZYStckG",
+    "name": "Zylo Into Crime",
+    "stream_urls": [
+      "https://amg00711-zylo-amg00711c10-rakuten-fr-6731.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "fra"
+    ],
+    "country": "fr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sao2rpFyAlLRAD",
+    "name": "Нано ТВ HD",
+    "stream_urls": [
+      "https://s1.tv-nano.com/Nano_rec/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "U1CYvPtiUwkGzD",
+    "name": "НАУКА",
+    "stream_urls": [
+      "https://vod.tuva.ru/nauka2/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  }
+]

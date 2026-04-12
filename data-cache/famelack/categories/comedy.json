@@ -1,0 +1,485 @@
+[
+  {
+    "nanoid": "gOima8j8Qx8bOX",
+    "name": "3Cat El búnquer",
+    "stream_urls": [
+      "https://fast-tailor.3catdirectes.cat/v1/channel/bunquer/hls.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "cat"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MsBPAtiznwuBpL",
+    "name": "3Cat Plats bruts",
+    "stream_urls": [
+      "https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "cat"
+    ],
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CYPaX2UVL5PBUV",
+    "name": "13 Humor",
+    "stream_urls": [
+      "https://origin.dpsgo.com/ssai/event/cKWySXKgSK-SzlJmESkOWw/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "spa"
+    ],
+    "country": "cl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "miNrjenD6E2QJg",
+    "name": "alpha Cinema",
+    "stream_urls": [
+      "https://live.15plusmg.ru/memfs/b389173a-df4e-4171-8904-e249893e71eb.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Iv7qvCNAFClLRJ",
+    "name": "alpha Funny",
+    "stream_urls": [
+      "https://live.15plusmg.ru/memfs/90b76c71-a86e-488a-aac4-cb66d6f88781.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "zDrvFUZTP4zt2k",
+    "name": "alpha Moretime",
+    "stream_urls": [
+      "https://live.15plusmg.ru/memfs/3546fc09-2eba-459d-9a1f-9a2fc39e50bd.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "rus"
+    ],
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uvGqqPEzc8FT4E",
+    "name": "America’s Funniest Home Videos",
+    "stream_urls": [
+      "https://d1mp1kdk5zi1ie.cloudfront.net/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "BFNn9BFX5O3vY0",
+    "name": "Anger Management Channel",
+    "stream_urls": [
+      "https://aegis-cloudfront-1.tubi.video/0a019247-55a2-4b3e-8b62-b84c9cbd5b12/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jwxJ88yTnvCRN9",
+    "name": "BBC Comedy Greats",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/hJbIWakkNNI"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OoTZbjtjjfRPgJ",
+    "name": "Camera Smile",
+    "stream_urls": [
+      "https://rpn.bozztv.com/gusa/gusa-camerasmile/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "DjReFSbUV8nG7b",
+    "name": "Chocolate Sundaes Comedy",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/37-X4eYGOFY"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "K1Rki2QXOUbCd5",
+    "name": "Classic Mr Bean",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/XQLEvieRMj4"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "8j5W4jKa2q9Ms3",
+    "name": "Comedy Dynamics",
+    "stream_urls": [
+      "https://d3a5mry3t5fzw9.cloudfront.net/playlist.m3u8",
+      "https://linear-903.frequency.stream/dist/xumo/903/hls/master/playlist.m3u8",
+      "https://aegis-cloudfront-1.tubi.video/03cfa38e-ff8b-4e52-8fd2-084636c0c043/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "QDT0Nt5qZTPoXG",
+    "name": "Comedy Play",
+    "stream_urls": [
+      "https://stream1.antenaplay.ro/live/ComedyPlay/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ron"
+    ],
+    "country": "ro",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "7B5TL7KhdmamWP",
+    "name": "El Chavo del 8",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/fy_fYd3ZwPE"
+    ],
+    "languages": [
+      "spa"
+    ],
+    "country": "mx",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "q6wDHNgUCUnAZX",
+    "name": "FailArmy",
+    "stream_urls": [
+      "https://pb-w5ixcojas1swl.akamaized.net/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "LAzGmzfDmBkZX9",
+    "name": "Fora Tedio TV",
+    "stream_urls": [
+      "https://stmv2.srvif.com/foratedio/foratedio/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "por"
+    ],
+    "country": "br",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "WdvSKjwqC8AU1a",
+    "name": "GEM Comedy",
+    "stream_urls": [
+      "https://ca-rt.onetv.app/gemcomedy/index-0.m3u8?token=onetv202"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "fas"
+    ],
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "I6D9IHQIDu6y7l",
+    "name": "Güldür Güldür Show",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/quW_Z7i-zKc"
+    ],
+    "languages": [
+      "tur"
+    ],
+    "country": "tr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qy6bcbSL050Vab",
+    "name": "Humor Mill",
+    "stream_urls": [
+      "https://du1gyxfing4ke.cloudfront.net/scheduler/scheduleMaster/152.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SPKf8qiF4zzrz5",
+    "name": "Jail",
+    "stream_urls": [
+      "https://e85541db4ae943d9b5a09477d6b1d8ab.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Jail/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "pl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yQMuoatPHbGi75",
+    "name": "Jordan Comedy",
+    "stream_urls": [
+      "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Comedy/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "jo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "e8szC96ftGfIR5",
+    "name": "Laugh After Dark",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/fxLorKqLpvA"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hpo8bmZBPSGLRO",
+    "name": "LOL Network",
+    "stream_urls": [
+      "https://d1kt53vrikzr5o.cloudfront.net/v1/lol_lolnetwork_5/samsungheadend_us/latest/main/hls/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Wta79gtFAih710",
+    "name": "LOL Network: Stand-Up 24/7",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/ctyzvJLoid0"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3VQ70bm6nYhxs7",
+    "name": "Mr Bean Live Action",
+    "stream_urls": [
+      "https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanpopupcc-rakutenuk/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "D0c4Jvigf5dKNp",
+    "name": "Mystery Science Theater 3000",
+    "stream_urls": [
+      "https://d1c73nj8qxp55a.cloudfront.net/Mystery_Science_Theater_3000.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RMSylCl2JLBBMs",
+    "name": "Mystery Science Theater 3000: FOREVER-a-thon",
+    "stream_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/B7qOZraAIlw"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "446xsIHgo8ylMC",
+    "name": "NBC Comedy Vault",
+    "stream_urls": [
+      "https://xumo-xumoent-vc-105-z0vpm.fast.nbcuni.com/live/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "rD66Oim1zZv8fD",
+    "name": "Persiana Comedy",
+    "stream_urls": [
+      "https://comedyhls.persiana.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "fas"
+    ],
+    "country": "fr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qFOPNZj5esf6S3",
+    "name": "RiffTrax",
+    "stream_urls": [
+      "https://wurlrifftrax.global.transmit.live/hls/68222b9cbe836edbe6f39e74/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bSyZI3uj6B02G3",
+    "name": "Roya Comedy",
+    "stream_urls": [
+      "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-comedy/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "ara"
+    ],
+    "country": "jo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4VE8AYBTYbd8ii",
+    "name": "Sirippoli TV",
+    "stream_urls": [
+      "https://segment.yuppcdn.net/240122/siripoli/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "tam"
+    ],
+    "country": "in",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "kXXPyaWYEhBzfW",
+    "name": "SNL Vault",
+    "stream_urls": [
+      "https://d4whmvwm0rdvi.cloudfront.net/10007/99993017/hls/master.m3u8?ads.xumo_channelId=99993017",
+      "https://xumo-xumoent-vc-103-d3uqt.fast.nbcuni.com/live/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yenlo48DOLbqmP",
+    "name": "The Chat Show Channel",
+    "stream_urls": [
+      "https://amg00426-lds-amg00426c11-rakuten-uk-3888.playouts.now.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "613B4maEJO1ust",
+    "name": "The Conners",
+    "stream_urls": [
+      "https://amg00353-amg00353c36-xumo-us-3803.playouts.now.amagi.tv/playlist.m3u8",
+      "https://aegis-cloudfront-1.tubi.video/e08080ff-3d87-4d9e-a156-91554fd2e39b/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": true
+  },
+  {
+    "nanoid": "MjP0Gu7jfIZvWL",
+    "name": "TVS Comedy Network",
+    "stream_urls": [
+      "https://rpn.bozztv.com/gusa/gusa-tvscomedy/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "languages": [
+      "eng"
+    ],
+    "country": "us",
+    "isGeoBlocked": false
+  }
+]
