@@ -178,7 +178,8 @@ endpoint <- 'http://api.statbank.dk/v1/data'"),
     } else if(s == 18) {
       tagList(
         h3("Trin 18: Vis kalender med markeret sidste arbejdsdag"),
-        plotOutput("calendarPlot")
+        plotOutput("calendarPlot"),
+        h2("Det er den dag hvor mænd kan gå på juleferie, fordi de da har lagt lige så mange arbejdstimer som kvinder lægger på et helt år.")
       )
     } else {
       h3("Alle trin er gennemgået!")
