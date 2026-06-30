@@ -1,0 +1,548 @@
+# app.R
+# install.packages(c("shiny", "bslib", "tidyverse", "rvest", "lubridate", "DT"))
+
+library(shiny)
+library(bslib)
+library(tidyverse)
+library(rvest)
+library(lubridate)
+library(DT)
+
+program_url <- "https://events.digital-research.academy/event/109/contributions/"
+event_tz <- "Europe/Warsaw"
+storage_key <- "user2026_plan_ids"
+
+`%||%` <- function(x, y) {
+  if (is.null(x) || length(x) == 0 || all(is.na(x))) y else x
+}
+
+duration_to_minutes <- function(type) {
+  type <- type %||% ""
+  h <- str_match(type, "(\\d+)\\s*hours?")[, 2] |> as.numeric()
+  m <- str_match(type, "(\\d+)\\s*minutes?")[, 2] |> as.numeric()
+  h[is.na(h)] <- 0
+  m[is.na(m)] <- 0
+  out <- h * 60 + m
+  
+  case_when(
+    out > 0 ~ out,
+    str_detect(type, "Keynote") ~ 60,
+    str_detect(type, "Poster") ~ 60,
+    str_detect(type, "Lightning Talk") ~ 5,
+    str_detect(type, "Talks") ~ 20,
+    TRUE ~ 20
+  )
+}
+
+parse_contributions <- function(url = program_url) {
+  page <- read_html(url)
+  
+  lines <- page |>
+    html_element("body") |>
+    html_text2() |>
+    str_split("\n") |>
+    pluck(1) |>
+    str_squish()
+  
+  lines <- lines[lines != ""]
+  starts <- which(str_detect(lines, "^\\d+\\.\\s+"))
+  blocks <- map2(starts, c(starts[-1] - 1, length(lines)), ~ lines[.x:.y])
+  
+  map_dfr(blocks, function(block) {
+    block <- block[!str_detect(block, "^Go to contribution page$")]
+    
+    date_i <- which(str_detect(block, "^\\d{2}/\\d{2}/\\d{4},\\s*\\d{2}:\\d{2}$"))[1]
+    if (is.na(date_i)) return(tibble())
+    
+    contribution_id <- str_extract(block[1], "^\\d+")
+    title <- str_remove(block[1], "^\\d+\\.\\s+")
+    
+    speaker <- block[2:(date_i - 1)] |>
+      paste(collapse = " ") |>
+      str_squish()
+    
+    start_dt <- dmy_hm(block[date_i], tz = event_tz)
+    after <- if (date_i < length(block)) block[(date_i + 1):length(block)] else character()
+    
+    type_i <- which(str_detect(
+      after,
+      "^(Tutorial|Talks|Lightning Talk|Poster|Keynote|Sponsor Session)"
+    ))[1]
+    
+    if (is.na(type_i)) type_i <- 1
+    
+    track <- if (type_i > 1) {
+      paste(after[1:(type_i - 1)], collapse = " ") |> str_squish()
+    } else {
+      NA_character_
+    }
+    
+    type <- after[type_i] %||% NA_character_
+    possible_session <- after[type_i + 1] %||% NA_character_
+    
+    session <- if (
+      !is.na(possible_session) &&
+        nchar(possible_session) < 80 &&
+        !str_detect(possible_session, "^Abstract")
+    ) possible_session else NA_character_
+    
+    desc_start <- type_i + ifelse(is.na(session), 1, 2)
+    
+    description <- if (desc_start <= length(after)) {
+      after[desc_start:length(after)] |>
+        paste(collapse = " ") |>
+        str_squish()
+    } else {
+      NA_character_
+    }
+    
+    duration_min <- duration_to_minutes(type)
+    end_dt <- start_dt + minutes(duration_min)
+    
+    tibble(
+      row_id = contribution_id,
+      title,
+      speaker,
+      datetime_start = start_dt,
+      datetime_end = end_dt,
+      date = as.Date(start_dt),
+      start = format(start_dt, "%H:%M"),
+      end = format(end_dt, "%H:%M"),
+      duration_min,
+      track,
+      type,
+      session,
+      room = NA_character_,
+      location = NA_character_,
+      description,
+      url = paste0(
+        "https://events.digital-research.academy/event/109/contributions/",
+        contribution_id,
+        "/"
+      )
+    )
+  }) |>
+    mutate(
+      text = str_c(
+        title, speaker, track, type, session, room, location, description,
+        sep = " "
+      )
+    ) |>
+    arrange(datetime_start, track, title)
+}
+
+overlaps_with_selected <- function(df, selected_ids) {
+  selected <- df |> filter(row_id %in% selected_ids)
+  
+  if (nrow(selected) == 0) return(rep(FALSE, nrow(df)))
+  
+  map_lgl(seq_len(nrow(df)), function(i) {
+    any(
+      df$datetime_start[i] < selected$datetime_end &
+        selected$datetime_start < df$datetime_end &
+        df$row_id[i] != selected$row_id
+    )
+  })
+}
+
+ics_escape <- function(x) {
+  x |>
+    replace_na("") |>
+    str_replace_all("\\\\", "\\\\\\\\") |>
+    str_replace_all("\n", "\\\\n") |>
+    str_replace_all(",", "\\\\,") |>
+    str_replace_all(";", "\\\\;")
+}
+
+make_ics <- function(df) {
+  if (nrow(df) == 0) {
+    return("BEGIN:VCALENDAR\r\nVERSION:2.0\r\nEND:VCALENDAR")
+  }
+  
+  one_event <- function(row) {
+    event_location <- paste(na.omit(c(row$location, row$room)), collapse = ", ")
+    
+    c(
+      "BEGIN:VEVENT",
+      paste0("UID:user2026-", row$row_id, "@local"),
+      paste0("DTSTAMP:", format(with_tz(now(), "UTC"), "%Y%m%dT%H%M%SZ")),
+      paste0("DTSTART:", format(with_tz(row$datetime_start, "UTC"), "%Y%m%dT%H%M%SZ")),
+      paste0("DTEND:", format(with_tz(row$datetime_end, "UTC"), "%Y%m%dT%H%M%SZ")),
+      paste0("SUMMARY:", ics_escape(row$title)),
+      paste0("LOCATION:", ics_escape(event_location)),
+      paste0("DESCRIPTION:", ics_escape(paste(
+        na.omit(c(row$track, row$type, row$session, row$speaker, row$url)),
+        collapse = " — "
+      ))),
+      paste0("URL:", row$url),
+      "END:VEVENT"
+    )
+  }
+  
+  c(
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//user2026-plan//shiny//EN",
+    unlist(map(split(df, seq_len(nrow(df))), one_event)),
+    "END:VCALENDAR"
+  ) |>
+    paste(collapse = "\r\n")
+}
+
+ui <- page_sidebar(
+  title = "Min useR! 2026-plan",
+  
+  tags$head(
+    tags$style(HTML("
+.talk-card.blocked {
+  background: #f1f1f1 !important;
+  border-color: #ddd !important;
+  color: #999 !important;
+  opacity: 0.55;
+}
+
+.talk-card.blocked * {
+  color: #999 !important;
+}
+  .talk-card.blocked .shiny-bound-input,
+.talk-card.blocked a {
+  pointer-events: none;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+      .slot { border-top: 1px solid #ddd; padding: 12px 0; }
+      .slot-time { font-weight: 700; font-size: 1.1rem; margin-bottom: 8px; }
+      .talk-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+      .talk-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        width: 310px;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      }
+      .talk-card.selected {
+        border: 3px solid #222;
+        background: #eefbea;
+      }
+      .talk-card.conflict {
+        background: #fff1f1;
+        border-color: #c44;
+      }
+      .talk-title { font-weight: 700; margin-bottom: 6px; }
+      .talk-meta { font-size: 0.85rem; color: #555; margin-bottom: 6px; }
+      .talk-track { font-size: 0.82rem; font-style: italic; margin-bottom: 6px; }
+      .small-muted { color: #777; font-size: 0.85rem; }
+    ")),
+    tags$script(HTML(sprintf("
+      document.addEventListener('shiny:connected', function() {
+        const saved = localStorage.getItem('%s') || '';
+        Shiny.setInputValue('stored_plan', saved, {priority: 'event'});
+      });
+
+      Shiny.addCustomMessageHandler('save_plan', function(ids) {
+        localStorage.setItem('%s', ids.join(','));
+      });
+
+      Shiny.addCustomMessageHandler('clear_plan', function(_) {
+        localStorage.removeItem('%s');
+      });
+    ", storage_key, storage_key, storage_key)))
+  ),
+  
+  sidebar = sidebar(
+    actionButton("reload", "Hent program igen"),
+    selectInput("day", "Dag", choices = "Alle"),
+    selectInput("track", "Track", choices = "Alle"),
+    selectInput("type", "Type", choices = "Alle"),
+    textInput("q", "Søg", placeholder = "fx shiny, quarto, econometrics"),
+    checkboxInput("hide_conflicts", "Skjul oplæg der overlapper med mine valg", FALSE),
+    checkboxInput("only_selected", "Vis kun mine valg", FALSE),
+    hr(),
+    actionButton("clear", "Ryd plan"),
+    downloadButton("csv", "Download CSV"),
+    downloadButton("ics", "Download kalender")
+  ),
+  
+  layout_columns(
+    card(card_header("Program"), uiOutput("calendar")),
+    card(
+      card_header("Min plan"),
+      textOutput("summary"),
+      DTOutput("chosen"),
+      textOutput("conflicts")
+    ),
+    col_widths = c(8, 4)
+  )
+)
+
+server <- function(input, output, session) {
+  program <- reactiveVal(parse_contributions())
+  chosen_ids <- reactiveVal(character())
+  restored <- reactiveVal(FALSE)
+  
+  observeEvent(input$stored_plan, {
+    if (isTRUE(restored())) return()
+    
+    saved <- input$stored_plan
+    
+    ids <- if (nzchar(saved)) {
+      str_split(saved, ",")[[1]]
+    } else {
+      character()
+    }
+    
+    ids <- intersect(ids, program()$row_id)
+    chosen_ids(ids)
+    restored(TRUE)
+  }, ignoreInit = FALSE)
+  
+  observeEvent(chosen_ids(), {
+    session$sendCustomMessage("save_plan", chosen_ids())
+  }, ignoreInit = TRUE)
+  
+  observeEvent(input$reload, {
+    program(parse_contributions())
+    chosen_ids(intersect(chosen_ids(), program()$row_id))
+  })
+  
+  observeEvent(input$clear, {
+    chosen_ids(character())
+    session$sendCustomMessage("clear_plan", list())
+  })
+  
+  observe({
+    df <- program()
+    
+    updateSelectInput(session, "day",
+      choices = c("Alle", sort(unique(as.character(df$date))))
+    )
+    
+    updateSelectInput(session, "track",
+      choices = c("Alle", sort(unique(na.omit(df$track))))
+    )
+    
+    updateSelectInput(session, "type",
+      choices = c("Alle", sort(unique(na.omit(df$type))))
+    )
+  })
+  
+  observe({
+    ids <- program()$row_id
+    
+    walk(ids, function(id) {
+      local({
+        this_id <- id
+        
+        observeEvent(input[[paste0("pick_", this_id)]], {
+          current <- chosen_ids()
+          
+          if (this_id %in% current) {
+            chosen_ids(setdiff(current, this_id))
+            return()
+          }
+          
+          df <- program()
+          candidate <- df |> filter(row_id == this_id)
+          selected <- df |> filter(row_id %in% current)
+          
+          has_conflict <- nrow(selected) > 0 &&
+            any(
+              candidate$datetime_start < selected$datetime_end &
+                selected$datetime_start < candidate$datetime_end
+            )
+          
+          if (has_conflict) {
+            clashing <- selected |>
+              filter(
+                candidate$datetime_start < datetime_end,
+                datetime_start < candidate$datetime_end
+              ) |>
+              pull(title) |>
+              paste(collapse = ", ")
+            
+            showNotification(
+              paste("Kolliderer med:", clashing),
+              type = "error",
+              duration = 6
+            )
+            return()
+          }
+          
+          chosen_ids(sort(unique(c(current, this_id))))
+        }, ignoreInit = TRUE)
+      })
+    })
+  })
+  
+  chosen <- reactive({
+    program() |>
+      filter(row_id %in% chosen_ids()) |>
+      arrange(datetime_start)
+  })
+  
+  filtered <- reactive({
+    df <- program()
+    selected <- chosen_ids()
+    
+    df <- df |>
+      mutate(
+        selected = row_id %in% selected,
+        conflict = overlaps_with_selected(df, selected)
+      )
+    
+    if (input$day != "Alle") df <- filter(df, as.character(date) == input$day)
+    if (input$track != "Alle") df <- filter(df, track == input$track)
+    if (input$type != "Alle") df <- filter(df, type == input$type)
+    
+    if (nzchar(input$q)) {
+      df <- filter(df, str_detect(str_to_lower(text), fixed(str_to_lower(input$q))))
+    }
+    
+    if (isTRUE(input$hide_conflicts)) {
+      df <- filter(df, !conflict | selected)
+    }
+    
+    if (isTRUE(input$only_selected)) {
+      df <- filter(df, selected)
+    }
+    
+    df
+  })
+  
+  output$calendar <- renderUI({
+    df <- filtered()
+    
+    if (nrow(df) == 0) {
+      return(tags$p("Ingen oplæg matcher filtrene."))
+    }
+    
+    by_day <- split(df, df$date)
+    
+    tagList(map(names(by_day), function(day_name) {
+      day_df <- by_day[[day_name]]
+      by_time <- split(day_df, day_df$start)
+      
+      tagList(
+        tags$h3(day_name),
+        map(names(by_time), function(t) {
+          slot_df <- by_time[[t]]
+          
+          tags$div(
+            class = "slot",
+            tags$div(class = "slot-time", t),
+            tags$div(
+              class = "talk-grid",
+              map(seq_len(nrow(slot_df)), function(i) {
+                row <- slot_df[i, ]
+                
+cls <- c(
+  "talk-card",
+  if (row$selected) "selected",
+  if (row$conflict && !row$selected) "blocked"
+) |>
+  discard(is.null) |>
+  paste(collapse = " ")
+                
+                room_text <- ifelse(
+                  is.na(row$room) || row$room == "",
+                  "Lokale: ikke angivet",
+                  paste("Lokale:", row$room)
+                )
+                
+                tags$div(
+                  class = cls,
+                  tags$div(class = "talk-title", row$title),
+                  tags$div(class = "talk-meta", paste(row$start, row$end, sep = "–")),
+                  tags$div(class = "talk-track", row$track %||% ""),
+                  tags$div(class = "small-muted", row$type %||% ""),
+                  tags$div(class = "small-muted", room_text),
+                  tags$div(class = "small-muted", row$speaker %||% ""),
+                  tags$br(),
+                  if (isTRUE(row$selected)) {
+  actionLink(
+    paste0("pick_", row$row_id),
+    "Fjern fra plan"
+  )
+} else if (isTRUE(row$conflict)) {
+  tags$span("Kolliderer", class = "small-muted")
+} else {
+  actionLink(
+    paste0("pick_", row$row_id),
+    "Tilføj til plan"
+  )
+},
+                  tags$span(" · "),
+                  tags$a("Indico", href = row$url, target = "_blank")
+                )
+              })
+            )
+          )
+        })
+      )
+    }))
+  })
+  
+  output$summary <- renderText({
+    paste0(nrow(chosen()), " valgte programpunkter. Gemmes automatisk i browseren.")
+  })
+  
+  output$chosen <- renderDT({
+    chosen() |>
+      transmute(
+        dato = date,
+        tid = paste(start, end, sep = "–"),
+        track,
+        type,
+        lokale = room,
+        titel = title,
+        speaker
+      ) |>
+      datatable(
+        rownames = FALSE,
+        options = list(pageLength = 10, scrollX = TRUE)
+      )
+  })
+  
+output$conflicts <- renderText({
+  df <- chosen()
+
+  if (nrow(df) < 2) return("Ingen overlap i dine valg.")
+
+  pairs <- tidyr::expand_grid(
+    a = seq_len(nrow(df)),
+    b = seq_len(nrow(df))
+  ) |>
+    filter(a < b)
+
+  clashes <- pairs |>
+    mutate(
+      overlap =
+        df$datetime_start[a] < df$datetime_end[b] &
+        df$datetime_start[b] < df$datetime_end[a],
+      label = paste(df$date[a], df$start[a])
+    ) |>
+    filter(overlap)
+
+  if (nrow(clashes) == 0) {
+    "Ingen overlap i dine valg."
+  } else {
+    paste(
+      "Overlap:",
+      paste(unique(clashes$label), collapse = ", ")
+    )
+  }
+})
+  
+  output$csv <- downloadHandler(
+    filename = function() "user2026_plan.csv",
+    content = function(file) write_csv(chosen(), file)
+  )
+  
+  output$ics <- downloadHandler(
+    filename = function() "user2026_plan.ics",
+    content = function(file) writeLines(make_ics(chosen()), file, useBytes = TRUE)
+  )
+}
+
+shinyApp(ui, server)
