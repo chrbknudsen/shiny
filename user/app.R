@@ -264,7 +264,7 @@ tags$script(HTML(sprintf("
   ),
   
   sidebar = sidebar(
-    actionButton("reload", "Hent program igen"),
+    actionButton("reload", "Hent program igen T"),
     selectInput("day", "Dag", choices = "Alle"),
     selectInput("track", "Track", choices = "Alle"),
     selectInput("type", "Type", choices = "Alle"),
