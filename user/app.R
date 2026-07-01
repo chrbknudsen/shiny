@@ -234,20 +234,33 @@ ui <- page_sidebar(
       .talk-track { font-size: 0.82rem; font-style: italic; margin-bottom: 6px; }
       .small-muted { color: #777; font-size: 0.85rem; }
     ")),
-    tags$script(HTML(sprintf("
-      document.addEventListener('shiny:connected', function() {
-        const saved = localStorage.getItem('%s') || '';
-        Shiny.setInputValue('stored_plan', saved, {priority: 'event'});
-      });
+tags$script(HTML(sprintf("
+  function normalizePlanIds(ids) {
+    if (ids === null || ids === undefined || ids === '') {
+      return [];
+    }
 
-      Shiny.addCustomMessageHandler('save_plan', function(ids) {
-        localStorage.setItem('%s', ids.join(','));
-      });
+    if (Array.isArray(ids)) {
+      return ids.map(String);
+    }
 
-      Shiny.addCustomMessageHandler('clear_plan', function(_) {
-        localStorage.removeItem('%s');
-      });
-    ", storage_key, storage_key, storage_key)))
+    return [String(ids)];
+  }
+
+  document.addEventListener('shiny:connected', function() {
+    const saved = localStorage.getItem('%s') || '';
+    Shiny.setInputValue('stored_plan', saved, {priority: 'event'});
+  });
+
+  Shiny.addCustomMessageHandler('save_plan', function(ids) {
+    const normalized = normalizePlanIds(ids);
+    localStorage.setItem('%s', normalized.join(','));
+  });
+
+  Shiny.addCustomMessageHandler('clear_plan', function(_) {
+    localStorage.removeItem('%s');
+  });
+", storage_key, storage_key, storage_key)))
   ),
   
   sidebar = sidebar(
