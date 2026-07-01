@@ -247,7 +247,7 @@ tags$script(HTML(sprintf("
     return [String(ids)];
   }
 
-  document.addEventListener('shiny:connected', function() {
+  Shiny.addCustomMessageHandler('request_stored_plan', function(_) {
     const saved = localStorage.getItem('%s') || '';
     Shiny.setInputValue('stored_plan', saved, {priority: 'event'});
   });
@@ -293,36 +293,48 @@ server <- function(input, output, session) {
   program <- reactiveVal(parse_contributions())
   chosen_ids <- reactiveVal(character())
   restored <- reactiveVal(FALSE)
+  session$onFlushed(function() {
+    session$sendCustomMessage("request_stored_plan", list())
+  }, once = TRUE)
   
-  observeEvent(input$stored_plan, {
-    if (isTRUE(restored())) return()
-    
-    saved <- input$stored_plan
-    
-    ids <- if (nzchar(saved)) {
-      str_split(saved, ",")[[1]]
-    } else {
-      character()
-    }
-    
-    ids <- intersect(ids, program()$row_id)
-    chosen_ids(ids)
-    restored(TRUE)
-  }, ignoreInit = FALSE)
+observeEvent(input$stored_plan, {
+  if (isTRUE(restored())) {
+    return()
+  }
+
+  saved <- input$stored_plan %||% ""
+
+  ids <- if (nzchar(saved)) {
+    str_split(saved, ",")[[1]] |>
+      str_trim()
+  } else {
+    character()
+  }
+
+  ids <- ids[ids != ""]
+  ids <- intersect(ids, program()$row_id)
+
+  chosen_ids(ids)
+  restored(TRUE)
+}, ignoreInit = FALSE)
   
-  observeEvent(chosen_ids(), {
-    session$sendCustomMessage("save_plan", chosen_ids())
-  }, ignoreInit = TRUE)
+observeEvent(chosen_ids(), {
+  if (!isTRUE(restored())) {
+    return()
+  }
+
+  session$sendCustomMessage("save_plan", chosen_ids())
+}, ignoreInit = TRUE)
   
   observeEvent(input$reload, {
     program(parse_contributions())
     chosen_ids(intersect(chosen_ids(), program()$row_id))
   })
   
-  observeEvent(input$clear, {
-    chosen_ids(character())
-    session$sendCustomMessage("clear_plan", list())
-  })
+observeEvent(input$clear, {
+  chosen_ids(character())
+  session$sendCustomMessage("clear_plan", list())
+})
   
   observe({
     df <- program()
