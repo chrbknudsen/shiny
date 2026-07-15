@@ -1,5 +1,5 @@
 library(shiny)
-
+library(dplyr)
 library(stringr)
 library(rvest)
 
