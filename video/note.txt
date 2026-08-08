@@ -1,0 +1,1 @@
+yt-dlp   --cookies-from-browser firefox   --remote-components ejs:github   --merge-output-format mp4   -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]/best[ext=mp4]/best"   -o "/home/christian/shiny/video/dhwam.mp4"   "https://www.youtube.com/watch?v=Bm-7eUNTxg8"
