@@ -84,14 +84,14 @@ to_svgs <- function(number){
 ui <- fluidPage(
   tags$head(
     tags$style(HTML("
-      h2 { color: #ff7800; }
+      h2 { color: #FF0000; }
       body { background-color: black; }
       .checkbox label {
-        color: #ff7800;
+        color: #FF0000;
         font-size: 16px;
       }
       .checkbox input[type='checkbox'] {
-        color: #ff7800;
+        color: #FF0000;
         
       }
     ")),
@@ -118,7 +118,7 @@ server <- function(input, output, session) {
     output$curr_down <- renderUI({
       invalidateLater(1000, session)
       curr_time <- with_tz(now("UTC"), tzone = "Europe/Copenhagen")
-      target_time <-  as.POSIXct("2029-01-20 12:00:00", tz = "America/New_York")
+      target_time <-  as.POSIXct("2027-01-19 18:00:00", tz = "Europe/Copenhagen")
       duration <- interval(curr_time, target_time)
       sekunder <- floor(as.numeric(duration, "seconds"))
       if(sekunder>0 & input$toggle){
