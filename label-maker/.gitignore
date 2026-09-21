@@ -1,0 +1,5 @@
+label-data/
+.Rhistory
+.RData
+.Renviron
+*.env

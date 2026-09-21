@@ -1,0 +1,50 @@
+# Tilføj eller fjern frit størrelser under "sizes".
+# Hvert id skal være unikt. Den første størrelse bliver standardvalget.
+sizes:
+  standard:
+    label: "Standard - 58 x 74 mm"
+    width_mm: 58
+    height_mm: 74
+
+  lille:
+    label: "Lille - 48 x 60 mm"
+    width_mm: 48
+    height_mm: 60
+
+  lav:
+    label: "Lav - 74 x 45 mm"
+    width_mm: 74
+    height_mm: 45
+
+# Alle familier under fonts.families bliver valgmuligheder i appen.
+# Filnavne er relative til fonts.directory. Absolutte stier kan også bruges.
+# family er det unikke interne navn, som R bruger efter registreringen.
+# bold, italic og bolditalic er valgfrie og falder ellers tilbage til regular.
+fonts:
+  directory: "fonts"
+  default_display: "dejavu_serif"
+  default_typewriter: "dejavu_mono"
+
+  families:
+    dejavu_serif:
+      label: "DejaVu Serif"
+      family: "label-dejavu-serif"
+      regular: "DejaVuSerif.ttf"
+      bold: "DejaVuSerif-Bold.ttf"
+
+    dejavu_sans:
+      label: "DejaVu Sans"
+      family: "label-dejavu-sans"
+      regular: "DejaVuSans.ttf"
+      bold: "DejaVuSans-Bold.ttf"
+
+    dejavu_mono:
+      label: "DejaVu Sans Mono"
+      family: "label-dejavu-mono"
+      regular: "DejaVuSansMono.ttf"
+      bold: "DejaVuSansMono-Bold.ttf"
+
+# PDF-siden er altid A4. Her styres kun luft omkring og mellem etiketterne.
+pdf:
+  margin_mm: 10
+  gap_mm: 4
